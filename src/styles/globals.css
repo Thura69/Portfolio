@@ -23,6 +23,7 @@
 
 body{
   background: #000;
+ 
 }
 
 .name{
@@ -39,6 +40,11 @@ body{
 .contact{
 background: rgb(18, 21, 26);
   background: linear-gradient(161deg, rgba(18, 21, 26, 1) 25%, rgba(0, 0, 0, 1) 56%, rgba(0, 0, 0, 1) 100%);
+}
+
+.active{
+  color:white;
+  font-size: 2.1rem;
 }
 
 .slide-in{
@@ -58,4 +64,8 @@ background: rgb(18, 21, 26);
   height: 100svh;
   background-color: blue;
   transform-origin: top;
+}
+
+#seven_frame{
+  scroll-behavior: smooth;
 }

@@ -12,6 +12,7 @@ import FifthFrame from './FifthFrame'
 import FourthFrame from './FourthFrame'
 import FirstFrame from './FirstFrame';
 import EightFrame from './EightFrame';
+import StickyCursor from './animation/StickyCursor';
 
 
  const App = () => {
@@ -43,6 +44,7 @@ requestAnimationFrame(raf)
    <div data-scroll-container  ref={containerRef} className='bg-bg relative h-[100svh] w-full'>
       {
         loader ? <>
+      <StickyCursor/>
       <FirstFrame  />  
       <SecondFrame/>  
       <ThirdFrame />
