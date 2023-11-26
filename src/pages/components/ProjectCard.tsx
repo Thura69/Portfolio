@@ -1,0 +1,38 @@
+import Image from 'next/image';
+import React from 'react'
+import Marquee from "react-fast-marquee";
+import Rocket from '../../../public/assets/screen.png'
+import Rocket2 from '../../../public/assets/screen2.png'
+import Rocket3 from '../../../public/assets/screen3.png'
+import Rocket4 from '../../../public/assets/screen4.png'
+import { workCardProps } from '@/types/workCard.types';
+import { projectCardProps } from '@/types/project.types';
+
+
+
+ const ProjectCard:React.FC<projectCardProps> = ({title,year,description,image,link}) => {
+  return (
+      <div className='p-5 '>
+          <p className='  text-text uppercase font-bold text-[25px] font-sans'>{title}</p> 
+      <a href='https://detfsmm.com/' className='text-[#0000FF]  font-light z-10 text-[18px]  '>{link}</a>
+              <p className='text-text  font-light z-10 text-[15px] uppercase '>{year}</p>
+              <p className='text-[#77818f] font-sans mt-6 text-[16px] font-light'>{description}</p>
+              <Marquee className='h-[500px] m-0  '>
+              <div className='h-[400px] mx-1 p-5  bg-[#13161b]'>
+                <Image src={image[0]} height={360} alt='win' />
+              </div>
+              <div className='h-[400px] mx-1 p-5  bg-[#13161b] '>
+                <Image src={image[1]} height={360} alt='win' />
+              </div>
+              <div className='h-[400px] mx-1 p-5  bg-[#13161b] '>
+                <Image src={image[2]} height={360} alt='win' />
+              </div>
+              <div className='h-[400px] mx-1 p-5  bg-[#13161b] '>
+                <Image src={image[3]} height={360} alt='win' />
+              </div>
+             </Marquee>
+            </div>
+  )
+}
+
+export default ProjectCard
