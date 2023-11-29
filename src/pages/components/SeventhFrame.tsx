@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Win from '../../../public/assets/laurel-wreath.png';
 import Cart from '../../../public/assets/shopping-cart.png'
 import Secure from '../../../public/assets/protection.png';
@@ -32,20 +32,40 @@ import fuel_5 from '../../../public/assets/fuel5.png'
 import fuel_6 from '../../../public/assets/fuel6.png'
 import fuel_7 from '../../../public/assets/server7.png'
 
-import server_1 from '../../../public/assets/server4.png'
-import server_2 from '../../../public/assets/server.png'
-import server_3 from '../../../public/assets/server2.png'
-import server_4 from '../../../public/assets/server3.png'
+import server_1 from '../../../public/assets/ecommerce2.png'
+import server_2 from '../../../public/assets/ecommerce.png'
+import server_3 from '../../../public/assets/ecommerce1.png'
+import server_4 from '../../../public/assets/server2.png'
+
+import youtube_1 from '../../../public/assets/youtube4.png'
+import youtube_2 from '../../../public/assets/youtube.png'
+import youtube_3 from '../../../public/assets/youtube2.png'
+import youtube_4 from '../../../public/assets/youtube3.png'
 
 import app_1 from '../../../public/assets/app4.png'
 import app_2 from '../../../public/assets/app.png'
 import app_3 from '../../../public/assets/app2.png'
 import app_4 from '../../../public/assets/app3.png'
 
+import drew_1 from '../../../public/assets/drew4.png'
+import drew_2 from '../../../public/assets/drew.png'
+import drew_3 from '../../../public/assets/drew2.png'
+import drew_4 from '../../../public/assets/drew3.png'
+
 import installer_1 from '../../../public/assets/installer4.png'
 import installer_2 from '../../../public/assets/installer.png'
 import installer_3 from '../../../public/assets/installer5.png'
 import installer_4 from '../../../public/assets/installer3.png'
+
+import micro_1 from '../../../public/assets/server.png'
+import micro_2 from '../../../public/assets/micro.png'
+import micro_3 from '../../../public/assets/micro1.png'
+import micro_4 from '../../../public/assets/micro2.png'
+
+import blog_1 from '../../../public/assets/server3.png'
+import blog_2 from '../../../public/assets/blog.png'
+import blog_3 from '../../../public/assets/server4.png'
+import blog_4 from '../../../public/assets/blog2.png'
 
 import hobby_1 from '../../../public/assets/IMG_9284.png'
 import hobby_2 from '../../../public/assets/IMG_9285.png'
@@ -59,13 +79,18 @@ import WorkCard from './Themes/WorkCard';
 import Text from './Themes/Text';
 import Frames from './Themes/Frames';
 import ProjectCard from './ProjectCard';
+import { englishLanguage } from '@/language/english';
+import svg from '../../../public/assets/6469a18e29af2de5755caf00_Animated_rainbow_card.svg'
 
-const ff = 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatibus, minus! Maiores, fugiat eligendi! Accusantium soluta autem a iste suscipit vero quaerat iure cum! Tempora possimus officia inventore! Dignissimos, earum vero. Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam laudantium doloremque beatae tempora corrupti. Harum error distinctio odit in alias, voluptas ex nulla id consectetur reprehenderit dolorem perferendis perspiciatis quia? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, tempora? Earum facilis ipsa soluta eaque voluptas tenetur itaque, perspiciatis labore incidunt dolor similique quis nulla voluptatem possimus autem voluptate ad.'
+
+
 
 
 
 const SeventhFrame = () => {
-
+  const [language, setLanguage] = useState(englishLanguage);
+  const fullstackRef = useRef(null);
+  const fullstackTextRef = useRef<HTMLAnchorElement>(null);
   const webRef = useRef(null);
   const webTextRef = useRef<HTMLAnchorElement>(null);
   const appRef = useRef(null);
@@ -81,6 +106,8 @@ const SeventhFrame = () => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
 
+  const currenFullStack = (fullstackRef as React.RefObject<HTMLParagraphElement>)?.current;
+  const currentTexFullStack = (fullstackTextRef as React.RefObject<HTMLAnchorElement>)?.current;
   const currentWeb = (webRef as React.RefObject<HTMLParagraphElement>)?.current;
   const currentTextWeb = (webTextRef as React.RefObject<HTMLAnchorElement>)?.current;
   const currentApp = (appRef as React.RefObject<HTMLParagraphElement>)?.current;
@@ -90,18 +117,28 @@ const SeventhFrame = () => {
   const currentOther = (otherRef as React.RefObject<HTMLParagraphElement>)?.current;
   const currentTextOther = (otherTextRef as React.RefObject<HTMLAnchorElement>)?.current;
   
-  
 
+  if (currentTexFullStack && currenFullStack && scrollPosition >= currenFullStack.offsetTop) {
+    currentTextApp?.classList.remove('active');
+    currentTextServer?.classList.remove('active');
+    currentTextOther?.classList.remove('active');
+    currentTextWeb?.classList.remove('active');
+    
+    
+    currentTexFullStack.classList.add('active');
+  } 
   if (currentTextWeb && currentWeb && scrollPosition >= currentWeb.offsetTop) {
     currentTextApp?.classList.remove('active');
     currentTextServer?.classList.remove('active');
-    
+    currentTexFullStack?.classList.remove('active');
     currentTextWeb.classList.add('active');
   } 
 
   if (currentTextApp && currentApp && scrollPosition >= currentApp.offsetTop) {
     currentTextWeb?.classList.remove('active');
     currentTextServer?.classList.remove('active');
+    currentTexFullStack?.classList.remove('active');
+
 
     currentTextApp.classList.add('active');
   } 
@@ -109,6 +146,8 @@ const SeventhFrame = () => {
     currentTextWeb?.classList.remove('active');
     currentTextApp?.classList.remove('active');
     currentTextOther?.classList.remove('active');
+    currentTexFullStack?.classList.remove('active');
+
 
 
     currentTextServer.classList.add('active');
@@ -117,6 +156,8 @@ const SeventhFrame = () => {
     currentTextWeb?.classList.remove('active');
     currentTextApp?.classList.remove('active');
     currentTextServer?.classList.remove('active');
+    currentTexFullStack?.classList.remove('active');
+
 
 
     currentTextOther.classList.add('active');
@@ -136,43 +177,55 @@ const SeventhFrame = () => {
     };
   }, []);
   return (
-    <div data-scroll-section id="seven_frame"  className='flex items-center justify-center w-full h-[1870px] lg:h-[4800px]'>
+    <div data-scroll-section id="seven_frame"  className='flex items-center justify-center w-full h-[1870px] lg:h-[9100px]'>
         <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3%]'/>
-        <div className='w-[94%] lg:w-[94%] xs:w-[94%] bg-bg  h-full border-b-[0.5px] mid:w-[86%] border-border md:w-[90%] border-r-[0.5px]  mid:px-7'>
-        <div className=' p-2  lg:hidden gap-1 flex items-center md:flex-row md:flex-wrap flex-col justify-center mid:gap-6 '>
-        <WorkCard title='Khit Zay Ecommerce' description='Ecommerce with latest modren UI.' tools="React.js, Tailwind CSS, Cloudinary" img={Cart} link='kd' />            
-        <WorkCard title='Awwwards Winning' description='Strongest UI design web.' tools="Next.js, TypeScript, Tailwind CSS, Framer Motion" img={Win} link='kd' />            
-        <WorkCard title='API Keys and Permits ' description='Fullstack web app controls Restful API.' tools="Next.js, Next auth, TypeScript, Tailwind CSS, Node.js" img={Secure} link='kd' />            
-        <WorkCard title='Android Application' description='Smart Home IoT app to control lights, fans and AC.' tools="React Native, TypeScript, Expo" img={Iot} link='kd' />            
-        <WorkCard title='Microservices Architecture' description='Food ecommerce server with microservices.' tools="Node.js, TypeScript, Express.js, Swagger, API gateway, MongoDb" img={Micro} link='kd' />            
-        <WorkCard title='Monolithic Architecture' description='Ecommerce API with Monolithic.' tools="Node.js, TypeScript, Express.js, MongoDb, Cloudinary, Swagger" img={cloud} link='kd' />            
+        
+        <div className='w-[94%] p-2  lg:w-[94%] xs:w-[94%] bg-bg  h-full border-b-[0.5px] mid:w-[86%] border-border relative md:w-[90%] border-r-[0.5px] overflow-clip   mid:px-7'>
+           <Image className='absolute right-[-270px] top-[-190px]' src={svg} alt='svg'/>
+        <h3 className='text-text px-2 mt-[20px] mb-[20px]  uppercase text-[1.5rem]  lg:text-[2.3rem] font-bold'>SELECTED PROJECTS</h3>
+       
+        <div className='   lg:hidden gap-1 flex items-center md:flex-row md:flex-wrap flex-col justify-center mid:gap-6 '>
+        <WorkCard no='01' title='Khit Zay Ecommerce' description='Ecommerce with latest modren UI.' tools="React.js, Tailwind CSS, Cloudinary" img={Cart} link='kd' />            
+        <WorkCard no="02" title='Awwwards Winning' description='Strongest UI design web.' tools="Next.js, TypeScript, Tailwind CSS, Framer Motion" img={Win} link='kd' />            
+        <WorkCard no="03" title='API Keys and Permits ' description='Fullstack web app controls Restful API.' tools="Next.js, Next auth, TypeScript, Tailwind CSS, Node.js" img={Secure} link='kd' />            
+        <WorkCard no="04" title='Android Application' description='Smart Home IoT app to control lights, fans and AC.' tools="React Native, TypeScript, Expo" img={Iot} link='kd' />            
+        <WorkCard no="05" title='Microservices Architecture' description='Food ecommerce server with microservices.' tools="Node.js, TypeScript, Express.js, Swagger, API gateway, MongoDb" img={Micro} link='kd' />            
+        <WorkCard no="06" title='Monolithic Architecture' description='Ecommerce API with Monolithic.' tools="Node.js, TypeScript, Express.js, MongoDb, Cloudinary, Swagger" img={cloud} link='kd' />            
         </div>
+       
         <div className='lg:flex hidden '>
           <div className=''>
-          <div className=' p-4 pt-[70px] text-textgray sticky top-[50px] right-0   flex flex-col justify-start items-start gap-[5px]   w-[270px] '>
-           <a ref={webTextRef}  className='text-[1.9rem] duration-500   font-bold font-sans '>Frontend </a>
-           <a ref={appTextRef}  className='text-[1.9rem] duration-500  font-bold font-sans'>Application</a>
-           <a ref={serverTextRef}  className='text-[1.9rem] duration-500  font-bold font-sans'>Backend</a>
-           <a ref={otherTextRef}  className='text-[1.9rem] duration-500  font-bold font-sans '>Others</a>
+          <div className=' p-4 pt-[70px] text-[#43474d] sticky top-[50px] right-0   flex flex-col justify-start items-start gap-[5px]   w-[270px] '>
+           <a ref={fullstackTextRef}  className='text-[2.5rem] duration-500 italic  font-bold font-sans '>Fullstack </a>
+           <a ref={webTextRef}  className='text-[2.5rem] duration-500   italic  font-bold font-sans '>Frontend </a>
+           <a ref={appTextRef}  className='text-[2.5rem] duration-500  italic font-bold font-sans'>Application</a>
+           <a ref={serverTextRef}  className='text-[2.5rem] duration-500  italic font-bold font-sans'>Backend</a>
+           <a ref={otherTextRef}  className='text-[2.5rem] duration-500  italic font-bold font-sans '>Others</a>
            {/* <p className='text-[1.9rem]   font-bold font-sans'>Full-stack</p> */}
-              
           </div>
           </div>
-          <div className=' pt-[50px]  '>
+          <div className=' pt-[60px]  '>
             {/* here */}
+          <div ref={fullstackRef}>
+              <ProjectCard link='https://detfsmm.com' url='https://detfsmm.com'  title={"REAL TIME FUEL MANAGEMNT SYSTEM"} year='2023' description={language.realtimefuelmanagementsystem} skills='React.js, Tailwind ,Framer Motion, React Rouder Dom, Redux, Redux Thunk, Custom Hooks,Prime React, Chart.js, Express, Node.js, Mongodb, TypeScript, Zod, EC2' image={[fuel_1, fuel_7, fuel_5, fuel_4]} account={true} accountDetail='Username : user, Password : 12345678' />
+          </div>
           <div ref={webRef} id='web'>
-                <ProjectCard link='https://detfsmm.com'  title={"REAL TIME FUEL MANAGEMNT SYSTEM"} year='2023' description={ff} image={[fuel_1, fuel_7, fuel_5, fuel_4]} />
-             <ProjectCard link='UNAUTHORIZED' title={"POS SET UP"} year='2023' description={ff} image={[installer_1,installer_2,installer_3,installer_4]}/>
-          <ProjectCard link='https://thurakhitzay.netlify.app' title={"ECOMMERCE"} year='2023' description={ff} image={[ecommerce_1,ecommerce_2,ecommerce_3,ecommerce_4]} />
+          <ProjectCard link='UNAUTHORIZED' url={''} title={"POS SET UP"} year='2023' description={language.possetup} image={[installer_1, installer_2, installer_3, installer_4]} skills='React.js, Tailwind, TypeScript, Redux, Framer Motion' account={false} />
+          <ProjectCard link='https://thurakhitzay.netlify.app' skills='React.js, Redux, Reuseable Components' url='https://thurakhitzay.netlify.app' title={"ECOMMERCE"} year='2023' description={language.ecommerce} image={[ecommerce_1,ecommerce_2,ecommerce_3,ecommerce_4]} account={false} />
+          <ProjectCard link='https://thura69.github.io/foreverBots/' url='https://thura69.github.io/foreverBots/' title={"FOREVER BOT (PURE VANILLA)"} year='2022' description={language.bot} skills='HTM, CSS, JavaScript' image={[bot_1,bot_2,bot_3,bot_4]} account={false} />
+          <ProjectCard link='https://thura69.github.io/drewhouse/'  url='https://thura69.github.io/drewhouse/' title={"DREW HOUSE (PURE VANILLA)"} year='2022' description={language.drewhouse} skills='HTML, CSS, JavaScript' image={[drew_1,drew_2,drew_3,drew_4]} account={false} />
           </div>
          <div ref={appRef} id='app'>
-          <ProjectCard link='READ APPLICATION GUIDE' title={"FMS (FUEL MANAGEMENT SYSTEM) APPLICATION "} year='2023' description={ff} image={[app_1,app_2,app_3,app_4]}/>
+          <ProjectCard url='https://drive.google.com/file/d/15NQDfyogA01TvzT2dz9qv_8cEdl7pLjJ/view?usp=drive_link' link='READ APPLICATION GUIDE ( USER MANUAL ) ' title={"FMS (FUEL MANAGEMENT SYSTEM) APPLICATION "} skills='ReactNative, Expo, Reuseable Components, React Navigation, Async Storage, Redux, Expo Print ' year='2022' description={language.fmsapplication} image={[app_1,app_2,app_3,app_4]} account={false}/>
          </div>
          <div  ref={serverRef} id="server">
-             <ProjectCard link='https://github.com/Thura69/Ecommerce_Backend' title={"ECOMMERCE SERVER REST API"} year='2023' description={ff} image={[server_1,server_2,server_3,server_4]}/>
+              <ProjectCard link='https://github.com/Thura69/Ecommerce_Backend' skills='Express.js,Node.js,TypeScript,MongoDb,MVC Pattern,Cloudinary' url='https://github.com/Thura69/Ecommerce_Backend' title={"ECOMMERCE SERVER REST API"} year='2023' description={language.ecommerceapi} image={[server_1, server_2, server_3, server_4]} account={false} />
+              <ProjectCard link='https://github.com/Thura69/Youtube_backend' skills='Express.js,Node.js,TypeScript,Mongodb' url='https://github.com/Thura69/Youtube_backend' title={"YOUTUBE REST API"} year='2023' description={language.youtube} image={[youtube_1, youtube_2, youtube_3, youtube_4]} account={false} />
+              <ProjectCard link='https://github.com/Thura69/Youtube_backend' skills='Express.js,Node.js,TypeScript,Mongodb,Swagger' url='https://github.com/Thura69/Youtube_backend' title={"BLOG REST API"} year='2023' description={language.blog} image={[blog_1, blog_2, blog_3, blog_4]} account={false} />
+              <ProjectCard link='https://github.com/Thura69/Youtube_backend' url='https://github.com/Thura69/Youtube_backend' title={"MICROSERVICES ARCHITECTURE"} year='2023' description={language.microservice} skills='MicroServices,Api GateWay,Express.js,Node.js,Mongodb' image={[micro_1, micro_2, micro_3, micro_4]} account={false} />
          </div>
             <div ref={otherRef} id='others'>
-                 <ProjectCard link='UNDEFINDED LINK' title={"RASPBERRY PI ,BANANA PI & POS HANDLE"} year='2023' description={ff} image={[hobby_1,hobby_4,hobby_3,hobby_8]}/>
+                 <ProjectCard link='UNDEFINDED LINK' title={"RASPBERRY PI ,BANANA PI & POS HANDLE"} year='2023' description={language.hobby} image={[hobby_1,hobby_4,hobby_3,hobby_8]} account={false}/>
          </div>
 
             {/* here */}

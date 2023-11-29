@@ -5,6 +5,10 @@ export interface projectCardProps{
     year: string,
     description: string,
     link:string,
-    image:StaticImageData[]
+    image: StaticImageData[],
+    account:boolean,
+    accountDetail?: string,
+    url?: string,
+    skills?:string
 }
 

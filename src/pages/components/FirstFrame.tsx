@@ -10,7 +10,7 @@ import Frames from './Themes/Frames';
         <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3.05%]'/>
         <div className='w-[47%]   flex items-center justify-start px-3  font-bold h-full  border-r-[0.5px]  border-b-[0.5px] border-border xs:w-[45%] mid:w-[68%] md:w-[45%] lg:w-[34.15%]' >
         {/* <p className=' text-text text-[18px]   absolute '>Full Stack Developer</p> */}
-         <AnimatedTextWord transition={{staggerChildren:0.3,delayChildren:0.050 * 10}} text='Frontend Developer' classname='text-text text-[18px]   absolute '/>
+         <AnimatedTextWord transition={{staggerChildren:0.3,delayChildren:0.050 * 10}} text='Software Developer' classname='text-text text-[18px]   absolute '/>
         </div>
         <Frames className='w-[72%] hidden lg:block lg:w-[15.53%]' />
         <Frames className='hidden lg:block lg:w-[15%]'/>

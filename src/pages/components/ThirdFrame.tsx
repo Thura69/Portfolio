@@ -20,7 +20,7 @@ const styles = {
  
  const ThirdFrame = () => {
   return (
-    <div data-scroll-section className='flex items-center justify-center  w-full h-[800px] xs:h-[860px] sm:h-[900px] lg:h-[550px] md:h-[540px]'>
+    <div data-scroll-section className='flex items-center justify-center  w-full h-[880px] xs:h-[860px] sm:h-[900px] lg:h-[550px] md:h-[540px]'>
       <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3.15%]'/>
       <div className='w-[94%] xs:w-[90%] mid:w-[86%] md:w-[90%] lg:w-[100%] bg-bg p-4 border-r-[0.5px] border-b-[0.5px] border-border h-full mid:p-7 md:p-0  md:flex  '>
       {/* <div className='w-[300px]  cursor-crosshair  relative h-[300px] rounded-md'>
@@ -43,7 +43,12 @@ const styles = {
         <div className=' md:flex md:p-10 md:w-[50%] lg:p-6  lg:w-[37%]  flex-col md:border-r-[0.5px] border-border items-start  lg:text-[19.4px]'>
           {/* <Text bold='font-bold lg:mb-[30px] mb-[30.3px]' context='About me' color='text-text' fontSize='text-[2.25rem] md:text-[3.2rem]' /> */}
           <AnimatedTextWord text={'About Me'} classname='font-bold lg:mb-[30px] mb-[30.3px] text-[2.25rem] md:text-[3.2rem] text-text'/>
-          <AnimatedTextWord text={'I am a seasoned Frontend Developer specializing in React.js, Next.js, Tailwind CSS, and React Native. Proficient in crafting innovative web applications. Committed to staying current with industry trends, I bring a unique blend of technical expertise and a passion for exploring creative ideas.Specializes in IoT integration and server technologies using Express and MongoDB for seamless web applications.'} />
+          <AnimatedTextWord text={'I am a seasoned Software Developer specializing in React.js, Next.js, Tailwind CSS, React Native, Express.js, Node.js, MongoDb, MySQL, Linux Servers , AWS services and Z.com. Versioning tool  as Git. Proficient in crafting innovative web applications. Committed to staying current with industry trends, I bring a unique blend of technical expertise and a passion for exploring creative ideas.Specializes in IoT integration and server technologies using Express and MongoDB for seamless web applications.'} />
+          <div>
+            <ul>
+              <li></li>
+            </ul>
+          </div>
           {/* <p className='text-[16.1px] font-sans text-[#77818f]'>I am a seasoned <span className=' text-[#ffff] font-bold   '>Full Stack Developer</span> specializing in React.js, Next.js, Tailwind CSS, and React Native. Proficient in crafting innovative web applications. Committed to staying current with industry trends, I bring a unique blend of technical expertise and a passion for exploring creative ideas.</p> */}
         {/* <AnimatedTextWord text='Specializes in IoT integration and server technologies using Express and MongoDB for seamless web applications.'/> */}
         {/* <Text context='Specializes in IoT integration and server technologies using Express and MongoDB for seamless web applications.' color='text-[#77818f]' fontSize='text-[16.1px]'/> */}
@@ -87,7 +92,7 @@ const styles = {
               
             <div className='text-[#ffff]'>
                 {/* <h3 className='text-[0.9rem] font-sans font-bold'>Frontend Developer at Digital Engineering Tech</h3> */}
-          <AnimatedTextWord transition={{staggerChildren:0.1,delayChildren:0.030 * 1}} text='Frontend Developer at Digital Engineering Tech' classname='text-[0.9rem] text-text font-sans font-bold'/>
+          <AnimatedTextWord transition={{staggerChildren:0.1,delayChildren:0.030 * 1}} text='Fullstack Developer at Digital Engineering Tech' classname='text-[0.9rem] text-text font-sans font-bold'/>
           <AnimatedTextWord transition={{staggerChildren:0.2,delayChildren:0.030 * 1}} text='Jan 2022 - Present' classname='font-sans text-textgray leading-[29px] text-[16.1px]'/>
                 
               {/* <h3 className=' font-sans text-textgray leading-[29px] text-[16.1px] '>Jan 2022 - Present</h3> */}

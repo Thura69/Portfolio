@@ -44,7 +44,7 @@ requestAnimationFrame(raf)
    <div data-scroll-container  ref={containerRef} className='bg-bg relative h-[100svh] w-full'>
       {
         loader ? <>
-      <StickyCursor/>
+      {/* <StickyCursor/> */}
       <FirstFrame  />  
       <SecondFrame/>  
       <ThirdFrame />

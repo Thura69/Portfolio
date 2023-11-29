@@ -11,11 +11,18 @@ import FourthFrame from './components/FourthFrame'
 import FirstFrame from './components/FirstFrame'
 import EightFrame from './components/EightFrame';
 import App from './components/App';
+import Head from 'next/head'
 
 function index() {
 
   return (
+    <>
+      <Head>
+        <title>ThuraNyi</title>
+        <link rel="icon" href="public/logo.png" />
+     </Head>
    <App />
+    </>
   )
 }
 
