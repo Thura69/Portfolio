@@ -21,9 +21,9 @@ const styles = {
  
  const ThirdFrame = () => {
   return (
-    <div data-scroll-section className='flex items-center justify-center  w-full h-[950px] xs:h-[860px] sm:h-[900px] lg:h-[550px] md:h-[540px]'>
+    <div data-scroll-section className='flex items-center justify-center  w-full h-[1050px] xs:h-[960px] sm:h-[900px] mid:h-[1000px] lg:h-[550px] md:h-[950px]'>
       <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3.15%]'/>
-      <div className='w-[94%] xs:w-[90%] mid:w-[86%] md:w-[90%] lg:w-[100%] bg-bg p-4 border-r-[0.5px] border-b-[0.5px] border-border h-full mid:p-7 md:p-0  md:flex  '>
+      <div className='w-[94%] xs:w-[90%] mid:w-[86%] md:w-[90%] lg:w-[100%] bg-bg p-4 border-r-[0.5px] border-b-[0.5px] border-border h-full mid:p-7 md:p-0  lg:flex  '>
       {/* <div className='w-[300px]  cursor-crosshair  relative h-[300px] rounded-md'>
       <div className=' bg-bg absolute bottom-1 left-1 text-[#ffff] px-1 rounded-sm'><h3 className=' text-[0.75rem]'>IMG_286.png</h3></div>
       <ReactSketchCanvas
@@ -35,15 +35,15 @@ const styles = {
         </div> */}
    
   
-    <div data-scroll-sticky className='md:p-7 bg-bg lg:w-[33.1%] order-1 md:w-[50%]   md:flex items-center justify-center'>
-              <Image blurDataURL={'../../../public/assets/64cd4b8241e30d1ff98179ad_gamestation.png'} src={Profile}  className='md:h-auto lg:h-auto   order-1 bg-active rounded-md' width={500} height={590} alt='profile'/>
+    <div data-scroll-sticky className='md:p-7 bg-bg lg:w-[50.1%] order-1 md:w-[50%] xl:w-[33.1%]   border-text  md:flex items-center justify-center md:justify-start'>
+      <Image blurDataURL={'../../../public/assets/64cd4b8241e30d1ff98179ad_gamestation.png'} src={Profile}  className='md:h-auto w-full lg:h-auto   order-1 bg-active rounded-md' width={500} height={590} alt='profile'/>
       </div>
         <div className='mt-[20.3px]'></div>
-        <div className=' md:flex md:p-10 md:w-[50%] lg:p-6  lg:w-[37%]  flex-col md:border-r-[0.5px] border-border items-start  lg:text-[19.4px]'>
+        <div className=' md:flex md:p-5 md:w-[100%] lg:p-6  lg:w-[55.3%] xl:w-[37%]  flex-col md:border-r-[0.5px] border-border items-start  lg:text-[19.4px]'>
           {/* <Text bold='font-bold lg:mb-[30px] mb-[30.3px]' context='About me' color='text-text' fontSize='text-[2.25rem] md:text-[3.2rem]' /> */}
-          <AnimatedTextWord text={'About Me'} classname='font-bold lg:mb-[30px] mb-[30.3px] text-[2.25rem] md:text-[3.2rem] text-text'/>
+          <AnimatedTextWord  transition={{staggerChildren:0.3,delayChildren:0.030 * 10}} text={'About Me'} classname='font-bold lg:mb-[0px] mb-[40.3px] text-[2.25rem] md:text-[3.2rem] text-text'/>
           {/* <AnimatedTextWord classname='text-sm' text={'I am a seasoned Software Developer specializing in React.js, Next.js, Tailwind CSS, React Native, Express.js, Node.js, MongoDb, MySQL, Linux Servers , AWS services and Z.com. Versioning tool  as Git. Proficient in crafting innovative web applications. Committed to staying current with industry trends, I bring a unique blend of technical expertise and a passion for exploring creative ideas.Specializes in IoT integration and server technologies using Express and MongoDB for seamless web applications.'} /> */}
-         <p className="text-sm text-textgray">I am a seasoned Software Developer specializing in React.js, Next.js, Tailwind CSS, React Native, Express.js, Node.js, MongoDb, MySQL, Linux Servers , AWS services and Z.com. Versioning tool  as Git. Proficient in crafting innovative web applications. Committed to staying current with industry trends, I bring a unique blend of technical expertise and a passion for exploring creative ideas.Specializes in IoT integration and server technologies using Express and MongoDB for seamless web applications.</p>
+         <p className="text-sm md:text-md text-textgray">I am a seasoned Software Developer specializing in React.js, Next.js, Tailwind CSS, React Native, Express.js, Node.js, MongoDb, MySQL, Linux Servers , AWS services and Z.com. Versioning tool  as Git. Proficient in crafting innovative web applications. Committed to staying current with industry trends, I bring a unique blend of technical expertise and a passion for exploring creative ideas.Specializes in IoT integration and server technologies using Express and MongoDB for seamless web applications.</p>
           <div>
             <ul>
               <li></li>
@@ -88,7 +88,7 @@ const styles = {
          </div>
        </div>
         </div>
-        <div className=' bg-bg hidden lg:block border-border  experience border-l-[0.5px] w-[32.7%] order-3'>
+        <div className=' bg-bg hidden border-border xl:block  experience border-l-[0.5px] w-[32.7%] order-3'>
            <div className='flex p-5 items-center  gap-3 justify-start'>
           <Image src={Experience} width={25} alt='experience' />
           <h3 className='text-active uppercase text-[0.85rem] font-bold'>Experience</h3>

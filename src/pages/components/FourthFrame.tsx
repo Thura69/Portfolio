@@ -8,9 +8,9 @@ import Frames from './Themes/Frames';
 
  const FourthFrame = () => {
   return (
-    <div data-scroll-section className='flex items-center lg:hidden  justify-center w-full h-[350px] lg:h-[320px] md:h-[300px]'>
-        <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%]   h-full'/>
-        <div className='w-[94%] xs:w-[90%] mid:w-[86%] md:w-[90%] h-full border-r-[0.5px]  p-2 border-border border-b-[0.5px] experience mid:px-7'>
+    <div data-scroll-section className='flex items-center xl:hidden  justify-center w-full h-[380px] lg:h-[400px] md:h-[390px]'>
+        <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] lg:w-[3%] md:w-[5%]   h-full'/>
+        <div className='w-[94%] xs:w-[90%] mid:w-[86%] lg:w-[94%] md:w-[90%] h-full border-r-[0.5px]  p-5 border-border border-b-[0.5px] experience mid:px-7'>
         <div className='flex items-center gap-3 justify-start'>
           <Image src={Experience} width={25} alt='experience' />
           <h3 className='text-active uppercase text-[18px] font-bold'>Experience</h3>
@@ -39,7 +39,7 @@ import Frames from './Themes/Frames';
           </div>
         </div>
         </div>
-        <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] h-full'/>
+        <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] lg:w-[3%] md:w-[5%] h-full'/>
     </div>
   )
 }

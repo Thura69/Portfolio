@@ -39,10 +39,10 @@ import Frames from './Themes/Frames';
         </div>
         <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3%]'/>
       {/* <p className='text-bg hidden sm:block font-bold top-[-10%] lg:left-[30%] md:left-[45%] mid:left-[55%] left-[60%] p-2 z-10 rounded-2xl absolute bg-active '>{greeting}!</p> */}
-        {/* <AnimatedTextWord transition={{staggerChildren:0.3,delayChildren:0.030 * 10}} text='Thura Nyi' classname='text-[60px] md:text-[90px] flex text-text name lg:text-[150px] top-[33px] font-bold absolute left-[7%] lg:top-[-25px] name'/> */}
-      <p className='text-[60px] md:text-[90px] text-text lg:text-[150px] top-[33px] font-bold absolute left-[7%] lg:top-[-25px]'>
-	Thura Nyi.
-</p>
+        <AnimatedTextWord transition={{staggerChildren:0.3,delayChildren:0.030 * 10}} text='Thura Nyi' classname='text-[60px] md:text-[90px] flex text-text name lg:text-[150px] top-[33px] font-bold absolute left-[7%] lg:top-[-25px] name'/>
+      {/* <p className='text-[60px] md:text-[90px] text-text lg:text-[150px] top-[33px] font-bold absolute left-[7%] lg:top-[-25px]'>
+<RevealWrapper duration={1000} origin='bottom'>	Thura Nyi.</RevealWrapper>
+</p> */}
     </div>
   )
 }
