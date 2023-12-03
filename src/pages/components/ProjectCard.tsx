@@ -9,17 +9,15 @@ import { workCardProps } from '@/types/workCard.types';
 import { projectCardProps } from '@/types/project.types';
 import AnimatedTextWord from './animation/AnimatedTextWord';
 import {RevealWrapper} from 'next-reveal';
+import Link from 'next/link';
 
-
- const ProjectCard:React.FC<projectCardProps> = ({title,year,description,image,link,account,accountDetail,url,skills}) => {
+ const ProjectCard:React.FC<projectCardProps> = ({title,year,description,image,link,account,accountDetail,url,skills,toPage=""}) => {
   return (
-      <div className='p-5 '>
+      <Link  href={toPage} className='p-5 '>
           <p className='  text-text uppercase font-bold text-[25px] font-sans'>{title}</p> 
       <a href={url} className='text-[#0000FF]  font-light z-10 text-[18px]  '>{link}</a>
               <p className='text-text  font-light z-10 text-[15px] uppercase '>{year}</p>
-            <RevealWrapper duration={2000}>
                  <p className='text-[#77818f] font-sans mt-6 text-[16px] font-light'>{description}</p>
-            </RevealWrapper>
       <p className='text-text  font-bold  z-10 text-[15px] uppercase mt-3 '>{skills}</p>
              {
               account &&   <p className='text-[#0000FF] font-sans mt-3 text-[16px] font-light'>{accountDetail}</p>
@@ -39,7 +37,7 @@ import {RevealWrapper} from 'next-reveal';
                 <Image src={image[3]} height={360} alt='win' />
               </div>
              </Marquee>
-            </div>
+            </Link>
   )
 }
 

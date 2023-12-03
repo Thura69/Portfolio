@@ -1,6 +1,8 @@
 import React, { useRef } from 'react'
 import Text from './Themes/Text'
 import Frames from './Themes/Frames'
+import { motion } from 'framer-motion';
+import { opacity } from '../../../public/header';
 
  const FifthFrame = () => {
   return (

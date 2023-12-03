@@ -1,4 +1,5 @@
 import { ImageProps, StaticImageData } from "next/image";
+import { Url } from "url";
 
 export interface projectCardProps{
     title: string,
@@ -9,6 +10,7 @@ export interface projectCardProps{
     account:boolean,
     accountDetail?: string,
     url?: string,
-    skills?:string
+    skills?: string,
+    toPage?:any
 }
 

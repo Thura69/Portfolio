@@ -1,0 +1,3 @@
+interface projectNameFrameProps{
+    title?: string,
+}

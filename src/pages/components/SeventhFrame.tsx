@@ -1,10 +1,12 @@
 import React, { useEffect, useRef, useState } from 'react'
 import Win from '../../../public/assets/laurel-wreath.png';
 import Cart from '../../../public/assets/shopping-cart.png'
+import Fuel from '../../../public/assets/gas-station-fuel-svgrepo-com (2).png'
 import Secure from '../../../public/assets/protection.png';
 import Iot from '../../../public/assets/internet-of-things-2.png';
 import cloud from '../../../public/assets/cloud-storage-2.png';
 import Micro from '../../../public/assets/microservice-2.png';
+import Rasp from '../../../public/assets/raspberry-pi-svgrepo-com (1).png';
 import Blue from '../../../public/assets/floor-plan.png';
 
 import Image from 'next/image';
@@ -81,6 +83,7 @@ import Frames from './Themes/Frames';
 import ProjectCard from './ProjectCard';
 import { englishLanguage } from '@/language/english';
 import svg from '../../../public/assets/6469a18e29af2de5755caf00_Animated_rainbow_card.svg'
+import Link from 'next/link';
 
 
 
@@ -177,20 +180,28 @@ const SeventhFrame = () => {
     };
   }, []);
   return (
-    <div data-scroll-section id="seven_frame"  className='flex items-center justify-center w-full h-[1870px] lg:h-[9100px]'>
+    <div data-scroll-section id="seven_frame"  className='flex items-center justify-center w-full h-[4900px] lg:h-[9100px]'>
         <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3%]'/>
         
         <div className='w-[94%] p-2  lg:w-[94%] xs:w-[94%] bg-bg  h-full border-b-[0.5px] mid:w-[86%] border-border relative md:w-[90%] border-r-[0.5px] overflow-clip   mid:px-7'>
            <Image className='absolute right-[-270px] top-[-190px]' src={svg} alt='svg'/>
         <h3 className='text-text px-2 mt-[20px] mb-[20px]  uppercase text-[1.5rem]  lg:text-[2.3rem] font-bold'>SELECTED PROJECTS</h3>
        
-        <div className='   lg:hidden gap-1 flex items-center md:flex-row md:flex-wrap flex-col justify-center mid:gap-6 '>
-        <WorkCard no='01' title='Khit Zay Ecommerce' description='Ecommerce with latest modren UI.' tools="React.js, Tailwind CSS, Cloudinary" img={Cart} link='kd' />            
-        <WorkCard no="02" title='Awwwards Winning' description='Strongest UI design web.' tools="Next.js, TypeScript, Tailwind CSS, Framer Motion" img={Win} link='kd' />            
-        <WorkCard no="03" title='API Keys and Permits ' description='Fullstack web app controls Restful API.' tools="Next.js, Next auth, TypeScript, Tailwind CSS, Node.js" img={Secure} link='kd' />            
-        <WorkCard no="04" title='Android Application' description='Smart Home IoT app to control lights, fans and AC.' tools="React Native, TypeScript, Expo" img={Iot} link='kd' />            
-        <WorkCard no="05" title='Microservices Architecture' description='Food ecommerce server with microservices.' tools="Node.js, TypeScript, Express.js, Swagger, API gateway, MongoDb" img={Micro} link='kd' />            
-        <WorkCard no="06" title='Monolithic Architecture' description='Ecommerce API with Monolithic.' tools="Node.js, TypeScript, Express.js, MongoDb, Cloudinary, Swagger" img={cloud} link='kd' />            
+        <div className='lg:hidden gap-1  mt-[50px] flex text-left items-start md:flex-row md:flex-wrap flex-col justify-center mid:gap-6 '>
+        <h3 className=' text-text text-xl  uppercase mb-2  font-bold '>Full Stack Development</h3>
+        <WorkCard real={true}  no='01' title='Real Time Fuel Management System' description='The real-time fuel management website is currently operational, with hundreds of users, including the Ministry of Electricity and Energy (MOEE) and fuel station companies, actively monitoring it. On the default website, 10 stations are running, providing detailed sales information. Many managers use this website for their stations to generate daily reports, manage accounts, and check profits and other staff details from their individual dashboards.' tools="React.js, Tailwind ,Framer Motion, React Rouder Dom, Redux, Redux Thunk, Custom Hooks,Prime React, Chart.js,Nginx, Express, Node.js, Mongodb,Redis, TypeScript, Zod, EC2" img={Fuel} link='/project' />            
+         <WorkCard real={true} no="02" title='FMS (Fuel Management System) Set up Application' description='The FMS application is currently operational across nine stations in Natogyi, Ohn Chaw, Kyawe Tat Sone, Kyein Pin Sel, Nawng Kio, Muse, Sittwe, Gwa, and Taunggyi. Fuel station employees are using this application with satisfaction, utilizing it to permit dispensers and adjust dispenser prices. They frequently use the app to monitor the fuel balance in the tanks.The application features two modes: auto permit and default permit. In auto permit mode, employees can add car numbers and customer information without requiring manual permission.' tools="React Native, Expo, React Navigation, Redux, Express.js, Node.js, TypeScript, Zod, Mongodb" img={Iot} link='kd' />
+        <h3 className=' text-text text-xl  uppercase my-4 mt-6  font-bold '>Frontend Development</h3>
+        <WorkCard real={true} no="03" title='POS Setup' description='The POS setup website serves as an installer platform, widely utilized by installers to configure POS servers for various stations. Dispensers, nozzles, initial data, and account controls all originate from this POS setup web. Emphasizing simplicity, ease of use, and lightweight design, I aim to make the setup process straightforward for users, offering a plug-and-play experience through installers. This setup web has successfully configured 10 stations with ease. I designed it using Figma and developed it using React.js, Redux, React Router Dom, and Framermotion. Git and GitHub are utilized for version control.' tools="Next.js, TypeScript, Tailwind CSS, Framer Motion" img={Win} link='kd' />            
+        <WorkCard real={false} no="04" title='Ecommerce' description='The UI for this ecommerce website is ready for interaction with the API that I developed during my free time. The features include displaying products based on categories, special products, sale products, and popular products determined by user preferences. Additionally, there will be a blog section for advertising. On the products page, users can utilize filters based on prices, categories, color, and stock availability.' tools="Next.js, Next auth, TypeScript, Tailwind CSS, Node.js" img={Cart} link='kd' />        
+           <h3 className=' text-text text-xl  uppercase my-4 mt-6  font-bold '>Application Development</h3>    
+        <WorkCard real={true} no="05" title='FMS (Fuel Management System) Application' description='The FMS application is currently operational across nine stations in Natogyi, Ohn Chaw, Kyawe Tat Sone, Kyein Pin Sel, Nawng Kio, Muse, Sittwe, Gwa, and Taunggyi. Fuel station employees are using this application with satisfaction, utilizing it to permit dispensers and adjust dispenser prices. They frequently use the app to monitor the fuel balance in the tanks.The application features two modes: auto permit and default permit. In auto permit mode, employees can add car numbers and customer information without requiring manual permission.' tools="React Native, Expo, React Navigation, Expo Print, Redux" img={Iot} link='kd' />            
+         <h3 className=' text-text text-xl  uppercase my-4 mt-6  font-bold '>Backend Development</h3>           
+        <WorkCard real={false} no="06" title='Ecommerce Backend Rest API' description='For API development, I designed with the MVC control pattern, a significant pattern for maintaining and identifying errors. I implemented thorough error handling to ensure the stability of the API and prevent crashes. Multiple middlewares are utilized for enhanced functionality.To efficiently handle images and videos, I integrated Cloudinary to store these media files, ensuring optimal API performance. The API includes a password recovery feature with email recovery and password reset functionalities, and I implemented Jsonweb token for security measures.' tools="Node.js, TypeScript,Express.js, JsonWebToken, Cloudinary, MongoDb" img={Micro} link='kd' />            
+        <WorkCard real={false} no="07" title='Youtube Backend Rest api' description='YouTube Rest API is implemented using the MVC pattern with Node.js and MongoDB. I utilize Zod for type validation, JSON Web Token for account control and security, and TypeScript for robust development, incorporating multiple middlewares. MongoDB is employed as the database.YouTube Rest API is implemented using the MVC pattern with Node.js and MongoDB. I utilize Zod for type validation, JSON Web Token for account control and security, and TypeScript for robust development, incorporating multiple middlewares. MongoDB is employed as the database.' tools="Node.js,JsonWebToken, TypeScript,Zod, Express.js, MongoDb" img={cloud} link='kd' />  
+         <h3 className=' text-text text-xl  uppercase my-4 mt-6  font-bold '>Local Server Development</h3>           
+                    
+        <WorkCard real={true} no="08" title='Raspberry pi, Banana pi and Pos Handle' description='I learned to connect my web and hardware devices for further improvement in my development. I am familiar with SSH technology, Raspbian OS, Linux, and server logic. Similar configurations apply to the Banana Pi. The server logic is the same as on a cloud server, such as EC2. Additionally, for the POS handler, I developed a printing application on Android, which proves to be highly beneficial for POS software.' tools="Raspberry pi, Banana Pi, SSH, Nginx, Pm2, Linux, Ubuntu" img={Rasp} link='kd' />              
         </div>
        
         <div className='lg:flex hidden '>
@@ -207,13 +218,13 @@ const SeventhFrame = () => {
           <div className=' pt-[60px]  '>
             {/* here */}
           <div ref={fullstackRef}>
-              <ProjectCard link='https://detfsmm.com' url='https://detfsmm.com'  title={"REAL TIME FUEL MANAGEMNT SYSTEM"} year='2023' description={language.realtimefuelmanagementsystem} skills='React.js, Tailwind ,Framer Motion, React Rouder Dom, Redux, Redux Thunk, Custom Hooks,Prime React, Chart.js, Express, Node.js, Mongodb, TypeScript, Zod, EC2' image={[fuel_1, fuel_7, fuel_5, fuel_4]} account={true} accountDetail='Username : user, Password : 12345678' />
+          <ProjectCard toPage={'/project'}  link='https://detfsmm.com' url='https://detfsmm.com'  title={"REAL TIME FUEL MANAGEMNT SYSTEM"} year='2023' description={language.realtimefuelmanagementsystem} skills='React.js, Tailwind ,Framer Motion, React Rouder Dom, Redux, Redux Thunk, Custom Hooks,Prime React, Chart.js, Express, Node.js, Mongodb, TypeScript, Zod, EC2' image={[fuel_1, fuel_7, fuel_5, fuel_4]} account={true} accountDetail='Username : user, Password : 12345678' />
           </div>
           <div ref={webRef} id='web'>
           <ProjectCard link='UNAUTHORIZED' url={''} title={"POS SET UP"} year='2023' description={language.possetup} image={[installer_1, installer_2, installer_3, installer_4]} skills='React.js, Tailwind, TypeScript, Redux, Framer Motion' account={false} />
           <ProjectCard link='https://thurakhitzay.netlify.app' skills='React.js, Redux, Reuseable Components' url='https://thurakhitzay.netlify.app' title={"ECOMMERCE"} year='2023' description={language.ecommerce} image={[ecommerce_1,ecommerce_2,ecommerce_3,ecommerce_4]} account={false} />
           <ProjectCard link='https://thura69.github.io/foreverBots/' url='https://thura69.github.io/foreverBots/' title={"FOREVER BOT (PURE VANILLA)"} year='2022' description={language.bot} skills='HTM, CSS, JavaScript' image={[bot_1,bot_2,bot_3,bot_4]} account={false} />
-          <ProjectCard link='https://thura69.github.io/drewhouse/'  url='https://thura69.github.io/drewhouse/' title={"DREW HOUSE (PURE VANILLA)"} year='2022' description={language.drewhouse} skills='HTML, CSS, JavaScript' image={[drew_1,drew_2,drew_3,drew_4]} account={false} />
+          {/* <ProjectCard link='https://thura69.github.io/drewhouse/'  url='https://thura69.github.io/drewhouse/' title={"DREW HOUSE (PURE VANILLA)"} year='2022' description={language.drewhouse} skills='HTML, CSS, JavaScript' image={[drew_1,drew_2,drew_3,drew_4]} account={false} /> */}
           </div>
          <div ref={appRef} id='app'>
           <ProjectCard url='https://drive.google.com/file/d/15NQDfyogA01TvzT2dz9qv_8cEdl7pLjJ/view?usp=drive_link' link='READ APPLICATION GUIDE ( USER MANUAL ) ' title={"FMS (FUEL MANAGEMENT SYSTEM) APPLICATION "} skills='ReactNative, Expo, Reuseable Components, React Navigation, Async Storage, Redux, Expo Print ' year='2022' description={language.fmsapplication} image={[app_1,app_2,app_3,app_4]} account={false}/>

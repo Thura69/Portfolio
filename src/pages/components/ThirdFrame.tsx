@@ -13,6 +13,7 @@ import AnimatedTextWord from './animation/AnimatedTextWord';
 import Text from './Themes/Text';
 import Frames from './Themes/Frames';
 import FramerMagnetic from './FramerMagnetic';
+import { MdEmail } from "react-icons/md";
 
 const styles = {
 };
@@ -20,7 +21,7 @@ const styles = {
  
  const ThirdFrame = () => {
   return (
-    <div data-scroll-section className='flex items-center justify-center  w-full h-[880px] xs:h-[860px] sm:h-[900px] lg:h-[550px] md:h-[540px]'>
+    <div data-scroll-section className='flex items-center justify-center  w-full h-[950px] xs:h-[860px] sm:h-[900px] lg:h-[550px] md:h-[540px]'>
       <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3.15%]'/>
       <div className='w-[94%] xs:w-[90%] mid:w-[86%] md:w-[90%] lg:w-[100%] bg-bg p-4 border-r-[0.5px] border-b-[0.5px] border-border h-full mid:p-7 md:p-0  md:flex  '>
       {/* <div className='w-[300px]  cursor-crosshair  relative h-[300px] rounded-md'>
@@ -35,21 +36,21 @@ const styles = {
    
   
     <div data-scroll-sticky className='md:p-7 bg-bg lg:w-[33.1%] order-1 md:w-[50%]   md:flex items-center justify-center'>
-          <RevealWrapper duration={3500}>
-              <Image src={Profile}  className='md:h-auto lg:h-auto   order-1 bg-active rounded-md' width={500} height={590} alt='profile'/>
-  </RevealWrapper>
+              <Image blurDataURL={'../../../public/assets/64cd4b8241e30d1ff98179ad_gamestation.png'} src={Profile}  className='md:h-auto lg:h-auto   order-1 bg-active rounded-md' width={500} height={590} alt='profile'/>
       </div>
         <div className='mt-[20.3px]'></div>
         <div className=' md:flex md:p-10 md:w-[50%] lg:p-6  lg:w-[37%]  flex-col md:border-r-[0.5px] border-border items-start  lg:text-[19.4px]'>
           {/* <Text bold='font-bold lg:mb-[30px] mb-[30.3px]' context='About me' color='text-text' fontSize='text-[2.25rem] md:text-[3.2rem]' /> */}
           <AnimatedTextWord text={'About Me'} classname='font-bold lg:mb-[30px] mb-[30.3px] text-[2.25rem] md:text-[3.2rem] text-text'/>
-          <AnimatedTextWord text={'I am a seasoned Software Developer specializing in React.js, Next.js, Tailwind CSS, React Native, Express.js, Node.js, MongoDb, MySQL, Linux Servers , AWS services and Z.com. Versioning tool  as Git. Proficient in crafting innovative web applications. Committed to staying current with industry trends, I bring a unique blend of technical expertise and a passion for exploring creative ideas.Specializes in IoT integration and server technologies using Express and MongoDB for seamless web applications.'} />
+          {/* <AnimatedTextWord classname='text-sm' text={'I am a seasoned Software Developer specializing in React.js, Next.js, Tailwind CSS, React Native, Express.js, Node.js, MongoDb, MySQL, Linux Servers , AWS services and Z.com. Versioning tool  as Git. Proficient in crafting innovative web applications. Committed to staying current with industry trends, I bring a unique blend of technical expertise and a passion for exploring creative ideas.Specializes in IoT integration and server technologies using Express and MongoDB for seamless web applications.'} /> */}
+         <p className="text-sm text-textgray">I am a seasoned Software Developer specializing in React.js, Next.js, Tailwind CSS, React Native, Express.js, Node.js, MongoDb, MySQL, Linux Servers , AWS services and Z.com. Versioning tool  as Git. Proficient in crafting innovative web applications. Committed to staying current with industry trends, I bring a unique blend of technical expertise and a passion for exploring creative ideas.Specializes in IoT integration and server technologies using Express and MongoDB for seamless web applications.</p>
           <div>
             <ul>
               <li></li>
             </ul>
           </div>
-          {/* <p className='text-[16.1px] font-sans text-[#77818f]'>I am a seasoned <span className=' text-[#ffff] font-bold   '>Full Stack Developer</span> specializing in React.js, Next.js, Tailwind CSS, and React Native. Proficient in crafting innovative web applications. Committed to staying current with industry trends, I bring a unique blend of technical expertise and a passion for exploring creative ideas.</p> */}
+          <p className='md:text-[16.1px] text-lg font-bold uppercase my-[10px] font-sans text-active'>Skills</p>
+          <p className='md:text-[16.1px] text-sm font-light my-[10px] font-sans text-text'>HTML, CSS, JavaScript, TypeScript, Tailwind, React.js, Next.js, React Native, Redux, ChartJs, PrimeReact, Express.js, Node.js, Swagger, JsonWebToken, Nginx, SSH, MQTT, SQL, MongoDb, Redis, SQL, AWS, Z.com </p>
         {/* <AnimatedTextWord text='Specializes in IoT integration and server technologies using Express and MongoDB for seamless web applications.'/> */}
         {/* <Text context='Specializes in IoT integration and server technologies using Express and MongoDB for seamless web applications.' color='text-[#77818f]' fontSize='text-[16.1px]'/> */}
        <div className='  text-right   mt-[20px]  w-full '>
@@ -74,6 +75,13 @@ const styles = {
            <div className='text-[#77818f] group border-border  md:w-[50px] md:h-[50px] w-[40px] h-[40px]  flex items-center droup justify-center rounded-full cursor-pointer'>
                 <FramerMagnetic>
                  <AiFillFacebook className='group-hover:text-active duration-500' size={35} />
+                </FramerMagnetic>   
+              </div>
+        </RevealWrapper>
+        <RevealWrapper duration={4500} origin='bottom'>
+           <div className='text-[#77818f] group border-border  md:w-[50px] md:h-[50px] w-[40px] h-[40px]  flex items-center droup justify-center rounded-full cursor-pointer'>
+                <FramerMagnetic>
+                 <MdEmail className='group-hover:text-active duration-500' size={35} />
                 </FramerMagnetic>   
               </div>
         </RevealWrapper>

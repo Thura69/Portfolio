@@ -3,6 +3,8 @@ import type { AppProps } from 'next/app'
 import {motion,AnimatePresence,useScroll, useTransform} from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
 import Preload from './components/Preload';
+import FirstFrame from './components/FirstFrame';
+import EightFrame from './components/EightFrame';
 
 
 export default function App({ Component, pageProps }: AppProps) {
@@ -20,25 +22,22 @@ export default function App({ Component, pageProps }: AppProps) {
 
   }, []);
 
-  const { scrollYProgress } = useScroll({
-    target: container,
-    offset:[`start end`,`end start`]
-  });
-  const y = useTransform(scrollYProgress,[0,1],[0,100])
 
   return <AnimatePresence mode='wait'  initial={false}  >
       {isAnimationComplete ? 
         <motion.div>
-          <Component {...pageProps} y={y} />
+          <FirstFrame/>
+        <Component {...pageProps} />
+           <EightFrame/>
           <motion.div
-            className=' absolute z-[99] top-0 left-0 w-full h-[100svh] bg-bg origin-bottom'
+            className=' absolute z-[101] top-0 left-0 w-full h-[100svh] bg-bg origin-bottom'
             initial={{ scaleY: 0 }}
             animate={{ scaleY: 0 }}
             exit={{ scaleY: 1 }}
             transition={{ duration: 2, ease: [1.5, 2, 2.5, 3] }}
           ></motion.div>
           <motion.div
-            className='absolute z-[99] top-0 left-0 w-full h-[100svh] bg-bg origin-top'
+            className='absolute z-[101] top-0 left-0 w-full h-[100svh] bg-bg origin-top'
             initial={{ scaleY: 1 }}
             animate={{ scaleY: 0 }}
             exit={{ scaleY: 0 }}
