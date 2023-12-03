@@ -40,10 +40,10 @@ requestAnimationFrame(raf)
     <div className='w-[54%] overflow-hidden relative xs:w-[52%]  mid:w-[53%] md:w-[90%] lg:w-[100%] bg-bg p-4  border-b-[0.5px] border-r-[0.5px] border-border h-full mid:p-7  md:p-7  md:flex  '>
     <ul className='text-text leading-8 mt-[10px]'>
         <RevealWrapper origin='bottom'>   <li className='font-bold text-text text-[2rem]'>Info:</li> </RevealWrapper>           
-            <RevealWrapper origin='bottom'>   <li className='font-bold text-textgray text-[1rem]  mt-[20px]'>2023</li></RevealWrapper>   
-          <p className='text-text'>Live at: <span className=' text-bg-blue font-bold underline'> https://detfsmm.com</span></p>
-  <p className='text-text'>Role: <span className='text-text font-bold'> FullStack Development</span></p>
-  <p className='text-text'>Year: <span className='text-text font-bold'> 2023</span></p>    
+        <RevealWrapper origin='bottom'>   <li className='font-bold text-textgray text-[1rem]  mt-[20px]'>2023</li></RevealWrapper>   
+        <RevealWrapper origin='bottom'>   <li className='font-bold text-textgray text-[1rem]  mt-[20px]'>  <p className='text-text'>Live at: <span className=' text-bg-blue font-bold underline'> https://detfsmm.com</span></p></li></RevealWrapper>   
+        <RevealWrapper origin='bottom'>   <li className='font-bold text-textgray text-[1rem]  mt-[20px]'> <p className='text-text'>Role: <span className='text-text font-bold'> FullStack Development</span></p></li></RevealWrapper>   
+        <RevealWrapper origin='bottom'>   <li className='font-bold text-textgray text-[1rem]  mt-[20px]'> <p className='text-text'>Year: <span className='text-text font-bold'> 2023</span></p>  </li></RevealWrapper>   
         {/* <RevealWrapper origin='bottom'>    <li className='text-[#0000FF] '>https://detfsmm.com</li> </RevealWrapper>           
         <RevealWrapper origin='bottom'>    <li className='font-extralight '>Fullstack</li> </RevealWrapper>           
         <RevealWrapper origin='bottom'>     <p className='text-active z-10 font-bold text-sm'>Running in RealWorld</p> </RevealWrapper>            */}
@@ -56,10 +56,10 @@ requestAnimationFrame(raf)
      </div>
      <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[7%] lg:w-[3.05%]'/>
     </div>
-    <div className='text-textgray overflow-hidden flex border-border border-b-[0.5px] h-[1930px] mid:h-[1900px] md:h-[2200px] relative '>
+    <div className='text-textgray overflow-hidden flex border-border border-b-[0.5px] h-[1670px] mid:h-[1900px] md:h-[2200px] relative '>
     <Frames className=' w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3.05%]'/>
-    <div className='w-[94%]  flex flex-col gap-3 overflow-hidden relative xs:w-[90%]  mid:w-[86%] md:w-[90%] lg:w-[100%] bg-bg py-5  border-b-[0.5px] border-r-[0.5px] border-border h-full mid:p-7 md:p-0  md:flex  '>
-  <div className='p-3'>
+    <div className='w-[94%] p-3  flex flex-col gap-3 overflow-hidden relative xs:w-[90%]  mid:w-[86%] md:w-[90%] lg:w-[100%] bg-bg py-5  border-b-[0.5px] border-r-[0.5px] border-border h-full mid:p-7 md:p-0  md:flex  '>
+  <div className=''>
      <RevealWrapper   origin='bottom'> <h3 className='font-bold text-text text-[2rem] uppercase'>About</h3></RevealWrapper>
     <RevealWrapper  className={' h-[190px] overflow-hidden'}  origin='bottom'>
     <p className='text-[14px]'>The real-time fuel management website is currently operational, with hundreds of users, including the Ministry of Electricity and Energy (MOEE) and fuel station companies, actively monitoring it. On the default website, 10 stations are running, providing detailed sales information.
@@ -85,7 +85,7 @@ requestAnimationFrame(raf)
     <div className='flex justify-center text-text gap-2 font-bold items-center'> <FaArrowLeftLong /> Raspberry Pi</div>
     <div className='flex justify-center gap-2 text-text font-bold items-center'>FMS APP<FaArrowRight /></div>
   </div> */}
-  <div className='p-3 my-4 mt-[80px]'>
+  <div className=' my-4 mt-[80px]'>
     <h3 className='text-text font-bold text-[2rem] mb-3 font-sans'>Next Project?</h3>
     <p> SETUP</p>
     <p className='text-text'>2023</p>

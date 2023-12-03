@@ -15,7 +15,7 @@ import Frames from './Themes/Frames';
           <Image src={Experience} width={25} alt='experience' />
           <h3 className='text-active uppercase text-[18px] font-bold'>Experience</h3>
         </div>
-        <div className='flex  lg:mt-[0px] flex-col h-[90%] gap-2 items-start justify-center '>
+        <div className='flex mt-[10px]  lg:mt-[0px] flex-col h-[90%] gap-2 items-start justify-center '>
           <div className='flex bg-bg w-full md:w-[500px] border-[0.5px] border-border px-4   h-[85px] items-center justify-start gap-5 mid:p-5'>
             <Image width={50} src={logo2} alt='logo' />
             <div className='text-[#ffff]'>

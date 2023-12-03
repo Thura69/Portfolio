@@ -21,7 +21,7 @@ const styles = {
  
  const ThirdFrame = () => {
   return (
-    <div data-scroll-section className='flex items-center justify-center  w-full h-[1050px] xs:h-[960px] sm:h-[900px] mid:h-[1000px] lg:h-[550px] md:h-[950px]'>
+    <div data-scroll-section className='flex items-center justify-center  w-full h-[950px] xs:h-[960px] sm:h-[900px] mid:h-[1000px] lg:h-[550px] md:h-[950px]'>
       <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3.15%]'/>
       <div className='w-[94%] xs:w-[90%] mid:w-[86%] md:w-[90%] lg:w-[100%] bg-bg p-4 border-r-[0.5px] border-b-[0.5px] border-border h-full mid:p-7 md:p-0  lg:flex  '>
       {/* <div className='w-[300px]  cursor-crosshair  relative h-[300px] rounded-md'>
@@ -53,7 +53,7 @@ const styles = {
           <p className='md:text-[16.1px] text-sm font-light my-[10px] font-sans text-text'>HTML, CSS, JavaScript, TypeScript, Tailwind, React.js, Next.js, React Native, Redux, ChartJs, PrimeReact, Express.js, Node.js, Swagger, JsonWebToken, Nginx, SSH, MQTT, SQL, MongoDb, Redis, SQL, AWS, Z.com </p>
         {/* <AnimatedTextWord text='Specializes in IoT integration and server technologies using Express and MongoDB for seamless web applications.'/> */}
         {/* <Text context='Specializes in IoT integration and server technologies using Express and MongoDB for seamless web applications.' color='text-[#77818f]' fontSize='text-[16.1px]'/> */}
-       <div className='  text-right   mt-[20px]  w-full '>
+       <div className='  text-right   mt-[30px]  w-full '>
             {/* <Text context='FIND ME AT' color='text-[#ffff]   md:font-bold' fontSize='text-[0.85rem] md:text-[0.9rem]' /> */}
             <AnimatedTextWord text='FIND ME AT' transition={{staggerChildren:0.4,delayChildren:0.050 * 10}} classname='text-[1rem] font-bold text-text mb-5 md:text-[0.9rem]' />
          <div className='flex  items-center gap-3 justify-end'>
