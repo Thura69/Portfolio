@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import {greet} from 'hourly-hello'
 import Image from 'next/image'
-import metro from './../../../public/assets/400x400bb.jpg';
+import metro from './../../public/assets/400x400bb.jpg';
 import { RevealWrapper } from  'next-reveal'
 import AnimatedTextWord from './animation/AnimatedTextWord'
 import Frames from './Themes/Frames';

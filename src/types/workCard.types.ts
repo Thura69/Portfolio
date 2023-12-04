@@ -7,6 +7,7 @@ export interface workCardProps{
     img: StaticImageData,
     link: string,
     no: string,
-    real:boolean
+    real: boolean,
+    id:number
     
 }

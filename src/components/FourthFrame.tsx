@@ -1,9 +1,9 @@
 import React from 'react'
-import Experience from '../../../public/assets/experience-information-knowledge-svgrepo-com (1).png';
+import Experience from '../../public/assets/experience-information-knowledge-svgrepo-com (1).png';
 import Image from 'next/image';
-import logo from '../../../public/assets/det_logo-2.png';
-import logo2 from '../../../public/assets/download.jpeg';
-import self from '../../../public/assets/tools-and-utensils-programmer-svgrepo-com.png';
+import logo from '../../public/assets/det_logo-2.png';
+import logo2 from '../../public/assets/download.jpeg';
+import self from '../../public/assets/tools-and-utensils-programmer-svgrepo-com.png';
 import Frames from './Themes/Frames';
 
  const FourthFrame = () => {
@@ -16,13 +16,13 @@ import Frames from './Themes/Frames';
           <h3 className='text-active uppercase text-[18px] font-bold'>Experience</h3>
         </div>
         <div className='flex mt-[10px]  lg:mt-[0px] flex-col h-[90%] gap-2 items-start justify-center '>
-          <div className='flex bg-bg w-full md:w-[500px] border-[0.5px] border-border px-4   h-[85px] items-center justify-start gap-5 mid:p-5'>
+          {/* <div className='flex bg-bg w-full md:w-[500px] border-[0.5px] border-border px-4   h-[85px] items-center justify-start gap-5 mid:p-5'>
             <Image width={50} src={logo2} alt='logo' />
             <div className='text-[#ffff]'>
               <h3 className='text-[0.9rem] font-bold'>Frontend Developer at Smilaxglobal</h3>
               <h3 className=' text-textgray text-[0.9rem]  mt-1'>Jan 2022 - Present</h3>
             </div>
-          </div>
+          </div> */}
           <div className='flex bg-bg w-full md:w-[500px] border-[0.5px] border-border px-4   h-[85px] items-center justify-start gap-5 mid:p-5'>
             <Image width={50} src={logo} alt='logo' />
             <div className='text-[#ffff]'>

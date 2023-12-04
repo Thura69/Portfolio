@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { blur, translate } from '../../../public/header';
+import { blur, translate } from '../../public/header';
 
 interface bodyProps{
     setIsActive:any

@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion'
 import React from 'react'
-import { height } from '../../../public/header'
+import { height } from '../../public/header'
 import Frames from './Themes/Frames'
 import Body from './Body'
 

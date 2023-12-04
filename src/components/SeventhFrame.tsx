@@ -1,88 +1,88 @@
 import React, { useEffect, useRef, useState } from 'react'
-import Win from '../../../public/assets/laurel-wreath.png';
-import Cart from '../../../public/assets/shopping-cart.png'
-import Fuel from '../../../public/assets/gas-station-fuel-svgrepo-com (2).png'
-import Secure from '../../../public/assets/protection.png';
-import Iot from '../../../public/assets/internet-of-things-2.png';
-import cloud from '../../../public/assets/cloud-storage-2.png';
-import Micro from '../../../public/assets/microservice-2.png';
-import Rasp from '../../../public/assets/raspberry-pi-svgrepo-com (1).png';
-import Blue from '../../../public/assets/floor-plan.png';
+import Win from '../../public/assets/laurel-wreath.png';
+import Cart from '../../public/assets/shopping-cart.png'
+import Fuel from '../../public/assets/gas-station-fuel-svgrepo-com (2).png'
+import Secure from '../../public/assets/protection.png';
+import Iot from '../../public/assets/internet-of-things-2.png';
+import cloud from '../../public/assets/cloud-storage-2.png';
+import Micro from '../../public/assets/microservice-2.png';
+import Rasp from '../../public/assets/raspberry-pi-svgrepo-com (1).png';
+import Blue from '../../public/assets/floor-plan.png';
 
 import Image from 'next/image';
 import { BsArrowUpRightCircle } from 'react-icons/bs';
 import { IoCartOutline} from 'react-icons/io5';
 
-import ecommerce_1 from '../../../public/assets/screen.png'
-import ecommerce_2 from '../../../public/assets/screen2.png'
-import ecommerce_3 from '../../../public/assets/screen3.png'
-import ecommerce_4 from '../../../public/assets/screen4.png'
+import ecommerce_1 from '../../public/assets/screen.png'
+import ecommerce_2 from '../../public/assets/screen2.png'
+import ecommerce_3 from '../../public/assets/screen3.png'
+import ecommerce_4 from '../../public/assets/screen4.png'
 
-import bank_1 from '../../../public/assets/bank.png'
-import bank_2 from '../../../public/assets/bank2.png'
+import bank_1 from '../../public/assets/bank.png'
+import bank_2 from '../../public/assets/bank2.png'
 
-import bot_1 from '../../../public/assets/bot.png'
-import bot_2 from '../../../public/assets/bot2.png'
-import bot_3 from '../../../public/assets/bot3.png'
-import bot_4 from '../../../public/assets/bot4.png'
+import bot_1 from '../../public/assets/bot.png'
+import bot_2 from '../../public/assets/bot2.png'
+import bot_3 from '../../public/assets/bot3.png'
+import bot_4 from '../../public/assets/bot4.png'
 
-import fuel_1 from '../../../public/assets/fuel4.png'
-import fuel_2 from '../../../public/assets/fuel.png'
-import fuel_3 from '../../../public/assets/fuel2.png'
-import fuel_4 from '../../../public/assets/fuel3.png'
-import fuel_5 from '../../../public/assets/fuel5.png'
-import fuel_6 from '../../../public/assets/fuel6.png'
-import fuel_7 from '../../../public/assets/server7.png'
+import fuel_1 from '../../public/assets/fuel4.png'
+import fuel_2 from '../../public/assets/fuel.png'
+import fuel_3 from '../../public/assets/fuel2.png'
+import fuel_4 from '../../public/assets/fuel3.png'
+import fuel_5 from '../../public/assets/fuel5.png'
+import fuel_6 from '../../public/assets/fuel6.png'
+import fuel_7 from '../../public/assets/server7.png'
 
-import server_1 from '../../../public/assets/ecommerce2.png'
-import server_2 from '../../../public/assets/ecommerce.png'
-import server_3 from '../../../public/assets/ecommerce1.png'
-import server_4 from '../../../public/assets/server2.png'
+import server_1 from '../../public/assets/ecommerce2.png'
+import server_2 from '../../public/assets/ecommerce.png'
+import server_3 from '../../public/assets/ecommerce1.png'
+import server_4 from '../../public/assets/server2.png'
 
-import youtube_1 from '../../../public/assets/youtube4.png'
-import youtube_2 from '../../../public/assets/youtube.png'
-import youtube_3 from '../../../public/assets/youtube2.png'
-import youtube_4 from '../../../public/assets/youtube3.png'
+import youtube_1 from '../../public/assets/youtube4.png'
+import youtube_2 from '../../public/assets/youtube.png'
+import youtube_3 from '../../public/assets/youtube2.png'
+import youtube_4 from '../../public/assets/youtube3.png'
 
-import app_1 from '../../../public/assets/app4.png'
-import app_2 from '../../../public/assets/app.png'
-import app_3 from '../../../public/assets/app2.png'
-import app_4 from '../../../public/assets/app3.png'
+import app_1 from '../../public/assets/app4.png'
+import app_2 from '../../public/assets/app.png'
+import app_3 from '../../public/assets/app2.png'
+import app_4 from '../../public/assets/app3.png'
 
-import drew_1 from '../../../public/assets/drew4.png'
-import drew_2 from '../../../public/assets/drew.png'
-import drew_3 from '../../../public/assets/drew2.png'
-import drew_4 from '../../../public/assets/drew3.png'
+import drew_1 from '../../public/assets/drew4.png'
+import drew_2 from '../../public/assets/drew.png'
+import drew_3 from '../../public/assets/drew2.png'
+import drew_4 from '../../public/assets/drew3.png'
 
-import installer_1 from '../../../public/assets/installer4.png'
-import installer_2 from '../../../public/assets/installer.png'
-import installer_3 from '../../../public/assets/installer5.png'
-import installer_4 from '../../../public/assets/installer3.png'
+import installer_1 from '../../public/assets/installer4.png'
+import installer_2 from '../../public/assets/installer.png'
+import installer_3 from '../../public/assets/installer5.png'
+import installer_4 from '../../public/assets/installer3.png'
 
-import micro_1 from '../../../public/assets/server.png'
-import micro_2 from '../../../public/assets/micro.png'
-import micro_3 from '../../../public/assets/micro1.png'
-import micro_4 from '../../../public/assets/micro2.png'
+import micro_1 from '../../public/assets/server.png'
+import micro_2 from '../../public/assets/micro.png'
+import micro_3 from '../../public/assets/micro1.png'
+import micro_4 from '../../public/assets/micro2.png'
 
-import blog_1 from '../../../public/assets/server3.png'
-import blog_2 from '../../../public/assets/blog.png'
-import blog_3 from '../../../public/assets/server4.png'
-import blog_4 from '../../../public/assets/blog2.png'
+import blog_1 from '../../public/assets/server3.png'
+import blog_2 from '../../public/assets/blog.png'
+import blog_3 from '../../public/assets/server4.png'
+import blog_4 from '../../public/assets/blog2.png'
 
-import hobby_1 from '../../../public/assets/IMG_9284.png'
-import hobby_2 from '../../../public/assets/IMG_9285.png'
-import hobby_3 from '../../../public/assets/IMG_9286.png'
-import hobby_4 from '../../../public/assets/IMG_9287.png'
-import hobby_5 from '../../../public/assets/IMG_9288.png'
-import hobby_6 from '../../../public/assets/IMG_9289.png'
-import hobby_7 from '../../../public/assets/IMG_9291.png'
-import hobby_8 from '../../../public/assets/IMG_9292.png'
+import hobby_1 from '../../public/assets/IMG_9284.png'
+import hobby_2 from '../../public/assets/IMG_9285.png'
+import hobby_3 from '../../public/assets/IMG_9286.png'
+import hobby_4 from '../../public/assets/IMG_9287.png'
+import hobby_5 from '../../public/assets/IMG_9288.png'
+import hobby_6 from '../../public/assets/IMG_9289.png'
+import hobby_7 from '../../public/assets/IMG_9291.png'
+import hobby_8 from '../../public/assets/IMG_9292.png'
 import WorkCard from './Themes/WorkCard';
 import Text from './Themes/Text';
 import Frames from './Themes/Frames';
 import ProjectCard from './ProjectCard';
 import { englishLanguage } from '@/language/english';
-import svg from '../../../public/assets/6469a18e29af2de5755caf00_Animated_rainbow_card.svg'
+import svg from '../../public/assets/6469a18e29af2de5755caf00_Animated_rainbow_card.svg'
 import Link from 'next/link';
 
 
@@ -190,24 +190,24 @@ const SeventhFrame = () => {
         <div className='lg:hidden gap-1  mt-[50px] flex text-left items-start md:flex-row md:flex-wrap flex-col justify-start mid:gap-6 '>
             <h3 className=' text-text text-xl  uppercase mb-2  font-bold '>Full Stack Development</h3>
        <div className=' border-text w-full gap-2 flex-wrap flex justify-between'>
-         <WorkCard real={true}  no='01' title='Real Time Fuel Management System' description='The real-time fuel management website is currently operational, with hundreds of users, including the Ministry of Electricity and Energy (MOEE) and fuel station companies, actively monitoring it. On the default website, 10 stations are running, providing detailed sales information. Many managers use this website for their stations to generate daily reports, manage accounts, and check profits and other staff details from their individual dashboards.' tools="React.js, Tailwind ,Framer Motion, React Rouder Dom, Redux, Redux Thunk, Custom Hooks,Prime React, Chart.js,Nginx, Express, Node.js, Mongodb,Redis, TypeScript, Zod, EC2" img={Fuel} link='/project' />            
-         <WorkCard real={true} no="02" title='FMS (Fuel Management System) Set up Application' description='The FMS application is currently operational across nine stations in Natogyi, Ohn Chaw, Kyawe Tat Sone, Kyein Pin Sel, Nawng Kio, Muse, Sittwe, Gwa, and Taunggyi. Fuel station employees are using this application with satisfaction, utilizing it to permit dispensers and adjust dispenser prices. They frequently use the app to monitor the fuel balance in the tanks.The application features two modes: auto permit and default permit. In auto permit mode, employees can add car numbers and customer information without requiring manual permission.' tools="React Native, Expo, React Navigation, Redux, Express.js, Node.js, TypeScript, Zod, Mongodb" img={Iot} link='kd' />
+         <WorkCard id={0} real={true}  no='01' title='Real Time Fuel Management System' description='The real-time fuel management website is currently operational, with hundreds of users, including the Ministry of Electricity and Energy (MOEE) and fuel station companies, actively monitoring it. On the default website, 10 stations are running, providing detailed sales information. Many managers use this website for their stations to generate daily reports, manage accounts, and check profits and other staff details from their individual dashboards.' tools="React.js, Tailwind ,Framer Motion, React Rouder Dom, Redux, Redux Thunk, Custom Hooks,Prime React, Chart.js,Nginx, Express, Node.js, Mongodb,Redis, TypeScript, Zod, EC2" img={Fuel} link='/project' />            
+         <WorkCard id={1} real={true} no="02" title='FMS (Fuel Management System) Set up Application' description='The FMS application is currently operational across nine stations in Natogyi, Ohn Chaw, Kyawe Tat Sone, Kyein Pin Sel, Nawng Kio, Muse, Sittwe, Gwa, and Taunggyi. Fuel station employees are using this application with satisfaction, utilizing it to permit dispensers and adjust dispenser prices. They frequently use the app to monitor the fuel balance in the tanks.The application features two modes: auto permit and default permit. In auto permit mode, employees can add car numbers and customer information without requiring manual permission.' tools="React Native, Expo, React Navigation, Redux, Express.js, Node.js, TypeScript, Zod, Mongodb" img={Iot} link='kd' />
        </div>
         <h3 className=' text-text text-xl  uppercase my-4 mt-6  font-bold '>Frontend Development</h3>
         <div className=' border-text w-full gap-2 flex-wrap flex justify-between'>
-          <WorkCard real={true} no="03" title='POS Setup' description='The POS setup website serves as an installer platform, widely utilized by installers to configure POS servers for various stations. Dispensers, nozzles, initial data, and account controls all originate from this POS setup web. Emphasizing simplicity, ease of use, and lightweight design, I aim to make the setup process straightforward for users, offering a plug-and-play experience through installers. This setup web has successfully configured 10 stations with ease. I designed it using Figma and developed it using React.js, Redux, React Router Dom, and Framermotion. Git and GitHub are utilized for version control.' tools="Next.js, TypeScript, Tailwind CSS, Framer Motion" img={Win} link='kd' />            
-        <WorkCard real={false} no="04" title='Ecommerce' description='The UI for this ecommerce website is ready for interaction with the API that I developed during my free time. The features include displaying products based on categories, special products, sale products, and popular products determined by user preferences. Additionally, there will be a blog section for advertising. On the products page, users can utilize filters based on prices, categories, color, and stock availability.' tools="Next.js, Next auth, TypeScript, Tailwind CSS, Node.js" img={Cart} link='kd' />        
+          <WorkCard id={2} real={true} no="03" title='POS Setup' description='The POS setup website serves as an installer platform, widely utilized by installers to configure POS servers for various stations. Dispensers, nozzles, initial data, and account controls all originate from this POS setup web. Emphasizing simplicity, ease of use, and lightweight design, I aim to make the setup process straightforward for users, offering a plug-and-play experience through installers. This setup web has successfully configured 10 stations with ease. I designed it using Figma and developed it using React.js, Redux, React Router Dom, and Framermotion. Git and GitHub are utilized for version control.' tools="Next.js, TypeScript, Tailwind CSS, Framer Motion" img={Win} link='kd' />            
+        <WorkCard id={3} real={false} no="04" title='Ecommerce' description='The UI for this ecommerce website is ready for interaction with the API that I developed during my free time. The features include displaying products based on categories, special products, sale products, and popular products determined by user preferences. Additionally, there will be a blog section for advertising. On the products page, users can utilize filters based on prices, categories, color, and stock availability.' tools="Next.js, Next auth, TypeScript, Tailwind CSS, Node.js" img={Cart} link='kd' />        
         </div>
            <h3 className=' text-text text-xl  uppercase my-4 mt-6  font-bold '>Application Development</h3>    
-        <div  className=' border-text gap-2 w-full flex-wrap flex justify-between'> <WorkCard real={true} no="05" title='FMS (Fuel Management System) Application' description='The FMS application is currently operational across nine stations in Natogyi, Ohn Chaw, Kyawe Tat Sone, Kyein Pin Sel, Nawng Kio, Muse, Sittwe, Gwa, and Taunggyi. Fuel station employees are using this application with satisfaction, utilizing it to permit dispensers and adjust dispenser prices. They frequently use the app to monitor the fuel balance in the tanks.The application features two modes: auto permit and default permit. In auto permit mode, employees can add car numbers and customer information without requiring manual permission.' tools="React Native, Expo, React Navigation, Expo Print, Redux" img={Iot} link='kd' /> </div>
+        <div  className=' border-text gap-2 w-full flex-wrap flex justify-between'> <WorkCard id={4} real={true} no="05" title='FMS (Fuel Management System) Application' description='The FMS application is currently operational across nine stations in Natogyi, Ohn Chaw, Kyawe Tat Sone, Kyein Pin Sel, Nawng Kio, Muse, Sittwe, Gwa, and Taunggyi. Fuel station employees are using this application with satisfaction, utilizing it to permit dispensers and adjust dispenser prices. They frequently use the app to monitor the fuel balance in the tanks.The application features two modes: auto permit and default permit. In auto permit mode, employees can add car numbers and customer information without requiring manual permission.' tools="React Native, Expo, React Navigation, Expo Print, Redux" img={Iot} link='kd' /> </div>
                   
          <h3 className=' text-text text-xl  uppercase my-4 mt-6  font-bold '>Backend Development</h3>           
         <div className=' border-text w-full flex-wrap gap-2 flex justify-between'>
-        <WorkCard real={false} no="06" title='Ecommerce Backend Rest API' description='For API development, I designed with the MVC control pattern, a significant pattern for maintaining and identifying errors. I implemented thorough error handling to ensure the stability of the API and prevent crashes. Multiple middlewares are utilized for enhanced functionality.To efficiently handle images and videos, I integrated Cloudinary to store these media files, ensuring optimal API performance. The API includes a password recovery feature with email recovery and password reset functionalities, and I implemented Jsonweb token for security measures.' tools="Node.js, TypeScript,Express.js, JsonWebToken, Cloudinary, MongoDb" img={Micro} link='kd' />            
-        <WorkCard real={false} no="07" title='Youtube Backend Rest api' description='YouTube Rest API is implemented using the MVC pattern with Node.js and MongoDB. I utilize Zod for type validation, JSON Web Token for account control and security, and TypeScript for robust development, incorporating multiple middlewares. MongoDB is employed as the database.YouTube Rest API is implemented using the MVC pattern with Node.js and MongoDB. I utilize Zod for type validation, JSON Web Token for account control and security, and TypeScript for robust development, incorporating multiple middlewares. MongoDB is employed as the database.' tools="Node.js,JsonWebToken, TypeScript,Zod, Express.js, MongoDb" img={cloud} link='kd' /> 
+        <WorkCard id={5} real={false} no="06" title='Ecommerce Backend Rest API' description='For API development, I designed with the MVC control pattern, a significant pattern for maintaining and identifying errors. I implemented thorough error handling to ensure the stability of the API and prevent crashes. Multiple middlewares are utilized for enhanced functionality.To efficiently handle images and videos, I integrated Cloudinary to store these media files, ensuring optimal API performance. The API includes a password recovery feature with email recovery and password reset functionalities, and I implemented Jsonweb token for security measures.' tools="Node.js, TypeScript,Express.js, JsonWebToken, Cloudinary, MongoDb" img={Micro} link='kd' />            
+        <WorkCard id={6} real={false} no="07" title='Youtube Backend Rest api' description='YouTube Rest API is implemented using the MVC pattern with Node.js and MongoDB. I utilize Zod for type validation, JSON Web Token for account control and security, and TypeScript for robust development, incorporating multiple middlewares. MongoDB is employed as the database.YouTube Rest API is implemented using the MVC pattern with Node.js and MongoDB. I utilize Zod for type validation, JSON Web Token for account control and security, and TypeScript for robust development, incorporating multiple middlewares. MongoDB is employed as the database.' tools="Node.js,JsonWebToken, TypeScript,Zod, Express.js, MongoDb" img={cloud} link='kd' /> 
         </div> 
          <h3 className=' text-text text-xl  uppercase my-4 mt-6  font-bold '>Local Server Development</h3>           
-        <div className=' border-text w-full flex-wrap flex justify-between'>  <WorkCard real={true} no="08" title='Raspberry pi, Banana pi and Pos Handle' description='I learned to connect my web and hardware devices for further improvement in my development. I am familiar with SSH technology, Raspbian OS, Linux, and server logic. Similar configurations apply to the Banana Pi. The server logic is the same as on a cloud server, such as EC2. Additionally, for the POS handler, I developed a printing application on Android, which proves to be highly beneficial for POS software.' tools="Raspberry pi, Banana Pi, SSH, Nginx, Pm2, Linux, Ubuntu" img={Rasp} link='kd' />   </div>            
+        <div className=' border-text w-full flex-wrap flex justify-between'>  <WorkCard id={7} real={true} no="08" title='Raspberry pi, Banana pi and Pos Handle' description='I learned to connect my web and hardware devices for further improvement in my development. I am familiar with SSH technology, Raspbian OS, Linux, and server logic. Similar configurations apply to the Banana Pi. The server logic is the same as on a cloud server, such as EC2. Additionally, for the POS handler, I developed a printing application on Android, which proves to be highly beneficial for POS software.' tools="Raspberry pi, Banana Pi, SSH, Nginx, Pm2, Linux, Ubuntu" img={Rasp} link='kd' />   </div>            
                  
         </div>
        

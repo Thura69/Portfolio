@@ -7,10 +7,10 @@ import Link from 'next/link';
 import Logo from '../../../../public/assets/64e2212a242e4af9b6eb6a2a_Icon.svg';
 
 // 13161b
-const WorkCard: React.FC<workCardProps> = ({ title, description, img, tools, no, link,real=false }) => {
+const WorkCard: React.FC<workCardProps> = ({ title, description, img, tools, no, link,real=false,id }) => {
    
   return (
-    <Link href={'/project'} className='w-full border-b-[1px]  leading-[29.1px] lg:text-[16.1px] sm:hover:translate-y-[-10px] duration-500 md:w-[48%] group lg:w-[30%] cursor-pointer p-[13px]  lg:border-solid relative  rounded-lg h-[550px] mid:h-[450px] md:h-[580px] bg-[#13161b]  border-bg  md:border-none '>
+    <Link href={`/projects/${id}`} className='w-full border-b-[1px]  leading-[29.1px] lg:text-[16.1px] sm:hover:translate-y-[-10px] duration-500 md:w-[48%] group lg:w-[30%] cursor-pointer p-[13px]  lg:border-solid relative  rounded-lg h-[550px] mid:h-[450px] md:h-[580px] bg-[#13161b]  border-bg  md:border-none '>
          <p className=' font-mono text-border font-extrabold text-[25px]'>{no}</p>    
       <p className='text-text  font-bold z-10 text-[15px] uppercase '>{title}</p>
       {

@@ -1,13 +1,13 @@
 import React from 'react'
 import Image from 'next/image'
-import Profile from '../../../public/assets/64cd4b8241e30d1ff98179ad_gamestation.png';
-import SVG from '../../../public/assets/nft-_1_.svg';
+import Profile from '../../public/assets/64cd4b8241e30d1ff98179ad_gamestation.png';
+import SVG from '../../public/assets/nft-_1_.svg';
 import {AiFillLinkedin,AiFillGithub,AiFillFacebook} from 'react-icons/ai'
-import Sign from '../../../public/assets/2-removebg-preview.png';
+import Sign from '../../public/assets/2-removebg-preview.png';
 import { ReactSketchCanvas } from 'react-sketch-canvas';
-import logo from '../../../public/assets/det_logo-2.png';
-import self from '../../../public/assets/tools-and-utensils-programmer-svgrepo-com.png';
-import Experience from '../../../public/assets/experience-information-knowledge-svgrepo-com (1).png';
+import logo from '../../public/assets/det_logo-2.png';
+import self from '../../public/assets/tools-and-utensils-programmer-svgrepo-com.png';
+import Experience from '../../public/assets/experience-information-knowledge-svgrepo-com (1).png';
 import { RevealWrapper } from  'next-reveal'
 import AnimatedTextWord from './animation/AnimatedTextWord';
 import Text from './Themes/Text';

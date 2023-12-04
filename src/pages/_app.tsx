@@ -2,9 +2,9 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import {motion,AnimatePresence,useScroll, useTransform} from 'framer-motion';
 import { useEffect, useRef, useState } from 'react';
-import Preload from './components/Preload';
-import FirstFrame from './components/FirstFrame';
-import EightFrame from './components/EightFrame';
+import Preload from '../components/Preload';
+import FirstFrame from '../components/FirstFrame';
+import EightFrame from '../components/EightFrame';
 
 
 export default function App({ Component, pageProps }: AppProps) {
