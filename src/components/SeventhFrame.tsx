@@ -180,12 +180,12 @@ const SeventhFrame = () => {
     };
   }, []);
   return (
-    <div data-scroll-section id="seven_frame"  className='flex items-center justify-center w-full h-[4900px] mid:h-[4360px] md:h-[3600px] lg:h-[8300px]'>
+    <div data-scroll-section id="seven_frame"  className='flex items-center justify-center w-full h-[4900px] mid:h-[4360px] md:h-[3600px] lg:h-[8450px]'>
         <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3%]'/>
         
         <div className='w-[94%] p-2  lg:w-[94%] xs:w-[94%] bg-bg  h-full border-b-[0.5px] mid:w-[86%] border-border relative md:w-[90%] border-r-[0.5px] overflow-clip   mid:px-7'>
-           <Image className='absolute right-[-270px] top-[-190px]' src={svg} alt='svg'/>
-        <h3 className='text-text px-2 mt-[20px] mb-[20px]  uppercase text-[1.5rem]  lg:text-[2.3rem] font-bold'>SELECTED PROJECTS</h3>
+           <Image className='absolute right-[-270px] top-[-150px]' src={svg} alt='svg'/>
+        <h3 className='text-text px-2 mt-[100px] mb-[20px]  uppercase text-[1.5rem]  lg:text-[3.2rem] font-bold'>SELECTED PROJECTS.</h3>
        
         <div className='lg:hidden gap-1  mt-[50px] flex text-left items-start md:flex-row md:flex-wrap flex-col justify-start mid:gap-6 '>
             <h3 className=' text-text text-xl  uppercase mb-2  font-bold '>Full Stack Development</h3>
@@ -213,12 +213,12 @@ const SeventhFrame = () => {
        
         <div className='lg:flex hidden '>
           <div className=''>
-          <div className=' p-4 pt-[70px] text-[#43474d] sticky top-[50px] right-0   flex flex-col justify-start items-start gap-[5px]   w-[270px] '>
-           <a ref={fullstackTextRef}  className='text-[2.5rem] duration-500 italic  font-bold font-sans '>Fullstack </a>
-           <a ref={webTextRef}  className='text-[2.5rem] duration-500   italic  font-bold font-sans '>Frontend </a>
-           <a ref={appTextRef}  className='text-[2.5rem] duration-500  italic font-bold font-sans'>Application</a>
-           <a ref={serverTextRef}  className='text-[2.5rem] duration-500  italic font-bold font-sans'>Backend</a>
-           <a ref={otherTextRef}  className='text-[2.5rem] duration-500  italic font-bold font-sans '>Others</a>
+          <div className=' p-4 pt-[70px] text-[#212326] sticky top-[50px] right-0   flex flex-col justify-start items-start gap-[20px]   w-[270px] '>
+           <a ref={fullstackTextRef}  className='text-[2.2rem] duration-500   font-bold font-sans '>Fullstack </a>
+           <a ref={webTextRef}  className='text-[2.2rem] duration-500   font-bold font-sans '>Frontend </a>
+           <a ref={appTextRef}  className='text-[2.2rem] duration-500     font-bold font-sans'>Application</a>
+           <a ref={serverTextRef}  className='text-[2.2rem] duration-500    font-bold font-sans'>Backend</a>
+           <a ref={otherTextRef}  className='text-[2.2rem] duration-500    font-bold font-sans '>Others</a>
            {/* <p className='text-[1.9rem]   font-bold font-sans'>Full-stack</p> */}
           </div>
           </div>

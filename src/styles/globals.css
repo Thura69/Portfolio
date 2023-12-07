@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Gasoek+One&display=swap');
+
 
 @tailwind base;
 @tailwind components;
@@ -28,6 +31,10 @@ body{
 
 .name{
   font-family: 'EB Garamond', serif;
+}
+
+.category{
+  font-family: 'Anton', sans-serif;
 }
 
 .experience{

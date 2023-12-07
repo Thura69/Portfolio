@@ -41,7 +41,7 @@ import {motion} from 'framer-motion';
     }
 
     return (
-        <motion.div variants={container} initial="hidden" animate="visible" className={`text-[16.1px] overflow-hidden  items-center   font-sans text-[#77818f] ${classname}`}>{words?.map((word, index) => <motion.span variants={child} className='' key={index}>
+        <motion.div variants={container} initial="hidden" animate="visible" className={`text-[16.1px]    items-center   font-sans text-[#77818f] ${classname}`}>{words?.map((word, index) => <motion.span variants={child} className='' key={index}>
             {
                word
             }

@@ -23,7 +23,7 @@ function StickyCursor() {
         return ()=>{  window.removeEventListener('mousemove', manageMouseMover);}
     });
   return (
-    <motion.div style={{left:smoothMouse.x,top:smoothMouse.y}} className='w-[20px] z-[100] h-[20px] top-5   bg-active rounded-full fixed'></motion.div>
+    <motion.div style={{left:smoothMouse.x,top:smoothMouse.y}} className='w-[50px] z-50 h-[50px] top-5   bg-active rounded-full fixed'></motion.div>
   )
 }
 
