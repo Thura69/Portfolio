@@ -33,7 +33,7 @@ requestAnimationFrame(raf)
   return (
    <div className='bg-bg relative h-[100svh] w-full'>
 <>
-      {/* <StickyCursor/> */}
+      <StickyCursor/>
       {/* <FirstFrame  />   */}
       <SecondFrame/>  
       <ThirdFrame />

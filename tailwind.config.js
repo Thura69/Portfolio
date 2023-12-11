@@ -27,6 +27,7 @@ module.exports = {
       // => @media (min-width: 640px) { ... }
       "mid":"600px",
       'md': '768px',
+      'm-md':'950px',
       // => @media (min-width: 768px) { ... }
 
       'lg': '1024px',

@@ -22,6 +22,11 @@ const Body:React.FC<bodyProps> =({setIsActive})=> {
             src: ''
         },
         {
+            title: "Projects",
+            href: '/about',
+            src: ''
+        },
+        {
             title: "Contact",
             href: '/contact',
             src: ''
@@ -44,7 +49,7 @@ const Body:React.FC<bodyProps> =({setIsActive})=> {
     <div className='text-text   flex flex-wrap'>
         { 
               links.map((link, index) => {
-                  return <Link  onMouseOver={()=>setSelectedLink({isActive:true,index})} onMouseLeave={()=>setSelectedLink({isActive:false,index})} className='mt-[40px]' href={link.href} key={`dd_${index}`}><motion.p onClick={()=>setIsActive(false)} variants={blur} initial='initial' animate={selectedLink.isActive && selectedLink.index != index? "open" : "closed"}  className='text-text m-0 flex uppercase overflow-hidden pl-[10px] mr-[20px] text-[2.5rem] lg:text-[5rem] font-bold '>{getChar(link.title)}</motion.p></Link>
+                  return <Link  onMouseOver={()=>setSelectedLink({isActive:true,index})} onMouseLeave={()=>setSelectedLink({isActive:false,index})} className='mt-[40px]' href={link.href} key={`dd_${index}`}><motion.p onClick={()=>setIsActive(false)} variants={blur} initial='initial' animate={selectedLink.isActive && selectedLink.index != index? "open" : "closed"}  className='text-text m-0 flex uppercase overflow-hidden pl-[10px] mr-[20px] text-[2.5rem] lg:text-[4rem] font-bold '>{getChar(link.title)}</motion.p></Link>
             })
         }
     </div>

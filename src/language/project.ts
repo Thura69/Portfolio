@@ -36,7 +36,7 @@ import project7_4 from '../../public/assets/IMG_9292.png';
 export const project = [
     {
         id: 1,
-        project_name: "Real Time Fuel Management System",
+        project_name: "FMS Management System",
         status: false,
         credential:['user','12345678'],
         credential_status:true,

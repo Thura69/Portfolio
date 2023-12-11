@@ -13,7 +13,7 @@ import Frames from './Themes/Frames';
 
   return (
     <div data-scroll-section className='flex items-center justify-center relative w-full h-[120px] lg:h-[190px] md:h-[160px] mt-[10px] xs:mt-[20px] lg:mt-[60px] mid:mt-[35px]'>
-        <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3.05%]'/>
+        <Frames className='w-[3%] xs:w-[5%] mid:w-[70%]  md:w-[5%] lg:w-[3.05%]'/>
         <Frames className='w-[3%] hidden lg:block lg:w-[34.15%]'/>
         <Frames className='w-[72%] xs:w-[70%] mid:w-[68%] md:w-[45%] lg:w-[15.55%]'/>
         <Frames className='hidden lg:block lg:w-[15%]'/>

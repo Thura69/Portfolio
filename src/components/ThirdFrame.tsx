@@ -36,7 +36,7 @@ const styles = {
    
   
     <div data-scroll-sticky className='md:p-5 lg:p-8 2xl:p-10 bg-bg lg:w-[50.1%] order-1 md:w-[50%] xl:w-[33.1%]   border-text  md:flex items-center justify-center md:justify-start'>
-      <Image blurDataURL={'../../../public/assets/64cd4b8241e30d1ff98179ad_gamestation.png'} src={Profile}  className='md:h-auto w-full lg:h-auto   order-1 bg-active rounded-md ' width={500} height={590} alt='profile'/>
+      <Image blurDataURL={'../../../public/assets/64cd4b8241e30d1ff98179ad_gamestation.png'} src={Profile}  className='md:h-auto w-full lg:h-auto p-0 border-[0.5px] border-border   order-1 bg-active rounded-md ' width={500} height={590} alt='profile'/>
       </div>
         <div className='mt-[20.3px]'></div>
         <div className=' md:flex md:p-5 md:w-[100%] lg:p-8  lg:w-[55.3%] xl:w-[37%]  flex-col md:border-r-[0.5px] border-border items-start  lg:text-[19.4px]'>

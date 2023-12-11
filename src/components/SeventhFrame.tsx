@@ -8,6 +8,7 @@ import cloud from '../../public/assets/cloud-storage-2.png';
 import Micro from '../../public/assets/microservice-2.png';
 import Rasp from '../../public/assets/raspberry-pi-svgrepo-com (1).png';
 import Blue from '../../public/assets/floor-plan.png';
+import Icons from '../../public/assets/64e2212a242e4af9b6eb6a2a_Icon.svg';
 
 import Image from 'next/image';
 import { BsArrowUpRightCircle } from 'react-icons/bs';
@@ -219,28 +220,32 @@ const SeventhFrame = () => {
            <a ref={appTextRef}  className='text-[2.2rem] duration-500     font-bold font-sans'>Application</a>
            <a ref={serverTextRef}  className='text-[2.2rem] duration-500    font-bold font-sans'>Backend</a>
            <a ref={otherTextRef}  className='text-[2.2rem] duration-500    font-bold font-sans '>Others</a>
+           <a  className='text-[1.2rem] py-1 flex items-center justify-start gap-3 bg-text px-2 duration-500   border-2 h-[45px] rounded-md border-border w-[70%]  font-bold font-sans '>
+                <Image width={30} src={Icons} alt='logo' />
+                <p>More</p>
+           </a>
            {/* <p className='text-[1.9rem]   font-bold font-sans'>Full-stack</p> */}
           </div>
           </div>
           <div className=' pt-[60px]  '>
             {/* here */}
           <div ref={fullstackRef}>
-          <ProjectCard toPage={'/project'}  link='https://detfsmm.com' url='https://detfsmm.com'  title={"REAL TIME FUEL MANAGEMNT SYSTEM"} year='2023' description={language.realtimefuelmanagementsystem} skills='React.js, Tailwind ,Framer Motion, React Rouder Dom, Redux, Redux Thunk, Custom Hooks,Prime React, Chart.js, Express, Node.js, Mongodb, TypeScript, Zod, EC2' image={[fuel_1, fuel_7, fuel_5, fuel_4]} account={true} accountDetail='Username : user, Password : 12345678' />
+          <ProjectCard toPage={'/projects/0'}  link='https://detfsmm.com' url='https://detfsmm.com'  title={"FMS MANAGEMNT SYSTEM"} year='2023' description={language.realtimefuelmanagementsystem} skills='React.js, Tailwind ,Framer Motion, React Rouder Dom, Redux, Redux Thunk, Custom Hooks,Prime React, Chart.js, Express, Node.js, Mongodb, TypeScript, Zod, EC2' image={[fuel_1, fuel_7, fuel_5, fuel_4]} account={true} accountDetail='Username : user, Password : 12345678' />
           </div>
           <div ref={webRef} id='web'>
-          <ProjectCard link='UNAUTHORIZED' url={''} title={"POS SET UP"} year='2023' description={language.possetup} image={[installer_1, installer_2, installer_3, installer_4]} skills='React.js, Tailwind, TypeScript, Redux, Framer Motion' account={false} />
-          <ProjectCard link='https://thurakhitzay.netlify.app' skills='React.js, Redux, Reuseable Components' url='https://thurakhitzay.netlify.app' title={"ECOMMERCE"} year='2023' description={language.ecommerce} image={[ecommerce_1,ecommerce_2,ecommerce_3,ecommerce_4]} account={false} />
-          <ProjectCard link='https://thura69.github.io/foreverBots/' url='https://thura69.github.io/foreverBots/' title={"FOREVER BOT (PURE VANILLA)"} year='2022' description={language.bot} skills='HTM, CSS, JavaScript' image={[bot_1,bot_2,bot_3,bot_4]} account={false} />
+          <ProjectCard toPage={'/projects/1'} link='UNAUTHORIZED' url={''} title={"POS SET UP"} year='2023' description={language.possetup} image={[installer_1, installer_2, installer_3, installer_4]} skills='React.js, Tailwind, TypeScript, Redux, Framer Motion' account={false} />
+          <ProjectCard toPage={'/projects/2'} link='https://thurakhitzay.netlify.app' skills='React.js, Redux, Reuseable Components' url='https://thurakhitzay.netlify.app' title={"ECOMMERCE"} year='2023' description={language.ecommerce} image={[ecommerce_1,ecommerce_2,ecommerce_3,ecommerce_4]} account={false} />
+          <ProjectCard toPage={'/projects/3'} link='https://thura69.github.io/foreverBots/' url='https://thura69.github.io/foreverBots/' title={"FOREVER BOT (PURE VANILLA)"} year='2022' description={language.bot} skills='HTM, CSS, JavaScript' image={[bot_1,bot_2,bot_3,bot_4]} account={false} />
           {/* <ProjectCard link='https://thura69.github.io/drewhouse/'  url='https://thura69.github.io/drewhouse/' title={"DREW HOUSE (PURE VANILLA)"} year='2022' description={language.drewhouse} skills='HTML, CSS, JavaScript' image={[drew_1,drew_2,drew_3,drew_4]} account={false} /> */}
           </div>
          <div ref={appRef} id='app'>
-          <ProjectCard url='https://drive.google.com/file/d/15NQDfyogA01TvzT2dz9qv_8cEdl7pLjJ/view?usp=drive_link' link='READ APPLICATION GUIDE ( USER MANUAL ) ' title={"FMS (FUEL MANAGEMENT SYSTEM) APPLICATION "} skills='ReactNative, Expo, Reuseable Components, React Navigation, Async Storage, Redux, Expo Print ' year='2022' description={language.fmsapplication} image={[app_1,app_2,app_3,app_4]} account={false}/>
+          <ProjectCard toPage={'/projects/4'} url='https://drive.google.com/file/d/15NQDfyogA01TvzT2dz9qv_8cEdl7pLjJ/view?usp=drive_link' link='READ APPLICATION GUIDE ( USER MANUAL ) ' title={"FMS (FUEL MANAGEMENT SYSTEM) APPLICATION "} skills='ReactNative, Expo, Reuseable Components, React Navigation, Async Storage, Redux, Expo Print ' year='2022' description={language.fmsapplication} image={[app_1,app_2,app_3,app_4]} account={false}/>
          </div>
          <div  ref={serverRef} id="server">
-              <ProjectCard link='https://github.com/Thura69/Ecommerce_Backend' skills='Express.js,Node.js,TypeScript,MongoDb,MVC Pattern,Cloudinary' url='https://github.com/Thura69/Ecommerce_Backend' title={"ECOMMERCE SERVER REST API"} year='2023' description={language.ecommerceapi} image={[server_1, server_2, server_3, server_4]} account={false} />
-              <ProjectCard link='https://github.com/Thura69/Youtube_backend' skills='Express.js,Node.js,TypeScript,Mongodb' url='https://github.com/Thura69/Youtube_backend' title={"YOUTUBE REST API"} year='2023' description={language.youtube} image={[youtube_1, youtube_2, youtube_3, youtube_4]} account={false} />
-              <ProjectCard link='https://github.com/Thura69/Youtube_backend' skills='Express.js,Node.js,TypeScript,Mongodb,Swagger' url='https://github.com/Thura69/Youtube_backend' title={"BLOG REST API"} year='2023' description={language.blog} image={[blog_1, blog_2, blog_3, blog_4]} account={false} />
-              <ProjectCard link='https://github.com/Thura69/Youtube_backend' url='https://github.com/Thura69/Youtube_backend' title={"MICROSERVICES ARCHITECTURE"} year='2023' description={language.microservice} skills='MicroServices,Api GateWay,Express.js,Node.js,Mongodb' image={[micro_1, micro_2, micro_3, micro_4]} account={false} />
+              <ProjectCard toPage={'/projects/5'} link='https://github.com/Thura69/Ecommerce_Backend' skills='Express.js,Node.js,TypeScript,MongoDb,MVC Pattern,Cloudinary' url='https://github.com/Thura69/Ecommerce_Backend' title={"ECOMMERCE SERVER REST API"} year='2023' description={language.ecommerceapi} image={[server_1, server_2, server_3, server_4]} account={false} />
+              <ProjectCard toPage={'/projects/6'} link='https://github.com/Thura69/Youtube_backend' skills='Express.js,Node.js,TypeScript,Mongodb' url='https://github.com/Thura69/Youtube_backend' title={"YOUTUBE REST API"} year='2023' description={language.youtube} image={[youtube_1, youtube_2, youtube_3, youtube_4]} account={false} />
+              <ProjectCard toPage={'/projects/7'} link='https://github.com/Thura69/Youtube_backend' skills='Express.js,Node.js,TypeScript,Mongodb,Swagger' url='https://github.com/Thura69/Youtube_backend' title={"BLOG REST API"} year='2023' description={language.blog} image={[blog_1, blog_2, blog_3, blog_4]} account={false} />
+              <ProjectCard toPage={`/projects/8`} link='https://github.com/Thura69/Youtube_backend' url='https://github.com/Thura69/Youtube_backend' title={"MICROSERVICES ARCHITECTURE"} year='2023' description={language.microservice} skills='MicroServices,Api GateWay,Express.js,Node.js,Mongodb' image={[micro_1, micro_2, micro_3, micro_4]} account={false} />
          </div>
             <div ref={otherRef} id='others'>
                  <ProjectCard link='UNDEFINDED LINK' title={"RASPBERRY PI ,BANANA PI & POS HANDLE"} year='2023' description={language.hobby} image={[hobby_1,hobby_4,hobby_3,hobby_8]} account={false}/>
