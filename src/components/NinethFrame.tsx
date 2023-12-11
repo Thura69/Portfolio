@@ -4,10 +4,13 @@ import Frames from './Themes/Frames'
 
  const NinethFrame = () => {
   return (
-     <div className='flex items-center justify-center w-full h-[10px] xs:h-[20px]'>
-        <Frames className='w-[3%] xs:w-[5%]'/>
-        <Frames className='w-[94%] xs:w-[90%]'/>
-        <Frames className='w-[3%] xs:w-[5%]'/>
+     <div className='flex items-center justify-between px-[3%] w-full bg-border h-[80px] '>
+     <ul className=' uppercase flex gap-3 text-text'>
+      <li>facebook</li>
+      <li>linkedin</li>
+      <li>gmail</li>
+     </ul>
+     <p className=' text-text'>Thura Nyi</p>
     </div>
   )
 }

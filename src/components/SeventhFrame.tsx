@@ -209,7 +209,7 @@ const SeventhFrame = () => {
         </div> 
          <h3 className=' text-text text-xl  uppercase my-4 mt-6  font-bold '>Local Server Development</h3>           
         <div className=' border-text w-full flex-wrap flex justify-between'>  <WorkCard id={7} real={true} no="08" title='Raspberry pi, Banana pi and Pos Handle' description='I learned to connect my web and hardware devices for further improvement in my development. I am familiar with SSH technology, Raspbian OS, Linux, and server logic. Similar configurations apply to the Banana Pi. The server logic is the same as on a cloud server, such as EC2. Additionally, for the POS handler, I developed a printing application on Android, which proves to be highly beneficial for POS software.' tools="Raspberry pi, Banana Pi, SSH, Nginx, Pm2, Linux, Ubuntu" img={Rasp} link='kd' />   </div>            
-                 
+
         </div>
        
         <div className='lg:flex hidden '>

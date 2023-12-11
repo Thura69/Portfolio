@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gasoek+One&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -25,13 +25,16 @@
 
 body{
   background: #000;
-  overflow: hidden;
+  overflow: clip;
 }
 
 .name{
   font-family: 'EB Garamond', serif;
 }
 
+.text{
+font-family: 'Indie Flower', cursive;
+}
 .category{
   font-family: 'Anton', sans-serif;
 }

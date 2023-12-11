@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from 'react';
 import Preload from '../components/Preload';
 import FirstFrame from '../components/FirstFrame';
 import EightFrame from '../components/EightFrame';
+import NinethFrame from '@/components/NinethFrame';
 
 
 export default function App({ Component, pageProps }: AppProps) {
