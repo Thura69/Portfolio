@@ -45,12 +45,14 @@ requestAnimationFrame(raf)
     <Frames className='w-[3%] xs:w-[4.8%] mid:w-[7%] md:w-[7%] lg:w-[3%]'/>
     <div className='w-[94%] border-r-[0.1px] flex border-border'>
         <div className=' p-7 w-[25%] h-full border-border border-r-[0.1px]'>
-        <p className=' uppercase font-bold text-active text-[2.5rem] mt-[20px]'>On-running</p>    
+            <RevealWrapper origin='bottom'>
+               <p className=' uppercase font-bold text-active text-[2.5rem] mt-[20px]'>On-running</p>  
+            </RevealWrapper>  
         <ul className=' text-text text-[1rem] mt-[30px] '>
-          <li className=' uppercase font-bold text-[1.5rem] mb-[20px]'>Information</li>
-          <li className=''>Year : 2022</li>
-          <li>Scope : Web Development</li>
-          <li className=' underline '>Live at : www.kpimedia.com</li>
+          <li className=' uppercase font-bold text-[1.5rem] mb-[20px]'><RevealWrapper origin='bottom'>Information</RevealWrapper></li>
+          <li className=''><RevealWrapper origin='bottom'>Year : 2022</RevealWrapper></li>
+          <li><RevealWrapper origin='bottom'>Scope : Web Development</RevealWrapper></li>
+          <li className=' underline '><RevealWrapper origin='bottom'>Live at : www.kpimedia.com</RevealWrapper></li>
         </ul>
           </div>
             <div className=' overflow-clip w-[75%] p-7 flex flex-col items-start   border-border bg-bg h-full  relative'>
