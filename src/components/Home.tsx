@@ -13,6 +13,8 @@ import FourthFrame from './FourthFrame'
 import FirstFrame from './FirstFrame';
 import EightFrame from './EightFrame';
 import StickyCursor from './animation/StickyCursor';
+import SomeTitle from './SomeTitle';
+import SomeAnimation from './SomeAnimation';
 
 
  const Home = () => {
@@ -41,6 +43,8 @@ requestAnimationFrame(raf)
       <FifthFrame />
       {/* <SixthFrame/> */}
       <SeventhFrame />
+      {/* <SomeTitle/>
+      <SomeAnimation/> */}
       <EightFrame />
       <div className='fixed h-[40px] bg-border text-text bottom-0 text-sm flex items-center justify-center gap-3  p-5'><TbInfoTriangle className='text-[#E9D502]'  size={25}/> This Portfolio is under developing</div>
         </>

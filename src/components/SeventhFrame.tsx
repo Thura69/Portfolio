@@ -181,14 +181,14 @@ const SeventhFrame = () => {
     };
   }, []);
   return (
-    <div data-scroll-section id="seven_frame"  className='flex items-center justify-center w-full h-[4900px] mid:h-[4360px] md:h-[3600px] lg:h-[8450px]'>
+    <div data-scroll-section id="seven_frame"  className='flex items-center justify-center w-full h-[4900px] mid:h-[4360px] md:h-[3600px] lg:h-[3690px]'>
         <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3%]'/>
         
         <div className='w-[94%] p-2  lg:w-[94%] xs:w-[94%] bg-bg  h-full border-b-[0.5px] mid:w-[86%] border-border relative md:w-[90%] border-r-[0.5px] overflow-clip   mid:px-7'>
            <Image className='absolute right-[-270px] top-[-150px]' src={svg} alt='svg'/>
-        <h3 className='text-text px-2 mt-[100px] mb-[20px]  uppercase text-[1.5rem]  lg:text-[3.2rem] font-bold'>SELECTED PROJECTS.</h3>
+        <h3 className='text-text px-2 mt-[50px]   uppercase text-[1.5rem]  lg:text-[3.2rem] font-bold'>SELECTED PROJECTS.</h3>
        
-        <div className='lg:hidden gap-1  mt-[50px] flex text-left items-start md:flex-row md:flex-wrap flex-col justify-start mid:gap-6 '>
+        <div className='lg:hidden gap-1   flex text-left items-start md:flex-row md:flex-wrap flex-col justify-start mid:gap-6 '>
             <h3 className=' text-text text-xl  uppercase mb-2  font-bold '>Full Stack Development</h3>
        <div className=' border-text w-full gap-2 flex-wrap flex justify-between'>
          <WorkCard id={0} real={true}  no='01' title='Real Time Fuel Management System' description='The real-time fuel management website is currently operational, with hundreds of users, including the Ministry of Electricity and Energy (MOEE) and fuel station companies, actively monitoring it. On the default website, 10 stations are running, providing detailed sales information. Many managers use this website for their stations to generate daily reports, manage accounts, and check profits and other staff details from their individual dashboards.' tools="React.js, Tailwind ,Framer Motion, React Rouder Dom, Redux, Redux Thunk, Custom Hooks,Prime React, Chart.js,Nginx, Express, Node.js, Mongodb,Redis, TypeScript, Zod, EC2" img={Fuel} link='/project' />            
@@ -201,7 +201,7 @@ const SeventhFrame = () => {
         </div>
            <h3 className=' text-text text-xl  uppercase my-4 mt-6  font-bold '>Application Development</h3>    
         <div  className=' border-text gap-2 w-full flex-wrap flex justify-between'> <WorkCard id={4} real={true} no="05" title='FMS (Fuel Management System) Application' description='The FMS application is currently operational across nine stations in Natogyi, Ohn Chaw, Kyawe Tat Sone, Kyein Pin Sel, Nawng Kio, Muse, Sittwe, Gwa, and Taunggyi. Fuel station employees are using this application with satisfaction, utilizing it to permit dispensers and adjust dispenser prices. They frequently use the app to monitor the fuel balance in the tanks.The application features two modes: auto permit and default permit. In auto permit mode, employees can add car numbers and customer information without requiring manual permission.' tools="React Native, Expo, React Navigation, Expo Print, Redux" img={Iot} link='kd' /> </div>
-                  
+             
          <h3 className=' text-text text-xl  uppercase my-4 mt-6  font-bold '>Backend Development</h3>           
         <div className=' border-text w-full flex-wrap gap-2 flex justify-between'>
         <WorkCard id={5} real={false} no="06" title='Ecommerce Backend Rest API' description='For API development, I designed with the MVC control pattern, a significant pattern for maintaining and identifying errors. I implemented thorough error handling to ensure the stability of the API and prevent crashes. Multiple middlewares are utilized for enhanced functionality.To efficiently handle images and videos, I integrated Cloudinary to store these media files, ensuring optimal API performance. The API includes a password recovery feature with email recovery and password reset functionalities, and I implemented Jsonweb token for security measures.' tools="Node.js, TypeScript,Express.js, JsonWebToken, Cloudinary, MongoDb" img={Micro} link='kd' />            
@@ -214,28 +214,24 @@ const SeventhFrame = () => {
        
         <div className='lg:flex hidden '>
           <div className=''>
-          <div className=' p-4 pt-[70px] text-[#212326] sticky top-[50px] right-0   flex flex-col justify-start items-start gap-[20px]   w-[270px] '>
-           <a ref={fullstackTextRef}  className='text-[2.2rem] duration-500   font-bold font-sans '>Fullstack </a>
-           <a ref={webTextRef}  className='text-[2.2rem] duration-500   font-bold font-sans '>Frontend </a>
-           <a ref={appTextRef}  className='text-[2.2rem] duration-500     font-bold font-sans'>Application</a>
-           <a ref={serverTextRef}  className='text-[2.2rem] duration-500    font-bold font-sans'>Backend</a>
-           <a ref={otherTextRef}  className='text-[2.2rem] duration-500    font-bold font-sans '>Others</a>
-           <a  className='text-[1.2rem] py-1 flex items-center justify-start gap-3 bg-text px-2 duration-500   border-2 h-[45px] rounded-md border-border w-[70%]  font-bold font-sans '>
-                <Image width={30} src={Icons} alt='logo' />
-                <p>More</p>
-           </a>
+          <div className=' p-4 pt-[60px] text-[#212326] sticky top-[50px] right-0   flex flex-col justify-start items-start gap-[20px]   w-[280px] '>
+           <a ref={fullstackTextRef}  className='text-[2.2rem] duration-500 category   font-bold font-sans '>Fullstack </a>
+           <a ref={webTextRef}  className='text-[2.2rem] duration-500  category  font-bold font-sans '>Frontend </a>
+           <a ref={appTextRef}  className='text-[2.2rem] duration-500   category  font-bold font-sans'>Application</a>
+           <a ref={serverTextRef}  className='text-[2.2rem] duration-500 category   font-bold font-sans'>Backend</a>
+           <a ref={otherTextRef}  className='text-[2.2rem] duration-500  category  font-bold font-sans '>Others</a>
            {/* <p className='text-[1.9rem]   font-bold font-sans'>Full-stack</p> */}
           </div>
           </div>
-          <div className=' pt-[60px]  '>
+          <div className=' pt-[40px]  '>
             {/* here */}
           <div ref={fullstackRef}>
           <ProjectCard toPage={'/projects/0'}  link='https://detfsmm.com' url='https://detfsmm.com'  title={"FMS MANAGEMNT SYSTEM"} year='2023' description={language.realtimefuelmanagementsystem} skills='React.js, Tailwind ,Framer Motion, React Rouder Dom, Redux, Redux Thunk, Custom Hooks,Prime React, Chart.js, Express, Node.js, Mongodb, TypeScript, Zod, EC2' image={[fuel_1, fuel_7, fuel_5, fuel_4]} account={true} accountDetail='Username : user, Password : 12345678' />
           </div>
           <div ref={webRef} id='web'>
-          <ProjectCard toPage={'/projects/1'} link='UNAUTHORIZED' url={''} title={"POS SET UP"} year='2023' description={language.possetup} image={[installer_1, installer_2, installer_3, installer_4]} skills='React.js, Tailwind, TypeScript, Redux, Framer Motion' account={false} />
+          {/* <ProjectCard toPage={'/projects/1'} link='UNAUTHORIZED' url={''} title={"POS SET UP"} year='2023' description={language.possetup} image={[installer_1, installer_2, installer_3, installer_4]} skills='React.js, Tailwind, TypeScript, Redux, Framer Motion' account={false} /> */}
           <ProjectCard toPage={'/projects/2'} link='https://thurakhitzay.netlify.app' skills='React.js, Redux, Reuseable Components' url='https://thurakhitzay.netlify.app' title={"ECOMMERCE"} year='2023' description={language.ecommerce} image={[ecommerce_1,ecommerce_2,ecommerce_3,ecommerce_4]} account={false} />
-          <ProjectCard toPage={'/projects/3'} link='https://thura69.github.io/foreverBots/' url='https://thura69.github.io/foreverBots/' title={"FOREVER BOT (PURE VANILLA)"} year='2022' description={language.bot} skills='HTM, CSS, JavaScript' image={[bot_1,bot_2,bot_3,bot_4]} account={false} />
+          {/* <ProjectCard toPage={'/projects/3'} link='https://thura69.github.io/foreverBots/' url='https://thura69.github.io/foreverBots/' title={"FOREVER BOT (PURE VANILLA)"} year='2022' description={language.bot} skills='HTM, CSS, JavaScript' image={[bot_1,bot_2,bot_3,bot_4]} account={false} /> */}
           {/* <ProjectCard link='https://thura69.github.io/drewhouse/'  url='https://thura69.github.io/drewhouse/' title={"DREW HOUSE (PURE VANILLA)"} year='2022' description={language.drewhouse} skills='HTML, CSS, JavaScript' image={[drew_1,drew_2,drew_3,drew_4]} account={false} /> */}
           </div>
          <div ref={appRef} id='app'>
@@ -243,9 +239,9 @@ const SeventhFrame = () => {
          </div>
          <div  ref={serverRef} id="server">
               <ProjectCard toPage={'/projects/5'} link='https://github.com/Thura69/Ecommerce_Backend' skills='Express.js,Node.js,TypeScript,MongoDb,MVC Pattern,Cloudinary' url='https://github.com/Thura69/Ecommerce_Backend' title={"ECOMMERCE SERVER REST API"} year='2023' description={language.ecommerceapi} image={[server_1, server_2, server_3, server_4]} account={false} />
-              <ProjectCard toPage={'/projects/6'} link='https://github.com/Thura69/Youtube_backend' skills='Express.js,Node.js,TypeScript,Mongodb' url='https://github.com/Thura69/Youtube_backend' title={"YOUTUBE REST API"} year='2023' description={language.youtube} image={[youtube_1, youtube_2, youtube_3, youtube_4]} account={false} />
-              <ProjectCard toPage={'/projects/7'} link='https://github.com/Thura69/Youtube_backend' skills='Express.js,Node.js,TypeScript,Mongodb,Swagger' url='https://github.com/Thura69/Youtube_backend' title={"BLOG REST API"} year='2023' description={language.blog} image={[blog_1, blog_2, blog_3, blog_4]} account={false} />
-              <ProjectCard toPage={`/projects/8`} link='https://github.com/Thura69/Youtube_backend' url='https://github.com/Thura69/Youtube_backend' title={"MICROSERVICES ARCHITECTURE"} year='2023' description={language.microservice} skills='MicroServices,Api GateWay,Express.js,Node.js,Mongodb' image={[micro_1, micro_2, micro_3, micro_4]} account={false} />
+              {/* <ProjectCard toPage={'/projects/6'} link='https://github.com/Thura69/Youtube_backend' skills='Express.js,Node.js,TypeScript,Mongodb' url='https://github.com/Thura69/Youtube_backend' title={"YOUTUBE REST API"} year='2023' description={language.youtube} image={[youtube_1, youtube_2, youtube_3, youtube_4]} account={false} /> */}
+              {/* <ProjectCard toPage={'/projects/7'} link='https://github.com/Thura69/Youtube_backend' skills='Express.js,Node.js,TypeScript,Mongodb,Swagger' url='https://github.com/Thura69/Youtube_backend' title={"BLOG REST API"} year='2023' description={language.blog} image={[blog_1, blog_2, blog_3, blog_4]} account={false} /> */}
+              {/* <ProjectCard toPage={`/projects/8`} link='https://github.com/Thura69/Youtube_backend' url='https://github.com/Thura69/Youtube_backend' title={"MICROSERVICES ARCHITECTURE"} year='2023' description={language.microservice} skills='MicroServices,Api GateWay,Express.js,Node.js,Mongodb' image={[micro_1, micro_2, micro_3, micro_4]} account={false} /> */}
          </div>
             <div ref={otherRef} id='others'>
                  <ProjectCard link='UNDEFINDED LINK' title={"RASPBERRY PI ,BANANA PI & POS HANDLE"} year='2023' description={language.hobby} image={[hobby_1,hobby_4,hobby_3,hobby_8]} account={false}/>

@@ -3,6 +3,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Gasoek+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gasoek+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -36,8 +37,10 @@ body{
 font-family: 'Indie Flower', cursive;
 }
 .category{
-  font-family: 'Anton', sans-serif;
+  font-family: 'Black Ops One'
 }
+
+
 
 .experience{
   background-image: url('../../public/assets/001@3x.png');
