@@ -26,11 +26,6 @@ const Body:React.FC<bodyProps> =({setIsActive})=> {
             href: '/about',
             src: ''
         },
-        {
-            title: "Contact",
-            href: '/contact',
-            src: ''
-        },
     ];
 
     const getChar = (title:string) => {

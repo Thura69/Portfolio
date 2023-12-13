@@ -15,9 +15,12 @@ import EightFrame from './EightFrame';
 import StickyCursor from './animation/StickyCursor';
 import SomeTitle from './SomeTitle';
 import SomeAnimation from './SomeAnimation';
+import { useRouter } from 'next/router';
 
 
- const Home = () => {
+const Home = () => {
+  const router = useRouter();
+  const seventhFrameRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const lenis = new Lenis()
@@ -32,8 +35,32 @@ function raf(time:any) {
 requestAnimationFrame(raf)
   }, []);
 
+  useEffect(() => {
+    const scrollToSeventhFrame = () => {
+       console.log(seventhFrameRef.current)
+      if (seventhFrameRef.current) {
+       
+        seventhFrameRef.current.scrollIntoView({behavior:'auto'});
+      }
+    };
+
+    // Scroll to SeventhFrame when the component mounts or when navigating to this page
+    scrollToSeventhFrame();
+
+    const handleRouteChange = () => {
+      // Scroll to SeventhFrame when navigating within the same page
+      scrollToSeventhFrame();
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, [router.events, seventhFrameRef]);
+
   return (
-   <div className='bg-bg relative h-[100svh] w-full'>
+   <div  className='bg-bg relative h-[100svh] w-full'>
 <>
       <StickyCursor/>
       {/* <FirstFrame  />   */}
@@ -42,7 +69,7 @@ requestAnimationFrame(raf)
       <FourthFrame />
       <FifthFrame />
       {/* <SixthFrame/> */}
-      <SeventhFrame />
+      <SeventhFrame gg={seventhFrameRef} />
       {/* <SomeTitle/>
       <SomeAnimation/> */}
       <EightFrame />

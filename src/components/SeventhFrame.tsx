@@ -85,13 +85,14 @@ import ProjectCard from './ProjectCard';
 import { englishLanguage } from '@/language/english';
 import svg from '../../public/assets/6469a18e29af2de5755caf00_Animated_rainbow_card.svg'
 import Link from 'next/link';
+import AnimatedTextWord from './animation/AnimatedTextWord';
 
 
 
 
 
 
-const SeventhFrame = () => {
+const SeventhFrame: React.FC<any> = ({gg}) => {
   const [language, setLanguage] = useState(englishLanguage);
   const fullstackRef = useRef(null);
   const fullstackTextRef = useRef<HTMLAnchorElement>(null);
@@ -107,8 +108,8 @@ const SeventhFrame = () => {
   const fullRef = useRef();
 
   useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
+  const handleScroll = () => {
+  const scrollPosition = window.scrollY;
 
   const currenFullStack = (fullstackRef as React.RefObject<HTMLParagraphElement>)?.current;
   const currentTexFullStack = (fullstackTextRef as React.RefObject<HTMLAnchorElement>)?.current;
@@ -128,13 +129,13 @@ const SeventhFrame = () => {
     currentTextOther?.classList.remove('active');
     currentTextWeb?.classList.remove('active');
     
-    
     currentTexFullStack.classList.add('active');
   } 
   if (currentTextWeb && currentWeb && scrollPosition >= currentWeb.offsetTop) {
     currentTextApp?.classList.remove('active');
     currentTextServer?.classList.remove('active');
     currentTexFullStack?.classList.remove('active');
+    currentTextWeb?.classList.remove('active');
     currentTextWeb.classList.add('active');
   } 
 
@@ -181,12 +182,11 @@ const SeventhFrame = () => {
     };
   }, []);
   return (
-    <div data-scroll-section id="seven_frame"  className='flex items-center justify-center w-full h-[4900px] mid:h-[4360px] md:h-[3600px] lg:h-[3690px]'>
+    <div ref={gg} data-scroll-section id="seven_frame"  className='flex items-center justify-center w-full h-[4900px] mid:h-[4360px] md:h-[3600px] lg:h-[3450px]'>
         <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3%]'/>
-        
         <div className='w-[94%] p-2  lg:w-[94%] xs:w-[94%] bg-bg  h-full border-b-[0.5px] mid:w-[86%] border-border relative md:w-[90%] border-r-[0.5px] overflow-clip   mid:px-7'>
            <Image className='absolute right-[-270px] top-[-150px]' src={svg} alt='svg'/>
-        <h3 className='text-text px-2 mt-[50px]   uppercase text-[1.5rem]  lg:text-[3.2rem] font-bold'>SELECTED PROJECTS.</h3>
+        <h3 className='text-text px-2 mt-[80px]   uppercase text-[1.5rem]  lg:text-[3.2rem] font-bold'>SELECTED PROJECTS.</h3>
        
         <div className='lg:hidden gap-1   flex text-left items-start md:flex-row md:flex-wrap flex-col justify-start mid:gap-6 '>
             <h3 className=' text-text text-xl  uppercase mb-2  font-bold '>Full Stack Development</h3>
@@ -209,13 +209,13 @@ const SeventhFrame = () => {
         </div> 
          <h3 className=' text-text text-xl  uppercase my-4 mt-6  font-bold '>Local Server Development</h3>           
         <div className=' border-text w-full flex-wrap flex justify-between'>  <WorkCard id={7} real={true} no="08" title='Raspberry pi, Banana pi and Pos Handle' description='I learned to connect my web and hardware devices for further improvement in my development. I am familiar with SSH technology, Raspbian OS, Linux, and server logic. Similar configurations apply to the Banana Pi. The server logic is the same as on a cloud server, such as EC2. Additionally, for the POS handler, I developed a printing application on Android, which proves to be highly beneficial for POS software.' tools="Raspberry pi, Banana Pi, SSH, Nginx, Pm2, Linux, Ubuntu" img={Rasp} link='kd' />   </div>            
-
         </div>
        
         <div className='lg:flex hidden '>
           <div className=''>
           <div className=' p-4 pt-[60px] text-[#212326] sticky top-[50px] right-0   flex flex-col justify-start items-start gap-[20px]   w-[280px] '>
            <a ref={fullstackTextRef}  className='text-[2.2rem] duration-500 category   font-bold font-sans '>Fullstack </a>
+           {/* <AnimatedTextWord text='Fullstack' classname='text-[2.2rem] duration-500 category  text-text font-bold font-sans'/> */}
            <a ref={webTextRef}  className='text-[2.2rem] duration-500  category  font-bold font-sans '>Frontend </a>
            <a ref={appTextRef}  className='text-[2.2rem] duration-500   category  font-bold font-sans'>Application</a>
            <a ref={serverTextRef}  className='text-[2.2rem] duration-500 category   font-bold font-sans'>Backend</a>
