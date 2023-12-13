@@ -18,8 +18,8 @@ import Frames from './Themes/Frames';
         <Frames className='w-[72%] xs:w-[70%] mid:w-[68%] md:w-[45%] lg:w-[15.55%]'/>
         <Frames className='hidden lg:block lg:w-[15%]'/>
       <div className='w-[22%] xs:w-[20%] mid:w-[18%] md:w-[45%] lg:w-[30.08%]  border-border border-b-[0.5px] h-full border-r-[0.5px] md:p-[30px] flex flex-col items-start justify-center  contact'>
-      <RevealWrapper origin='top' duration={1000}>  <p className='text-text text-[1.2rem] my-5  font-bold '>When did a dragon ever die from the poison of a snake.</p></RevealWrapper>
-      <RevealWrapper origin='bottom' duration={1000}> <p className=' text-text'>Nietzsche</p></RevealWrapper>
+      <RevealWrapper origin='top' duration={1000}>  <p className='text-text text-[1.2rem] hidden my-5  font-bold '>When did a dragon ever die from the poison of a snake.</p></RevealWrapper>
+      <RevealWrapper origin='bottom' duration={1000}> <p className=' text-text hidden'>Nietzsche</p></RevealWrapper>
 
         </div>
         <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3%]'/>

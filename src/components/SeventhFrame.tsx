@@ -131,15 +131,15 @@ const SeventhFrame: React.FC<any> = ({gg}) => {
     
     currentTexFullStack.classList.add('active');
   } 
-  if (currentTextWeb && currentWeb && scrollPosition >= currentWeb.offsetTop) {
+  if (currentTextWeb && currentWeb && scrollPosition >= currentWeb.offsetTop + 500) {
     currentTextApp?.classList.remove('active');
     currentTextServer?.classList.remove('active');
     currentTexFullStack?.classList.remove('active');
     currentTextWeb?.classList.remove('active');
     currentTextWeb.classList.add('active');
-  } 
+  } 6
 
-  if (currentTextApp && currentApp && scrollPosition >= currentApp.offsetTop) {
+  if (currentTextApp && currentApp && scrollPosition >= currentApp.offsetTop + 500) {
     currentTextWeb?.classList.remove('active');
     currentTextServer?.classList.remove('active');
     currentTexFullStack?.classList.remove('active');
@@ -147,7 +147,7 @@ const SeventhFrame: React.FC<any> = ({gg}) => {
 
     currentTextApp.classList.add('active');
   } 
-  if (currentTextServer && currentServer && scrollPosition >= currentServer.offsetTop) {
+  if (currentTextServer && currentServer && scrollPosition >= currentServer.offsetTop + 500) {
     currentTextWeb?.classList.remove('active');
     currentTextApp?.classList.remove('active');
     currentTextOther?.classList.remove('active');
@@ -157,7 +157,7 @@ const SeventhFrame: React.FC<any> = ({gg}) => {
 
     currentTextServer.classList.add('active');
   } 
-  if (currentTextOther && currentOther && scrollPosition >= currentOther.offsetTop) {
+  if (currentTextOther && currentOther && scrollPosition >= currentOther.offsetTop + 500) {
     currentTextWeb?.classList.remove('active');
     currentTextApp?.classList.remove('active');
     currentTextServer?.classList.remove('active');
@@ -186,7 +186,7 @@ const SeventhFrame: React.FC<any> = ({gg}) => {
         <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3%]'/>
         <div className='w-[94%] p-2  lg:w-[94%] xs:w-[94%] bg-bg  h-full border-b-[0.5px] mid:w-[86%] border-border relative md:w-[90%] border-r-[0.5px] overflow-clip   mid:px-7'>
            <Image className='absolute right-[-270px] top-[-150px]' src={svg} alt='svg'/>
-        <h3 className='text-text px-2 mt-[80px]   uppercase text-[1.5rem]  lg:text-[3.2rem] font-bold'>SELECTED PROJECTS.</h3>
+        <h3 className='text-text px-2 mt-[100px]   uppercase text-[1.5rem]  lg:text-[3.2rem] font-bold'>SELECTED PROJECTS.</h3>
        
         <div className='lg:hidden gap-1   flex text-left items-start md:flex-row md:flex-wrap flex-col justify-start mid:gap-6 '>
             <h3 className=' text-text text-xl  uppercase mb-2  font-bold '>Full Stack Development</h3>
@@ -214,7 +214,7 @@ const SeventhFrame: React.FC<any> = ({gg}) => {
         <div className='lg:flex hidden '>
           <div className=''>
           <div className=' p-4 pt-[60px] text-[#212326] sticky top-[50px] right-0   flex flex-col justify-start items-start gap-[20px]   w-[280px] '>
-           <a ref={fullstackTextRef}  className='text-[2.2rem] duration-500 category   font-bold font-sans '>Fullstack </a>
+           <a ref={fullstackTextRef}  className='text-[2.2rem] active duration-500 category   font-bold font-sans '>Fullstack </a>
            {/* <AnimatedTextWord text='Fullstack' classname='text-[2.2rem] duration-500 category  text-text font-bold font-sans'/> */}
            <a ref={webTextRef}  className='text-[2.2rem] duration-500  category  font-bold font-sans '>Frontend </a>
            <a ref={appTextRef}  className='text-[2.2rem] duration-500   category  font-bold font-sans'>Application</a>
@@ -228,7 +228,7 @@ const SeventhFrame: React.FC<any> = ({gg}) => {
           <div ref={fullstackRef}>
           <ProjectCard toPage={'/projects/0'}  link='https://detfsmm.com' url='https://detfsmm.com'  title={"FMS MANAGEMNT SYSTEM"} year='2023' description={language.realtimefuelmanagementsystem} skills='React.js, Tailwind ,Framer Motion, React Rouder Dom, Redux, Redux Thunk, Custom Hooks,Prime React, Chart.js, Express, Node.js, Mongodb, TypeScript, Zod, EC2' image={[fuel_1, fuel_7, fuel_5, fuel_4]} account={true} accountDetail='Username : user, Password : 12345678' />
           </div>
-          <div ref={webRef} id='web'>
+          <div ref={webRef} className='' id='web'>
           {/* <ProjectCard toPage={'/projects/1'} link='UNAUTHORIZED' url={''} title={"POS SET UP"} year='2023' description={language.possetup} image={[installer_1, installer_2, installer_3, installer_4]} skills='React.js, Tailwind, TypeScript, Redux, Framer Motion' account={false} /> */}
           <ProjectCard toPage={'/projects/2'} link='https://thurakhitzay.netlify.app' skills='React.js, Redux, Reuseable Components' url='https://thurakhitzay.netlify.app' title={"ECOMMERCE"} year='2023' description={language.ecommerce} image={[ecommerce_1,ecommerce_2,ecommerce_3,ecommerce_4]} account={false} />
           {/* <ProjectCard toPage={'/projects/3'} link='https://thura69.github.io/foreverBots/' url='https://thura69.github.io/foreverBots/' title={"FOREVER BOT (PURE VANILLA)"} year='2022' description={language.bot} skills='HTM, CSS, JavaScript' image={[bot_1,bot_2,bot_3,bot_4]} account={false} /> */}

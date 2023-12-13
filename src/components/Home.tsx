@@ -37,7 +37,6 @@ requestAnimationFrame(raf)
 
   useEffect(() => {
     const scrollToSeventhFrame = () => {
-       console.log(seventhFrameRef.current)
       if (seventhFrameRef.current) {
        
         seventhFrameRef.current.scrollIntoView({behavior:'auto'});
