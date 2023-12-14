@@ -17,7 +17,10 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
-      "*.pdf":["pdf.d.ts"]
+      "*.pdf":["pdf.d.ts"],
+      "@videos/*": [
+        "./public/assets/videos/*"
+      ]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],

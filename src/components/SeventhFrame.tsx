@@ -182,7 +182,7 @@ const SeventhFrame: React.FC<any> = ({gg}) => {
     };
   }, []);
   return (
-    <div ref={gg} data-scroll-section id="seven_frame"  className='flex items-center justify-center w-full h-[4900px] mid:h-[4360px] md:h-[3600px] lg:h-[3450px]'>
+    <div  data-scroll-section id="seven_frame"  className='flex items-center justify-center w-full h-[4900px] mid:h-[4360px] md:h-[3600px] lg:h-[3450px]'>
         <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3%]'/>
         <div className='w-[94%] p-2  lg:w-[94%] xs:w-[94%] bg-bg  h-full border-b-[0.5px] mid:w-[86%] border-border relative md:w-[90%] border-r-[0.5px] overflow-clip   mid:px-7'>
            <Image className='absolute right-[-270px] top-[-150px]' src={svg} alt='svg'/>
@@ -211,19 +211,19 @@ const SeventhFrame: React.FC<any> = ({gg}) => {
         <div className=' border-text w-full flex-wrap flex justify-between'>  <WorkCard id={7} real={true} no="08" title='Raspberry pi, Banana pi and Pos Handle' description='I learned to connect my web and hardware devices for further improvement in my development. I am familiar with SSH technology, Raspbian OS, Linux, and server logic. Similar configurations apply to the Banana Pi. The server logic is the same as on a cloud server, such as EC2. Additionally, for the POS handler, I developed a printing application on Android, which proves to be highly beneficial for POS software.' tools="Raspberry pi, Banana Pi, SSH, Nginx, Pm2, Linux, Ubuntu" img={Rasp} link='kd' />   </div>            
         </div>
        
-        <div className='lg:flex hidden '>
+        <div ref={gg} className='lg:flex hidden pt-[70px] border-border '>
           <div className=''>
-          <div className=' p-4 pt-[60px] text-[#212326] sticky top-[50px] right-0   flex flex-col justify-start items-start gap-[20px]   w-[280px] '>
-           <a ref={fullstackTextRef}  className='text-[2.2rem] active duration-500 category   font-bold font-sans '>Fullstack </a>
+          <div className=' p-4  text-[#212326] sticky top-[50px] right-0   flex flex-col justify-start items-start gap-[20px]   w-[280px] '>
+           <a ref={fullstackTextRef}  className='text-[2rem] active duration-500 category uppercase   font-bold font-sans '>Fullstack </a>
            {/* <AnimatedTextWord text='Fullstack' classname='text-[2.2rem] duration-500 category  text-text font-bold font-sans'/> */}
-           <a ref={webTextRef}  className='text-[2.2rem] duration-500  category  font-bold font-sans '>Frontend </a>
-           <a ref={appTextRef}  className='text-[2.2rem] duration-500   category  font-bold font-sans'>Application</a>
-           <a ref={serverTextRef}  className='text-[2.2rem] duration-500 category   font-bold font-sans'>Backend</a>
-           <a ref={otherTextRef}  className='text-[2.2rem] duration-500  category  font-bold font-sans '>Others</a>
+           <a ref={webTextRef}  className='text-[2rem] duration-500 uppercase  category   font-bold font-sans '>Frontend </a>
+           <a ref={appTextRef}  className='text-[2rem] duration-500 uppercase  category  font-bold font-sans'>Application</a>
+           <a ref={serverTextRef}  className='text-[2rem] duration-500 uppercase category   font-bold font-sans'>Backend</a>
+           <a ref={otherTextRef}  className='text-[2rem] duration-500  uppercase category  font-bold font-sans '>Others</a>
            {/* <p className='text-[1.9rem]   font-bold font-sans'>Full-stack</p> */}
           </div>
           </div>
-          <div className=' pt-[40px]  '>
+          <div className='  '>
             {/* here */}
           <div ref={fullstackRef}>
           <ProjectCard toPage={'/projects/0'}  link='https://detfsmm.com' url='https://detfsmm.com'  title={"FMS MANAGEMNT SYSTEM"} year='2023' description={language.realtimefuelmanagementsystem} skills='React.js, Tailwind ,Framer Motion, React Rouder Dom, Redux, Redux Thunk, Custom Hooks,Prime React, Chart.js, Express, Node.js, Mongodb, TypeScript, Zod, EC2' image={[fuel_1, fuel_7, fuel_5, fuel_4]} account={true} accountDetail='Username : user, Password : 12345678' />

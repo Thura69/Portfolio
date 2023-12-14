@@ -23,7 +23,7 @@ const Body:React.FC<bodyProps> =({setIsActive})=> {
         },
         {
             title: "Projects",
-            href: '/about',
+            href: '/projects',
             src: ''
         },
     ];

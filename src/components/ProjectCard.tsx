@@ -23,18 +23,18 @@ import Link from 'next/link';
               account &&   <p className='text-[#0000FF] font-sans mt-3 text-[16px] font-light'>{accountDetail}</p>
              }
       {/* <AnimatedTextWord classname='text-[#77818f] font-sans mt-6 text-[16px] font-light' text={description} /> */}
-              <Marquee className='h-[350px] my-3 overflow-clip  '>
+              <Marquee className='h-[350px] my-3 mt-[20px] overflow-clip  '>
               <div className='h-[350px] mx-1 p-5  bg-[#13161b]'>
-                <Image src={image[0]} height={360} alt='win' />
+                <Image src={image[0]} height={310} alt='win' />
               </div>
               <div className='h-[350px] mx-1 p-5  bg-[#13161b] '>
-                <Image src={image[1]} height={360} alt='win' />
+                <Image src={image[1]} height={310} alt='win' />
               </div>
               <div className='h-[350px] mx-1 p-5  bg-[#13161b] '>
-                <Image src={image[2]} height={360} alt='win' />
+                <Image src={image[2]} height={310} alt='win' />
               </div>
               <div className='h-[350px] mx-1 p-5  bg-[#13161b] '>
-                <Image src={image[3]} height={360} alt='win' />
+                <Image src={image[3]} height={310} alt='win' />
               </div>
              </Marquee>
             </div>

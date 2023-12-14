@@ -12,7 +12,7 @@ import React from 'react'
         <title>Thura Nyi | About</title>
         <link rel="icon" href="public/logo.png" />
     </Head>
-      {/* <StickyCursor/> */}
+      <StickyCursor/>
       <SomeTitle/>
       <SomeAnimation/>
       <InfoDetail/>

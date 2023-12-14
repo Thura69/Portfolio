@@ -13,18 +13,18 @@ import Frames from './Themes/Frames';
 
   return (
     <div data-scroll-section className='flex items-center justify-center mt-[50px] relative w-full h-[120px] lg:h-[200px] '>
-        <Frames className='w-[3%] xs:w-[5%] mid:w-[70%]  md:w-[5%] lg:w-[3.05%]'/>
+        <Frames className='w-[3%]  xs:w-[5%] mid:w-[7%]  md:w-[5%] lg:w-[3.05%]'/>
         <Frames className='w-[3%] hidden lg:block lg:w-[34.15%]'/>
         <Frames className='w-[72%] xs:w-[70%] mid:w-[68%] md:w-[45%] lg:w-[15.55%]'/>
         <Frames className='hidden lg:block lg:w-[15%]'/>
       <div className='w-[22%] xs:w-[20%] mid:w-[18%] md:w-[45%] lg:w-[30.08%]  border-border border-b-[0.5px] h-full border-r-[0.5px] md:p-[30px] flex flex-col items-start justify-center  contact'>
-      <RevealWrapper origin='top' duration={1000}>  <p className='text-text text-[1.2rem] hidden my-5  font-bold '>When did a dragon ever die from the poison of a snake.</p></RevealWrapper>
-      <RevealWrapper origin='bottom' duration={1000}> <p className=' text-text hidden'>Nietzsche</p></RevealWrapper>
+      <RevealWrapper origin='top' duration={1000}>  <p className='text-text text-[1.2rem] lg:block hidden my-5  font-bold '>When did a dragon ever die from the poison of a snake.</p></RevealWrapper>
+      <RevealWrapper origin='bottom' duration={1000}> <p className=' text-text lg:block hidden'>Nietzsche</p></RevealWrapper>
 
         </div>
         <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3%]'/>
       {/* <p className='text-bg hidden sm:block font-bold top-[-10%] lg:left-[30%] md:left-[45%] mid:left-[55%] left-[60%] p-2 z-10 rounded-2xl absolute bg-active '>{greeting}!</p> */}
-        <h3 className='text-text px-2    uppercase text-[1.5rem] absolute left-[5%]  lg:text-[3.2rem] font-bold'>
+        <h3 className='text-text px-2    uppercase text-[1.5rem] absolute left-[5%] mid:left-[7%] mid:px-5  lg:text-[3.2rem] font-bold'>
         <RevealWrapper origin='top' duration={1000}>
           MEET THE MAKER <br/> BEHIND THE MAGIC.
         </RevealWrapper>

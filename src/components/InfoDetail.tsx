@@ -19,11 +19,9 @@ const styles = {
  
  const InfoDetail = () => {
   return (
-    <div data-scroll-section className='flex items-center justify-center  w-full h-[550px] xs:h-[960px] sm:h-[900px] mid:h-[1000px] lg:h-[500px] md:h-[950px]'>
+    <div data-scroll-section className='flex items-center justify-center  w-full h-[550px] xs:h-[550px] sm:h-[600px] mid:h-[570px] lg:h-[500px] md:h-[480px]'>
       <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3.15%]'/>
       <div className='w-[94%] xs:w-[90%] mid:w-[86%] md:w-[90%] lg:w-[100%] bg-bg p-4 border-r-[0.5px] border-b-[0.5px] border-border h-full mid:p-7 md:p-0  lg:flex  '>
-
-  
     {/* <div data-scroll-sticky className='md:p-5 lg:p-8 2xl:p-10 bg-bg lg:w-[50.1%] order-1 md:w-[50%] xl:w-[33.1%]   border-text  md:flex items-center justify-center md:justify-start bg-text'>
       <p className='text-bg text-[2.2rem]  font-bold'>Infinite rotation</p>
        <div className='border-2 flex  border-border w-[80%] rounded-full gap-5 p-3 '>
@@ -33,17 +31,17 @@ const styles = {
        <Image className='mx-auto' src={Profile} alt="hello"/>
       </div> */}
         <div className='mt-[20.3px]'></div>
-        <div className=' md:flex md:p-5 md:w-[100%] relative lg:p-10  lg:w-[60%] xl:w-[100.6%]  flex-col  items-start  lg:text-[19.4px] bg-bg'>
+        <div className=' md:flex md:p-10 mid:px-8 md:w-[100%] relative lg:p-10    lg:w-[60%] xl:w-[50%]  flex-col  items-start  lg:text-[19.4px] bg-bg'>
         <h3 className='text-text mb-10 font-bold  text-[30px]'>CAREER PATH</h3>
-       <div className='flex flex-col w-full  justify-between items-start '>
-         <div className=' border-2 w-[100%] order-1 '>
+          <div className='flex flex-col md:flex-row w-full  justify-between items-start '>
+             <div className='w-[100%]  h-full lg:border-l-[0.5px] px-10 border-border  md:order-1 '>
+            <h3 className=' text-textgray     text-[1rem]'>PRESENT</h3>
+        <CareerPath open={false} companyName='Open To Work #'/>
+         </div>
+         <div className=' border-2 w-[100%]  order-0  '>
             <h3 className=' text-textgray  text-[1rem]'>PAST EXPERIENCES</h3>
         <CareerPath link='https://www.digitalengineeringtech.com/' open={true} position='Digital Engineerning Tech' companyName='Full-stack Developer' year='Dec 2022 - Dec 2023'/>
         <CareerPath link='https://www.linkedin.com/in/thura-nyi-453858241/' open={true} position='Self-employed' companyName='Free Lance Developer' year='Sep 2021 - Present'/>
-         </div>
-         <div className='w-[100%]  h-full  border-border'>
-            <h3 className=' text-textgray    text-[1rem]'>PRESENT</h3>
-        <CareerPath open={false} companyName='Open To Work #'/>
          </div>
        </div>
               </div>
