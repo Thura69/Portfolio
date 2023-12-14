@@ -11,8 +11,8 @@ import React from 'react'
     <Head>
         <title>Thura Nyi | About</title>
         <link rel="icon" href="public/logo.png" />
-     </Head>
-      <StickyCursor/>
+    </Head>
+      {/* <StickyCursor/> */}
       <SomeTitle/>
       <SomeAnimation/>
       <InfoDetail/>
