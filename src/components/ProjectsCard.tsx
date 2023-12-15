@@ -10,7 +10,7 @@ import { projectCardProps } from '@/types/projectCard.types';
 
 const ProjectsCard:React.FC<projectCardProps> = ({id,project_name,description,date,image,video,github_link,demo_link,category}) => {
   return (
-      <RevealWrapper origin='bottom' className='md:w-[45%]  h-[350px] lg:h-[400px] xl:w-[31%] mid:my-[20px]' duration={1000}>
+      <div className='md:w-[45%]   h-[350px] lg:h-[400px] xl:w-[31.8%] mid:my-[20px]'>
           <a href={demo_link} className=' group hover:translate-y-[-10px] duration-300 relative'>
               <Image className=' group-hover:hidden  rounded-lg' src={image} alt='smaple' />
   <video loop autoPlay  muted className='hidden rounded-lg group-hover:block' width="100%" height="auto" >
@@ -35,7 +35,7 @@ const ProjectsCard:React.FC<projectCardProps> = ({id,project_name,description,da
               <h2 className='text-[14px] lg:text-[21px] font-bold text-text '>{project_name}</h2>
               <p className='text-textgray text-[11px] lg:text-[12px] mt-1 '>{description}</p>
           </div>
-   </RevealWrapper>
+   </div>
   )
 }
 

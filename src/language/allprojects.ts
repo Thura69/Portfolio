@@ -12,7 +12,7 @@ export const allprojects = [
         video:'https://res.cloudinary.com/dbqyaigcg/video/upload/v1702561708/Screen_Recording_2023-12-14_at_20.16.08_sdv393.mov',
         github_link: 'https://github.com/Thura69',
         demo_link: 'https://thurakhitzay.netlify.app',
-        category:['REACT.JS','NODE.JS','FULLSTACK']
+        category:['REACT.JS','NODE.JS','FULLSTACK','FRONTEND']
     },
     {
         id: 2,
@@ -45,11 +45,11 @@ export const allprojects = [
         video:'https://res.cloudinary.com/dbqyaigcg/video/upload/v1702545481/Untitled_c7uulm.mp4',
         github_link: 'https://github.com/Thura69',
         demo_link: 'https://thurakhitzay.netlify.app',
-        category:['REACT NATIVE','ZUSTAND']
+        category:['REACTNATIVE','ZUSTAND','FRONTEND']
     },
     {
         id: 5,
-        project_name: 'Reddit Clone:',
+        project_name: 'Reddit Clone',
         description: 'Comming Soon!',
         date: "Comming Soon!",
         image: Sample,
