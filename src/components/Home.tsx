@@ -16,10 +16,12 @@ import StickyCursor from './animation/StickyCursor';
 import SomeTitle from './SomeTitle';
 import SomeAnimation from './SomeAnimation';
 import { useRouter } from 'next/router';
-
+import { useParams } from 'next/navigation';
+import { useLocation } from 'react-router-dom';
 
 const Home = () => {
   const router = useRouter();
+  const { ady } = router.query;
   const seventhFrameRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -38,8 +40,9 @@ requestAnimationFrame(raf)
   useEffect(() => {
     const scrollToSeventhFrame = () => {
       if (seventhFrameRef.current) {
-       
+        if (ady === "ok") {
         seventhFrameRef.current.scrollIntoView({behavior:'auto'});
+        }
       }
     };
 
@@ -56,7 +59,7 @@ requestAnimationFrame(raf)
     return () => {
       router.events.off('routeChangeComplete', handleRouteChange);
     };
-  }, [router.events, seventhFrameRef]);
+  }, [ady, router.events, seventhFrameRef]);
 
   return (
    <div  className='bg-bg relative h-[100svh] w-full'>
@@ -69,8 +72,6 @@ requestAnimationFrame(raf)
       <FifthFrame />
       {/* <SixthFrame/> */}
       <SeventhFrame gg={seventhFrameRef} />
-      {/* <SomeTitle/>
-      <SomeAnimation/> */}
       <EightFrame />
       {/* <div className='fixed h-[40px] bg-border text-text bottom-0 text-sm flex items-center justify-center gap-3  p-5'><TbInfoTriangle className='text-[#E9D502]'  size={25}/> This Portfolio is under developing</div> */}
         </>

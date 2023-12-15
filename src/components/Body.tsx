@@ -13,7 +13,7 @@ const Body:React.FC<bodyProps> =({setIsActive})=> {
     const links = [
         {
             title: "Home",
-            href: '/',
+            href: '/?ady=ok',
             src: ''
         },
         {

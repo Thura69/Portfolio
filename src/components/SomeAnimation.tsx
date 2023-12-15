@@ -27,7 +27,7 @@ const styles = {
  
  const SomeAnimation = () => {
   return (
-    <div data-scroll-section className='flex items-center justify-center  w-full h-[1400px] xs:h-[1250px] sm:h-[1200px] mid:h-[1250px] lg:h-[570px] md:h-[1200px]'>
+    <div data-scroll-section className='flex items-center justify-center  w-full h-[1300px] xs:h-[1250px] sm:h-[1200px] mid:h-[1250px] lg:h-[570px] md:h-[1200px]'>
       <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3.15%]'/>
       <div className='w-[94%] xs:w-[90%] mid:w-[86%] md:w-[90%] lg:w-[100%] bg-bg  border-r-[0.5px] border-b-[0.5px] border-border h-full md:p-0  lg:flex  '>
     {/* <div data-scroll-sticky className='md:p-5 lg:p-8 2xl:p-10 bg-bg lg:w-[50.1%] order-1 md:w-[50%] xl:w-[33.1%]   border-text  md:flex items-center justify-center md:justify-start bg-text'>
@@ -38,7 +38,7 @@ const styles = {
        </div>
        <Image className='mx-auto' src={Profile} alt="hello"/>
       </div> */}
-        <div className=' md:flex p-4 md:p-5 md:w-[100%] relative lg:p-10 mid:p-10  lg:w-[45%] xl:w-[40.6%] border-b-[0.5px]  flex-col md:border-r-[0.5px] border-border items-start  lg:text-[19.4px] bg-bg h-[400px] xs:h-[450px] mid:h-[480px] sm:h-[460px] lg:h-auto'>
+        <div className=' md:flex p-4 md:p-5 md:w-[100%] relative lg:p-10 mid:p-10  lg:w-[45%] xl:w-[40.6%] border-b-[0.5px]  flex-col md:border-r-[0.5px] border-border items-start  lg:text-[19.4px] bg-bg h-[470px] xs:h-[450px] mid:h-[480px] sm:h-[460px] lg:h-auto'>
       <div className='border-border mx-auto md:mx-0 relative lg:w-auto  border-[0.5px] inline-block lg:mx-auto    rounded-xl'>
          <Image className=' mx-auto w-auto p-3   rounded-xl max-w-[400px] lg:w-[500px]   ' src={Dance} alt="hello" />
          <p className='text-bg absolute font-sans text-sm   bottom-[20px] uppercase font-bold left-[20px]'>IMG_054.JPG</p>
@@ -65,7 +65,7 @@ I like debating and exchanging concepts and ideas that educate people.I thrive u
 </p>
        </RevealWrapper>
 
-    <div className='flex-col lg:flex-row flex gap-5'> <RevealWrapper origin='bottom' duration={1400}> <div className='text-text w-full duration-500 hover:bg-text hover:text-bg border-[1px]   text-sm inline-block mt-[30px] p-3 rounded-full'>
+    <div className='flex-col lg:flex-row flex lg:gap-5'> <RevealWrapper origin='bottom' duration={1400}> <div className='text-text w-full duration-500 hover:bg-text hover:text-bg border-[1px]   text-sm inline-block mt-[30px] p-3 rounded-full'>
           <a href="mailto:thuranyi64@gmail.com" className='flex items-center cursor-pointer justify-center gap-2'>  <p className=' text-md'>SEND ME AN EMAIL</p>
             <GrWaypoint className=' scale-125' /></a>
         </div></RevealWrapper>

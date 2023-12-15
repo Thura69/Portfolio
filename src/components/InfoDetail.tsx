@@ -34,8 +34,8 @@ const styles = {
         <div className=' md:flex md:p-10 mid:px-8 md:w-[100%] relative lg:p-10    lg:w-[60%] xl:w-[50%]  flex-col  items-start  lg:text-[19.4px] bg-bg'>
         <h3 className='text-text mb-10 font-bold  text-[30px]'>CAREER PATH</h3>
           <div className='flex flex-col md:flex-row w-full  justify-between items-start '>
-             <div className='w-[100%]  h-full lg:border-l-[0.5px] px-10 border-border  md:order-1 '>
-            <h3 className=' text-textgray     text-[1rem]'>PRESENT</h3>
+             <div className='w-[100%]   h-full lg:border-l-[0.5px] lg:px-10 md:order-1 '>
+            <h3 className=' text-textgray   text-[1rem]'>PRESENT</h3>
         <CareerPath open={false} companyName='Open To Work #'/>
          </div>
          <div className=' border-2 w-[100%]  order-0  '>

@@ -24,8 +24,10 @@ module.exports = {
       "xs": '420px',
 
       'sm': '480px',
+      'msm':'500px',
       // => @media (min-width: 640px) { ... }
-      "mid":"600px",
+      "mid": "600px",
+      'lmid':'650px',
       'md': '768px',
       'm-md':'950px',
       // => @media (min-width: 768px) { ... }

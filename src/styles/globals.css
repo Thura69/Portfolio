@@ -75,6 +75,10 @@ background: rgb(18, 21, 26);
   transform-origin: top;
 }
 
+.category_container::-webkit-scrollbar {
+  display: none;
+}
+
 #seven_frame{
   scroll-behavior: smooth;
 }
