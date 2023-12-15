@@ -27,7 +27,7 @@ const styles = {
  
  const SomeAnimation = () => {
   return (
-    <div data-scroll-section className='flex items-center justify-center  w-full h-[1400px] xs:h-[1250px] sm:h-[1200px] mid:h-[1250px] lg:h-[570px] md:h-[1200px]'>
+    <div data-scroll-section className='flex items-center justify-center  w-full h-[1350px] xs:h-[1250px] sm:h-[1200px] mid:h-[1250px] lg:h-[570px] md:h-[1200px]'>
       <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3.15%]'/>
       <div className='w-[94%] xs:w-[90%] mid:w-[86%] md:w-[90%] lg:w-[100%] bg-bg  border-r-[0.5px] border-b-[0.5px] border-border h-full md:p-0  lg:flex  '>
     {/* <div data-scroll-sticky className='md:p-5 lg:p-8 2xl:p-10 bg-bg lg:w-[50.1%] order-1 md:w-[50%] xl:w-[33.1%]   border-text  md:flex items-center justify-center md:justify-start bg-text'>

@@ -19,7 +19,7 @@ function index() {
     <>
       <Head>
         <title>ThuraNyi</title>
-        <link rel="icon" href="public/logo.png" />
+        <link rel="icon" href="public/favicon.ico" />
      </Head>
    <App />
     </>

@@ -10,7 +10,7 @@ import React from 'react'
       <>
     <Head>
         <title>Thura Nyi | About</title>
-        <link rel="icon" href="public/logo.png" />
+        <link rel="icon" href="public/favicon.ico" />
     </Head>
       <StickyCursor/>
       <SomeTitle/>

@@ -61,28 +61,28 @@ const styles = {
           <RevealWrapper duration={2500} origin='bottom'>
                 <div className='text-[#77818f] border-border border-[1.2px]   md:w-[50px] md:h-[50px] w-[40px] h-[40px]  flex items-center justify-center duration-500 cursor-pointer rounded-full group'>
                 <FramerMagnetic>
-                <AiFillLinkedin className=' group-hover:text-active duration-500' size={25}/>
+               <a href='https://www.linkedin.com/in/thura-nyi-453858241/' target="_blank"><AiFillLinkedin  className=' group-hover:text-active duration-500' size={25}/></a>
                 </FramerMagnetic>  
             </div>
           </RevealWrapper>
           <RevealWrapper duration={2500} origin='bottom'>
              <div className='text-[#77818f] border-border  border-[1.2px]    md:w-[50px] md:h-[50px] w-[40px] h-[40px]  flex items-center justify-center group rounded-full cursor-pointer'>
                 <FramerMagnetic>
-               <AiFillGithub className=' group-hover:text-active duration-500' size={25} />
+              <a href='https://github.com/Thura69' target="_blank"> <AiFillGithub className=' group-hover:text-active duration-500' size={25} /></a>
                 </FramerMagnetic>   
                </div>
           </RevealWrapper>
         <RevealWrapper duration={2500} origin='bottom'>
            <div className='text-[#77818f] group border-border  border-[1.2px]   md:w-[50px] md:h-[50px] w-[40px] h-[40px]  flex items-center droup justify-center rounded-full cursor-pointer'>
                 <FramerMagnetic>
-                 <AiFillFacebook className='group-hover:text-active duration-500' size={25} />
+               <a href='https://www.facebook.com/mrx.clay.129/' target="_blank">  <AiFillFacebook className='group-hover:text-active duration-500' size={25} /></a>
                 </FramerMagnetic>   
               </div>
         </RevealWrapper>
         <RevealWrapper duration={2500} origin='bottom'>
            <div className='text-[#77818f] group border-border border-[1.2px]    md:w-[50px] md:h-[50px] w-[40px] h-[40px]  flex items-center droup justify-center rounded-full cursor-pointer'>
                 <FramerMagnetic>
-                 <MdEmail className='group-hover:text-active duration-500' size={25} />
+              <a href="mailto:thuranyi64@gmail.com" target='_blank'>   <MdEmail className='group-hover:text-active duration-500' size={25} /></a>
                 </FramerMagnetic>   
               </div>
         </RevealWrapper>
