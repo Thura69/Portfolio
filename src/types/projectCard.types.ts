@@ -5,7 +5,7 @@ export interface projectCardProps{
     project_name: string,
     description: string,
     date:string,
-    image: StaticImageData,
+    image: any,
     video:string,
     github_link?: string,
     demo_link?: string,

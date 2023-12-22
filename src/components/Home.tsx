@@ -73,7 +73,7 @@ requestAnimationFrame(raf)
       {/* <SixthFrame/> */}
       <SeventhFrame gg={seventhFrameRef} />
       <EightFrame />
-      <div className='fixed h-[40px] bg-border text-text bottom-0 text-sm flex items-center justify-center gap-3  p-5'><TbInfoTriangle className='text-[#E9D502]'  size={25}/> This Portfolio is under developing</div>
+      {/* <div className='fixed h-[40px] bg-border text-text bottom-0 text-sm flex items-center justify-center gap-3  p-5'><TbInfoTriangle className='text-[#E9D502]'  size={25}/> This Portfolio is under developing</div> */}
         </>
     </div>
   )

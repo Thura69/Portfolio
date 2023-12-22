@@ -45,13 +45,12 @@ const Projects = () => {
     <>
       <Head>
         <title>Thura Nyi | Projects</title>
-        <link rel="icon" href="public/favicon.ico" />
     </Head>
        <StickyCursor/>
-       <div data-scroll-section className='flex items-center mt-[50px] justify-center  w-full h-[2650px] xs:h-[2650px] sm:h-[2800px] msm:h-[3200px] lmid:h-[3600px] mid:h-[3800] lg:h-[1800px] md:h-[1500px] xl:h-[1300px]'>
+       <div data-scroll-section className='flex items-center mt-[50px] justify-center  w-full h-[2650px] xs:h-[2650px] sm:h-[2800px] msm:h-[3200px] lmid:h-[3600px] mid:h-[3800] lg:h-[2000px] md:h-[1500px] xl:h-[1900px]'>
       <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3.15%]'/>
       <div className='w-[94%] xs:w-[90%] mid:w-[86%] md:w-[90%] lg:w-[100%] bg-bg p-4 border-r-[0.5px] border-b-[0.5px]   border-border h-full mid:p-7 md:p-0  '>
-      <div className='border-[0.5px] md:p-7 mdh:border-border category_container justify-start  flex-wrap    flex gap-2'>
+      <div className='border-[0.5px] md:p-7 md:border-border category_container justify-start  flex-wrap    flex gap-2'>
     <Category  setSelectedCategory={setSelectedCategory} active={selectedCategory === "REACT.JS"?true:false} title="REACT.JS"/>
     <Category  setSelectedCategory={setSelectedCategory} active={selectedCategory === "ANGULAR"?true:false} title="ANGULAR"/>
     <Category  setSelectedCategory={setSelectedCategory} active={selectedCategory === "NEXT.JS"?true:false} title="NEXT.JS"/>

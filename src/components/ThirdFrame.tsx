@@ -35,8 +35,8 @@ const styles = {
         </div> */}
    
   
-    <div data-scroll-sticky className='md:p-5 lg:p-8 2xl:p-10 bg-bg lg:w-[50.1%] order-1 md:w-[50%] xl:w-[33.1%]   border-text  md:flex items-center justify-center md:justify-start'>
-      <Image blurDataURL={'../../../public/assets/64cd4b8241e30d1ff98179ad_gamestation.png'} src={Profile}  className='md:h-auto w-full lg:h-auto p-0 border-[0.5px] border-border   order-1 bg-active rounded-md ' width={500} height={590} alt='profile'/>
+    <div data-scroll-sticky className='md:p-5 lg:p-5 2xl:p-10 bg-bg lg:w-[50.1%] order-1 md:w-[50%] xl:w-[33%]   border-text  md:flex items-center justify-center md:justify-start'>
+      <Image blurDataURL={'../../../public/assets/64cd4b8241e30d1ff98179ad_gamestation.png'} src={Profile}  className='md:h-auto w-full xl:scale-90 lg:h-auto p-0 border-[0.5px] border-border   order-1 bg-active rounded-md ' width={500} height={590} alt='profile'/>
       </div>
         <div className='mt-[20.3px]'></div>
         <div className=' md:flex md:p-5 md:w-[100%] lg:p-8  lg:w-[55.3%] xl:w-[37%]  flex-col md:border-r-[0.5px] border-border items-start  lg:text-[19.4px]'>
@@ -89,7 +89,7 @@ const styles = {
          </div>
        </div>
         </div>
-        <div className=' bg-bg hidden p-8 border-border xl:block  experience border-l-[0.5px] w-[32.7%] order-3'>
+        <div className=' bg-bg hidden p-8 border-border xl:block  experience border-l-[0.5px] w-[32.6%] order-3'>
            <div className='flex  items-center  gap-3 justify-start'>
           <Image src={Experience} width={25} alt='experience' />
           <h3 className='text-active uppercase text-[0.85rem] font-bold'>Experience</h3>
@@ -99,7 +99,7 @@ const styles = {
                <div className='flex h-[100px] w-full md:w-[100%] xl:min-w-full bg-bg border-[1px] border-border drop-shadow-md  p-3 rounded-sm   items-center justify-start gap-7 mid:p-5'>
               <Image width={60} src={logo} alt='logo' />
               
-            <div className='text-[#ffff]'>
+          <div className='text-[#ffff]'>
                 {/* <h3 className='text-[0.9rem] font-sans font-bold'>Frontend Developer at Digital Engineering Tech</h3> */}
           <AnimatedTextWord transition={{staggerChildren:0.1,delayChildren:0.030 * 1}} text='Fullstack Developer at Digital Engineering Tech' classname='text-[0.85rem] text-text font-sans font-bold'/>
           <AnimatedTextWord transition={{staggerChildren:0.2,delayChildren:0.030 * 1}} text='Jan 2022 - Present' classname='font-sans text-textgray leading-[29px] text-[16.1px]'/>
@@ -123,7 +123,7 @@ const styles = {
         </div>
         </div>
         </div>
-        <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3.16%]'/>
+        <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3.17%]'/>
     </div>
   )
 }

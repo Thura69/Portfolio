@@ -10,10 +10,10 @@ import { projectCardProps } from '@/types/projectCard.types';
 
 const ProjectsCard:React.FC<projectCardProps> = ({id,project_name,description,date,image,video,github_link,demo_link,category}) => {
   return (
-      <RevealWrapper origin='bottom' duration={1000} className='md:w-[47.6%]    lg:h-[400px] xl:w-[31.8%] mid:my-[20px]'>
+      <RevealWrapper origin='bottom' duration={1000} className='md:w-[47.6%]    lg:h-[500px] xl:w-[48%] mid:my-[20px]'>
           <a href={demo_link} className=' group hover:translate-y-[-10px] duration-300 relative'>
-              <Image className=' group-hover:hidden  rounded-lg' src={image} alt='smaple' />
-  <video loop autoPlay  muted className='hidden rounded-lg group-hover:block' width="100%" height="auto" >
+              <Image className=' group-hover:hidden rounded-md ' src={image} alt='smaple' />
+  <video loop autoPlay  muted className='hidden  rounded-md group-hover:block' width="100%" height="auto" >
   <source src={video} type="video/mp4"/>
   </video>
               <div className="absolute opacity-0 hidden group-hover:translate-y-[-10px] lg:flex group-hover:opacity-100 duration-500 bottom-2 gap-3 right-2">
