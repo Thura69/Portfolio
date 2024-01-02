@@ -154,7 +154,7 @@ export const project = [
         project_name: "Local Server Development",
         status: false,
         credential:'userName:User , Password:12345678',
-        credential_status:false,
+    credential_status:false,
         year: 2023,
         live_at: 'https://detfsmmm.com',
         role: "Server ",

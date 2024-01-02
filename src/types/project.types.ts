@@ -6,11 +6,12 @@ export interface projectCardProps{
     year: string,
     description: string,
     link:string,
-    image: StaticImageData[],
+    image: any[],
     account:boolean,
     accountDetail?: string,
     url?: string,
     skills?: string,
-    toPage?:any
+    toPage?: any,
+    vd?:boolean[]
 }
 

@@ -47,7 +47,7 @@ const Projects = () => {
         <title>Thura Nyi | Projects</title>
     </Head>
        <StickyCursor/>
-       <div data-scroll-section className='flex items-center mt-[50px] justify-center  w-full h-[2650px] xs:h-[2650px] sm:h-[2800px] msm:h-[3200px] lmid:h-[3600px] mid:h-[3800] lg:h-[2000px] md:h-[1500px] xl:h-[1900px]'>
+       <div data-scroll-section className='flex items-center mt-[50px] justify-center  w-full h-[2650px] xs:h-[2650px] sm:h-[2800px] msm:h-[3200px] lmid:h-[3600px] mid:h-[3800] lg:h-[1800px] md:h-[1500px] xl:h-[1600px]'>
       <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3.15%]'/>
       <div className='w-[94%] xs:w-[90%] mid:w-[86%] md:w-[90%] lg:w-[100%] bg-bg p-4 border-r-[0.5px] border-b-[0.5px]   border-border h-full mid:p-7 md:p-0  '>
       <div className='border-[0.5px] md:p-7 md:border-border category_container justify-start  flex-wrap    flex gap-2'>
@@ -59,6 +59,7 @@ const Projects = () => {
     <Category  setSelectedCategory={setSelectedCategory} active={selectedCategory === "FRONTEND"?true:false} title="FRONTEND"/>
     <Category  setSelectedCategory={setSelectedCategory} active={selectedCategory === "BACKEND"?true:false} title="BACKEND"/>
     <Category  setSelectedCategory={setSelectedCategory} active={selectedCategory === "FULLSTACK"?true:false} title="FULLSTACK"/>
+    <Category  setSelectedCategory={setSelectedCategory} active={selectedCategory === "VANILLA.JS"?true:false} title="VANILLA.JS"/>
     <Category  setSelectedCategory={setSelectedCategory} active={selectedCategory === "ALL"?true:false} title="ALL"/>
       </div>
      <div className='lg:px-[30px] md:px-[40px] border-bg-blue  '>
@@ -66,7 +67,7 @@ const Projects = () => {
       <div className='flex flex-col md:flex-row  border-bg-blue flex-wrap items-center justify-start  gap-7   lg:w-[100%] mx-auto'>
     {
         data.map((e,index)=>(
-            <ProjectsCard id={e.id} project_name={e.project_name} description={e.description} date={e.date} image={e.image} video={e.video} demo_link={e.demo_link} category={e.category} key={e.id}/>
+            <ProjectsCard id={e.id} project_name={e.project_name} description={e.description} date={e.date} image={e.image} video={e.video} github_link={e.github_link} demo_link={e.demo_link} category={e.category} key={e.id}/>
         ))
     }
       </div>

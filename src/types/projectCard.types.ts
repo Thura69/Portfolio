@@ -6,7 +6,7 @@ export interface projectCardProps{
     description: string,
     date:string,
     image: any,
-    video:string,
+    video:string | boolean,
     github_link?: string,
     demo_link?: string,
     category?: any[],

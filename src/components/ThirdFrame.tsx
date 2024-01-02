@@ -89,7 +89,7 @@ const styles = {
          </div>
        </div>
         </div>
-        <div className=' bg-bg hidden p-8 border-border xl:block  experience border-l-[0.5px] w-[32.6%] order-3'>
+        <div className=' bg-bg  p-8 border-border xl:block  experience border-l-[0.5px] w-[32.6%] order-3'>
            <div className='flex  items-center  gap-3 justify-start'>
           <Image src={Experience} width={25} alt='experience' />
           <h3 className='text-active uppercase text-[0.85rem] font-bold'>Experience</h3>

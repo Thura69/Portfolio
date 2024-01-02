@@ -14,10 +14,10 @@ import Image from 'next/image';
 import { BsArrowUpRightCircle } from 'react-icons/bs';
 import { IoCartOutline} from 'react-icons/io5';
 
-import ecommerce_1 from '../../public/assets/screen.png'
-import ecommerce_2 from '../../public/assets/screen2.png'
-import ecommerce_3 from '../../public/assets/screen3.png'
-import ecommerce_4 from '../../public/assets/screen4.png'
+import ecommerce_1 from '../../public/assets/page11.png'
+import ecommerce_2 from '../../public/assets/pageform2.png'
+import ecommerce_3 from '../../public/assets/pg3.png'
+import ecommerce_4 from '../../public/assets/pg5.png'
 
 import bank_1 from '../../public/assets/bank.png'
 import bank_2 from '../../public/assets/bank2.png'
@@ -48,7 +48,7 @@ import youtube_4 from '../../public/assets/youtube3.png'
 import app_1 from '../../public/assets/app4.png'
 import app_2 from '../../public/assets/app.png'
 import app_3 from '../../public/assets/app2.png'
-import app_4 from '../../public/assets/app3.png'
+import app_4 from '../../public/assets/modren.png'
 
 import drew_1 from '../../public/assets/drew4.png'
 import drew_2 from '../../public/assets/drew.png'
@@ -86,7 +86,6 @@ import { englishLanguage } from '@/language/english';
 import svg from '../../public/assets/6469a18e29af2de5755caf00_Animated_rainbow_card.svg'
 import Link from 'next/link';
 import AnimatedTextWord from './animation/AnimatedTextWord';
-
 
 
 
@@ -182,11 +181,11 @@ const SeventhFrame: React.FC<any> = ({gg}) => {
     };
   }, []);
   return (
-    <div  data-scroll-section id="seven_frame"  className='flex items-center justify-center w-full h-[4900px] mid:h-[4360px] md:h-[3600px] lg:h-[3900px]'>
+    <div  data-scroll-section id="seven_frame"  className='flex items-center justify-center w-full h-[4900px] mid:h-[4360px] md:h-[3600px] plg:h-[3300px] lg:h-[3400px] alg:h-[3300px] xl:h-[3250px]'>
         <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3%]'/>
-        <div className='w-[94%] p-2  lg:w-[94%] xs:w-[94%] bg-bg  h-full border-b-[0.5px] mid:w-[86%] border-border relative md:w-[90%] border-r-[0.5px] overflow-clip   mid:px-7'>
-           <Image className='absolute right-[-270px] top-[-150px]' src={svg} alt='svg'/>
-        <h3 className='text-text px-2  mt-[50px] translate-y-10  uppercase text-[1.5rem]  lg:text-[3.2rem] font-bold'>SELECTED PROJECTS.</h3>
+        <div className='w-[94%]   lg:w-[94%] xs:w-[94%] bg-bg  h-full border-b-[0.5px] mid:w-[86%] border-border relative md:w-[90%] border-r-[0.5px] overflow-clip  '>
+           {/* <Image className='absolute right-[-270px] top-[-150px]' src={svg} alt='svg'/> */}
+        <h3 className='text-text px-[30px]   translate-y-10  uppercase text-[1.5rem]  lg:text-[2.25rem] font-bold'>SELECTED PROJECTS.</h3>
        
         <div className='lg:hidden gap-1    flex text-left items-start md:flex-row md:flex-wrap flex-col justify-start mid:gap-6 '>
             <h3 className=' text-text text-xl  uppercase mb-2  font-bold '>Full Stack Development</h3>
@@ -197,7 +196,7 @@ const SeventhFrame: React.FC<any> = ({gg}) => {
         <h3 className=' text-text text-xl  uppercase my-4 mt-6  font-bold '>Frontend Development</h3>
         <div className=' border-text w-full gap-2 flex-wrap flex justify-between'>
           <WorkCard id={2} real={true} no="03" title='POS Setup' description='The POS setup website serves as an installer platform, widely utilized by installers to configure POS servers for various stations. Dispensers, nozzles, initial data, and account controls all originate from this POS setup web. Emphasizing simplicity, ease of use, and lightweight design, I aim to make the setup process straightforward for users, offering a plug-and-play experience through installers. This setup web has successfully configured 10 stations with ease. I designed it using Figma and developed it using React.js, Redux, React Router Dom, and Framermotion. Git and GitHub are utilized for version control.' tools="Next.js, TypeScript, Tailwind CSS, Framer Motion" img={Win} link='kd' />            
-        <WorkCard id={3} real={false} no="04" title='Ecommerce' description='The UI for this ecommerce website is ready for interaction with the API that I developed during my free time. The features include displaying products based on categories, special products, sale products, and popular products determined by user preferences. Additionally, there will be a blog section for advertising. On the products page, users can utilize filters based on prices, categories, color, and stock availability.' tools="Next.js, Next auth, TypeScript, Tailwind CSS, Node.js" img={Cart} link='kd' />        
+        <WorkCard id={3} real={false} no="04" title='Page Form' description='The UI for this ecommerce website is ready for interaction with the API that I developed during my free time. The features include displaying products based on categories, special products, sale products, and popular products determined by user preferences. Additionally, there will be a blog section for advertising. On the products page, users can utilize filters based on prices, categories, color, and stock availability.' tools="Next.js, Next auth, TypeScript, Tailwind CSS, Node.js" img={Cart} link='kd' />        
         </div>
            <h3 className=' text-text text-xl  uppercase my-4 mt-6  font-bold '>Application Development</h3>    
         <div  className=' border-text gap-2 w-full flex-wrap flex justify-between'> <WorkCard id={4} real={true} no="05" title='FMS (Fuel Management System) Application' description='The FMS application is currently operational across nine stations in Natogyi, Ohn Chaw, Kyawe Tat Sone, Kyein Pin Sel, Nawng Kio, Muse, Sittwe, Gwa, and Taunggyi. Fuel station employees are using this application with satisfaction, utilizing it to permit dispensers and adjust dispenser prices. They frequently use the app to monitor the fuel balance in the tanks.The application features two modes: auto permit and default permit. In auto permit mode, employees can add car numbers and customer information without requiring manual permission.' tools="React Native, Expo, React Navigation, Expo Print, Redux" img={Iot} link='kd' /> </div>
@@ -213,29 +212,29 @@ const SeventhFrame: React.FC<any> = ({gg}) => {
        
         <div ref={gg} className='lg:flex hidden pt-[30px]'>
           <div className=''>
-          <div className=' p-4  mt-[40px] pt-[60px] text-[#212326] sticky top-[50px] right-0   flex flex-col justify-start items-start gap-[20px]   w-[265px] '>
-           <a ref={fullstackTextRef}  className='text-[2rem] active duration-500 category uppercase   font-bold font-sans '>Fullstack </a>
+          <div className=' p-4 px-[30px]  mt-[50px] text-[#212326] sticky top-[80px] right-0   flex flex-col justify-start items-start gap-[20px]   w-[300px] '>
+           <a ref={fullstackTextRef}  className='text-[1.75rem] active duration-500 category uppercase   font-bold font-sans '>Fullstack </a>
            {/* <AnimatedTextWord text='Fullstack' classname='text-[2.2rem] duration-500 category  text-text font-bold font-sans'/> */}
-           <a ref={webTextRef}  className='text-[2rem] duration-500 uppercase  category   font-bold font-sans '>Frontend </a>
-           <a ref={appTextRef}  className='text-[2rem] duration-500 uppercase  category  font-bold font-sans'>Application</a>
-           <a ref={serverTextRef}  className='text-[2rem] duration-500 uppercase category   font-bold font-sans'>Backend</a>
-           <a ref={otherTextRef}  className='text-[2rem] duration-500  uppercase category  font-bold font-sans '>Others</a>
+           <a ref={webTextRef}  className='text-[1.75rem] f duration-500 uppercase  category   font-bold font-sans '>Frontend </a>
+           <a ref={appTextRef}  className='text-[1.75rem] duration-500 uppercase  category  font-bold font-sans'>Application</a>
+           <a ref={serverTextRef}  className='text-[1.75rem] duration-500 uppercase category   font-bold font-sans'>Backend</a>
+           <a ref={otherTextRef}  className='text-[1.75rem] duration-500  uppercase category  font-bold font-sans '>Others</a>
            {/* <p className='text-[1.9rem]   font-bold font-sans'>Full-stack</p> */}
           </div>
           </div>
-          <div className='  mt-[80px] '>
+          <div className='  mt-[30px] pt-[12px]'>
             {/* here */}
           <div ref={fullstackRef}>
-          <ProjectCard toPage={'/projects/0'}  link='https://detfsmm.com' url='https://detfsmm.com'  title={"FMS MANAGEMNT SYSTEM"} year='2023' description={language.realtimefuelmanagementsystem} skills='React.js, Tailwind ,Framer Motion, React Rouder Dom, Redux, Redux Thunk, Custom Hooks,Prime React, Chart.js, Express, Node.js, Mongodb, TypeScript, Zod, EC2' image={[fuel_1, fuel_7, fuel_5, fuel_4]} account={true} accountDetail='Username : user, Password : 12345678' />
+          <ProjectCard toPage={'/projects/0'}  link='https://detfsmm.com' url='https://detfsmm.com'  title={"FMS MANAGEMNT SYSTEM"} year='2023' description={language.realtimefuelmanagementsystem} skills='React.js, Tailwind ,Framer Motion, React Rouder Dom, Redux, Redux Thunk, Custom Hooks,Prime React, Chart.js, Express, Node.js, Mongodb, TypeScript, Zod, EC2' image={[fuel_1, fuel_7, fuel_5, fuel_4]} account={true} vd={[false,false,false,false]} accountDetail='Username : user, Password : 12345678' />
           </div>
           <div ref={webRef} className='' id='web'>
           {/* <ProjectCard toPage={'/projects/1'} link='UNAUTHORIZED' url={''} title={"POS SET UP"} year='2023' description={language.possetup} image={[installer_1, installer_2, installer_3, installer_4]} skills='React.js, Tailwind, TypeScript, Redux, Framer Motion' account={false} /> */}
-          <ProjectCard toPage={'/projects/2'} link='https://thurakhitzay.netlify.app' skills='React.js, Redux, Reuseable Components' url='https://thurakhitzay.netlify.app' title={"ECOMMERCE"} year='2023' description={language.ecommerce} image={[ecommerce_1,ecommerce_2,ecommerce_3,ecommerce_4]} account={false} />
+          <ProjectCard toPage={'/projects/2'} link='https://github.com/Thura69/Drag-and-Drop-Forms-Management' skills='React.js, Redux, Reuseable Components' url='https://github.com/Thura69/Drag-and-Drop-Forms-Management' title={"Form Drag & Drop"} year='2023' description={language.ecommerce} image={['https://res.cloudinary.com/dbqyaigcg/video/upload/v1704097659/Screen_Recording_2023-12-30_at_19.44.29_h23x9p_2_rbgyxq.webm','https://res.cloudinary.com/dbqyaigcg/video/upload/v1704097566/Screen_Recording_2023-12-30_at_19.43.08_cvnpdz_e3wqeg.webm','https://res.cloudinary.com/dbqyaigcg/video/upload/v1704097255/Screen_Recording_2023-12-30_at_19.45.37_ut4elc_iilapm.webm',ecommerce_4]} vd={[true,true,true,false]} account={false} />
           {/* <ProjectCard toPage={'/projects/3'} link='https://thura69.github.io/foreverBots/' url='https://thura69.github.io/foreverBots/' title={"FOREVER BOT (PURE VANILLA)"} year='2022' description={language.bot} skills='HTM, CSS, JavaScript' image={[bot_1,bot_2,bot_3,bot_4]} account={false} /> */}
           {/* <ProjectCard link='https://thura69.github.io/drewhouse/'  url='https://thura69.github.io/drewhouse/' title={"DREW HOUSE (PURE VANILLA)"} year='2022' description={language.drewhouse} skills='HTML, CSS, JavaScript' image={[drew_1,drew_2,drew_3,drew_4]} account={false} /> */}
           </div>
          <div ref={appRef} id='app'>
-          <ProjectCard toPage={'/projects/4'} url='https://drive.google.com/file/d/15NQDfyogA01TvzT2dz9qv_8cEdl7pLjJ/view?usp=drive_link' link='READ APPLICATION GUIDE ( USER MANUAL ) ' title={"FMS (FUEL MANAGEMENT SYSTEM) APPLICATION "} skills='ReactNative, Expo, Reuseable Components, React Navigation, Async Storage, Redux, Expo Print ' year='2022' description={language.fmsapplication} image={[app_1,app_2,app_3,app_4]} account={false}/>
+          <ProjectCard toPage={'/projects/4'} url='https://drive.google.com/file/d/15NQDfyogA01TvzT2dz9qv_8cEdl7pLjJ/view?usp=drive_link' link='READ APPLICATION GUIDE ( USER MANUAL ) ' title={"FMS Application"} skills='ReactNative, Expo, Reuseable Components, React Navigation, Async Storage, Redux, Expo Print ' year='2022' description={language.fmsapplication} vd={[false,false,false,false]}  image={[app_1,app_2,app_3,app_1]} account={false}/>
          </div>
          <div  ref={serverRef} id="server">
               <ProjectCard toPage={'/projects/5'} link='https://github.com/Thura69/Ecommerce_Backend' skills='Express.js,Node.js,TypeScript,MongoDb,MVC Pattern,Cloudinary' url='https://github.com/Thura69/Ecommerce_Backend' title={"ECOMMERCE SERVER REST API"} year='2023' description={language.ecommerceapi} image={[server_1, server_2, server_3, server_4]} account={false} />
