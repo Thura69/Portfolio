@@ -47,7 +47,7 @@ const Projects = () => {
         <title>Thura Nyi | Projects</title>
     </Head>
        <StickyCursor/>
-       <div data-scroll-section className='flex items-center mt-[50px] justify-center  w-full h-[4600px] xs:h-[2650px] sm:h-[2800px] msm:h-[3200px] lmid:h-[3600px] mid:h-[3800] lg:h-[2500px] md:h-[1500px] xl:h-[2050px]'>
+       <div data-scroll-section className='flex items-center mt-[50px] justify-center  w-full h-[4720px] sxs:h-[4750px] xs:h-[4800px] mxs:h-[4870px] hsm:h-[5500px] sm:h-[5200px] xsm:h-[5100px] msm:h-[5400px] lsm:h-[5750px] mid:h-[6200px] lmid:h-[6500px] hmid:h-[6800px] amid:h-[2800px] m-md:h-[3000px] lg:h-[2100px]'>
       <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3.15%]'/>
       <div className='w-[94%] xs:w-[90%] mid:w-[86%] md:w-[90%] lg:w-[100%] bg-bg p-4 border-r-[0.5px] border-b-[0.5px]   border-border h-full mid:p-7 md:p-0  '>
       <div className='border-[0.5px] md:p-7 md:border-border category_container justify-start  flex-wrap    flex gap-2'>
@@ -64,7 +64,7 @@ const Projects = () => {
       </div>
      <div className='lg:px-[30px] md:px-[40px] border-bg-blue  '>
        <h2 className='text-[2rem] text-text font-bold md:mx-auto  uppercase font-sans mx-auto  my-[20px]'>All Projects</h2>
-      <div className='grid  grid-cols-1 lg:grid-cols-3 border-bg-blue   gap-7   lg:w-[100%] mx-auto'>
+      <div className='grid  amid:grid-cols-2 grid-cols-1 lg:grid-cols-3 border-bg-blue   gap-7   lg:w-[100%] mx-auto'>
     {
         data.map((e,index)=>(
             <ProjectsCard id={e.id} project_name={e.project_name} description={e.description} date={e.date} image={e.image} video={e.video} github_link={e.github_link} demo_link={e.demo_link} category={e.category} key={e.id}/>

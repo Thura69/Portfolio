@@ -27,10 +27,13 @@ module.exports = {
       'xsm':'450px',
       'sm': '480px',
       'msm': '500px',
+      'hsm':'530px',
       'lsm':'550px',
       // => @media (min-width: 640px) { ... }
       "mid": "600px",
-      'lmid':'650px',
+      'lmid': '650px',
+      'hmid': '700px',
+      'amid':'750px',
       'md': '768px',
       'm-md':'950px',
       // => @media (min-width: 768px) { ... }
