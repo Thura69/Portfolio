@@ -11,7 +11,7 @@ import Link from 'next/link';
 
 const ProjectsCard:React.FC<projectCardProps> = ({id,project_name,description,date,image,video,github_link,demo_link,category}) => {
   return (
-      <RevealWrapper origin='bottom' duration={1000} className='md:w-[47.6%]     lg:h-[400px] xl:w-[31%] mid:my-[20px]'>
+      <RevealWrapper origin='bottom' duration={1000} className='lg:h-[400px] mid:my-[20px]'>
           <div className='group w-full hover:translate-y-[-10px] duration-300 relative'>
               <Image className={`${video ? 'group-hover:hidden':''} rounded-md `} src={image} alt='smaple' />
         {
@@ -24,8 +24,8 @@ const ProjectsCard:React.FC<projectCardProps> = ({id,project_name,description,da
   <a href={github_link!} target="_blank"  className="flex   cursor-pointer hover:text-text  items-center gap-1 bottom-2 left-2 rounded-full uppercase font-sans p-[10px]  text-[18px] my-2 bg-textgray duration-700 group-hover:translate-y-[-10px]">
      <FaGithub />
           </a>
-          <div className=" opacity-0 group-hover:opacity-100 hidden group-hover:translate-y-[-10px] lg:flex duration-500 gap-3 bottom-0  right-0">
-  <a href={demo_link} target="_blank"  className="flex cursor-pointer hover:gap-2 items-center gap-1 bottom-2 right-2 rounded-full uppercase font-sans p-[10px] px-[15px] text-[18px] my-2 bg-textgray duration-700">
+          <div className=" lg:opacity-0 opacity-1 group-hover:opacity-100  group-hover:translate-y-[-10px] lg:flex duration-500 gap-3 bottom-0  right-0">
+  <a href={demo_link} target="_blank"  className="flex cursor-pointer hover:gap-2 items-center gap-1 bottom-2 right-2 rounded-full uppercase font-sans p-[10px] px-[15px] lg:text-[18px] text-[12px] my-2 bg-textgray duration-700">
     DEMO <LiaExternalLinkAltSolid />
   </a>
 </div>
@@ -33,7 +33,7 @@ const ProjectsCard:React.FC<projectCardProps> = ({id,project_name,description,da
           </div> 
           <div className='my-3'>
               <p className=' text-textgray  text-[12px] font-sans'>{date}</p>
-              <div className='flex gap-2'>
+              <div className='flex flex-wrap gap-2'>
                   {
                       category?.map((e) => (<div key={e} className='  rounded-[18px] uppercase font-sans p-[5px]  text-[10px] my-2 bg-textgray inline-block'>{e}</div>))
                   }

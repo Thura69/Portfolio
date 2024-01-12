@@ -21,10 +21,13 @@ module.exports = {
       'bg-blue':'#0000FF'
     },
     screens: {
+      "sxs":'400px',
       "xs": '420px',
-
+      "mxs": '434px',
+      'xsm':'450px',
       'sm': '480px',
-      'msm':'500px',
+      'msm': '500px',
+      'lsm':'550px',
       // => @media (min-width: 640px) { ... }
       "mid": "600px",
       'lmid':'650px',

@@ -40,7 +40,7 @@ const styles = {
          </div>
          <div className='  w-[100%]  order-0  '>
             <h3 className=' text-textgray  text-[1rem]'>PAST EXPERIENCES</h3>
-        <CareerPath link='https://www.digitalengineeringtech.com/' open={true} position='Digital Engineerning Tech' companyName='Full-stack Developer' year='Dec 2022 - Dec 2023'/>
+        <CareerPath link='https://www.digitalengineeringtech.com/' open={true} position='Digital Engineerning Tech' companyName='Full-stack Developer' year='Dec 2022 - Jan 2024'/>
         <CareerPath link='https://www.linkedin.com/in/thura-nyi-453858241/' open={true} position='Self-employed' companyName='Free Lance Developer' year='Sep 2021 - Present'/>
          </div>
        </div>

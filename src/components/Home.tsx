@@ -18,6 +18,7 @@ import SomeAnimation from './SomeAnimation';
 import { useRouter } from 'next/router';
 import { useParams } from 'next/navigation';
 import { useLocation } from 'react-router-dom';
+import SomeAnimations from './SomeAnimations';
 
 const Home = () => {
   const router = useRouter();
@@ -66,12 +67,13 @@ requestAnimationFrame(raf)
 <>
       <StickyCursor/>
       {/* <FirstFrame  />   */}
-      <SecondFrame/>  
+      <SecondFrame/>
       <ThirdFrame />
       <FourthFrame />
       <FifthFrame />
       {/* <SixthFrame/> */}
       <SeventhFrame gg={seventhFrameRef} />
+      {/* <SomeAnimations/> */}
       <EightFrame />
       {/* <div className='fixed h-[40px] bg-border text-text bottom-0 text-sm flex items-center justify-center gap-3  p-5'><TbInfoTriangle className='text-[#E9D502]'  size={25}/> This Portfolio is under developing</div> */}
         </>

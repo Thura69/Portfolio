@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Gasoek+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -35,16 +36,15 @@ body{
 font-family: 'Indie Flower', cursive;
 }
 .category{
-  font-family: 'Black Ops One'
+  font-family: 'Oswald', sans-serif;
 }
 
 
 
 .experience{
-  background-image: url('../../public/assets/001@3x.png');
+  /* background-image: url('../../public/assets/polka-dots.svg'); */
   background-size:contain;
-  background-repeat:repeat;
-  background-position:85% 80%;
+  background-position:80% 80%;
 }
 
 .contact{
@@ -54,6 +54,10 @@ background: rgb(18, 21, 26);
 
 .active{
   color:white;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .slide-in{
