@@ -47,7 +47,7 @@ const Projects = () => {
         <title>Thura Nyi | Projects</title>
     </Head>
        <StickyCursor/>
-       <div data-scroll-section className='flex items-center mt-[50px] justify-center  w-full h-[4720px] sxs:h-[4750px] xs:h-[4800px] mxs:h-[4870px] hsm:h-[5500px] sm:h-[5200px] xsm:h-[5100px] msm:h-[5400px] lsm:h-[5750px] mid:h-[6200px] lmid:h-[6500px] hmid:h-[6800px] amid:h-[2800px] m-md:h-[3000px] lg:h-[2100px]'>
+       <div data-scroll-section className='flex items-center mt-[50px] justify-center  w-full h-[5200px] sxs:h-[5220px] xs:h-[5300px] mxs:h-[5300px] hsm:h-[6000px] sm:h-[5620px] xsm:h-[5400px] msm:h-[5800px] lsm:h-[6250px] mid:h-[6730px] lmid:h-[7100px] hmid:h-[7400px] amid:h-[3300px] m-md:h-[3400px] lg:h-[2600px]'>
       <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3.15%]'/>
       <div className='w-[94%] xs:w-[90%] mid:w-[86%] md:w-[90%] lg:w-[100%] bg-bg p-4 border-r-[0.5px] border-b-[0.5px]   border-border h-full mid:p-7 md:p-0  '>
       <div className='border-[0.5px] md:p-7 md:border-border category_container justify-start  flex-wrap    flex gap-2'>

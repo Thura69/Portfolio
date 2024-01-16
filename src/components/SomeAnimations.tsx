@@ -22,10 +22,12 @@ const styles = {
  
  const SomeAnimations = () => {
   return (
-    <div data-scroll-section className=' grid grid-cols-3  items-center justify-center  w-full h-[800px] xs:h-[960px] sm:h-[900px] mid:h-[1000px] lg:h-[650px] md:h-[950px]'>
+    <div data-scroll-section className='  items-center justify-center  w-full h-[800px] xs:h-[960px] sm:h-[900px] mid:h-[1000px] lg:h-[650px] md:h-[950px]'>
+
       <AnimationCard/>
       <AnimationCard/>
       <AnimationCard/>
+        </div>
     </div>
   )
  }

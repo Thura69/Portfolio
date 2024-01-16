@@ -1,6 +1,7 @@
 import KhitZay from '../../public/assets/screen.png';
 import KhitZay_one from '../../public/assets/Screenshot 2024-01-09 at 02.01.48.png';
 import KBZ from '../../public/assets/bank.png';
+import MG from '../../public/assets/mg1.png';
 import KhitZayBackend from '../../public/assets/ecommerce.png';
 import Sample from '../../public/assets/smple.webp'
 import Form from '../../public/assets/pageform3.png';
@@ -57,6 +58,17 @@ export const allprojects = [
     },
     {
         id: 5,
+        project_name: 'Real Time Chat App',
+        description: 'A real-time Messenger clone using the latest web development technologies,fully-functional and visually stunning chat application with Next.js, TypeScript, NextAuth, Pusher.',
+        date: "Jan 16, 2024",
+        image: MG,
+        video:false,
+        github_link: 'https://github.com/Thura69/RealTime_chat',
+        demo_link: 'https://real-time-chat-nine.vercel.app/',
+        category:['NEXT.JS','TYPESCRIPT','PUSHER']
+    },
+    {
+        id: 6,
         project_name: 'Drew House Clothing ',
         description: 'Clone project of Drew House clothing E-commerce. Develop with HMTL, CSS, JavaScript. This is fully responsive and really cool UI.',
         date: "2020",
@@ -67,7 +79,7 @@ export const allprojects = [
         category:['VANILLA.JS']
     },
     {
-        id: 6,
+        id: 7,
         project_name: 'Khit Zay Filter Page',
         description: 'This is Khit Zay products filter page by gender, category, subCategory, size, price, low to hight, hight to low and other things.',
         date: "2020",
@@ -78,7 +90,7 @@ export const allprojects = [
         category:['React.JS']
     },
     {
-        id: 7,
+        id: 8,
         project_name: 'Forever Bots NTF Web',
         description: 'This is NFT website with fully responsive. I develop this with vanilla javaScript with HTML, CSS, JavaScript. Check the demo you will love it.',
         date: "2020",
@@ -89,7 +101,7 @@ export const allprojects = [
         category:['VANILLA.JS']
     },
     { 
-        id: 8,
+        id: 9,
         project_name: 'Christmas Gift',
         description: 'Vanilla JavaScript project with light and dark mode. Fully Responsive with any device. Although a small project check it out.',
         date: "2020",
@@ -100,7 +112,7 @@ export const allprojects = [
        category:['VANILLA.JS']
     },
      {
-        id: 9,
+        id: 10,
         project_name: 'Digit Ecommerce Backend',
         description: 'The server powering the khitzay front-end with node.js, express.js, typescript, and image uploading with Cloudinary. The route documentation is on the GitHub repository. Enjoy!',
         date: "Nov 5, 2023",
@@ -111,7 +123,7 @@ export const allprojects = [
         category:['NODE.JS','MONGODB',"CLOUDINARY",'BACKEND']
     },
     {
-        id: 10,
+        id: 11,
         project_name: 'Coffee Shop APP',
         description: 'Comming Soon!',
         date: "Comming Soon!",
@@ -122,7 +134,7 @@ export const allprojects = [
         category:['REACTNATIVE','ZUSTAND','FRONTEND']
     },
     {
-        id: 11,
+        id: 12,
         project_name: 'Reddit Clone',
         description: 'Comming Soon!',
         date: "Comming Soon!",
@@ -133,7 +145,7 @@ export const allprojects = [
         category:['NEXT.JS','PRISMA','MYSQL','FULLSTACK']
     },
     {
-        id: 12,
+        id: 13,
         project_name: 'MICRO SERVICES',
         description: 'Comming Soon!',
         date: "Comming Soon!",

@@ -44,10 +44,10 @@ import youtube_2 from '../../public/assets/youtube.png'
 import youtube_3 from '../../public/assets/youtube2.png'
 import youtube_4 from '../../public/assets/youtube3.png'
 
-import app_1 from '../../public/assets/app4.png'
-import app_2 from '../../public/assets/app.png'
-import app_3 from '../../public/assets/app2.png'
-import app_4 from '../../public/assets/modren.png'
+import mg_1 from '../../public/assets/mg1.png'
+import mg_2 from '../../public/assets/mg2.png'
+import mg_3 from '../../public/assets/mg3.png'
+import mg_4 from '../../public/assets/mg5.png'
 
 import drew_1 from '../../public/assets/drew4.png'
 import drew_2 from '../../public/assets/drew.png'
@@ -182,17 +182,18 @@ const SeventhFrame: React.FC<any> = ({gg}) => {
     };
   }, []);
   return (
-    <div  data-scroll-section id="seven_frame"  className='flex items-center justify-center w-full h-[1250px] mid:h-[2000px] md:h-[700px] sxs:h-[1300px] mxs:h-[1350px] msm:h-[1580px] sm:h-[1450px] xsm:h-[1500px] lsm:h-[1670px] plg:h-[800px] lg:h-[2700px] alg:h-[2700px] xl:h-[2600px]'>
+    <div  data-scroll-section id="seven_frame"  className='flex items-center justify-center w-full h-[1500px] mid:h-[2200px] md:h-[1200px] sxs:h-[1650px] mxs:h-[1700px] msm:h-[1900px] sm:h-[1850px] xsm:h-[1750px] lsm:h-[2150px] plg:h-[800px] lg:h-[3500px] alg:h-[3700px] lmid:h-[2350px] hmid:h-[2500px] amid:h-[2600px] hsm:h-[2000px] xl:h-[3300px]'>
         <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3%]'/>
         <div className='w-[94%]   lg:w-[94%] xs:w-[94%] bg-bg  h-full border-b-[0.5px] mid:w-[86%] border-border relative md:w-[90%] border-r-[0.5px] overflow-clip  '>
            {/* <Image className='absolute right-[-270px] top-[-150px]' src={svg} alt='svg'/> */}
         <h3 className='text-text px-[30px]  my-[20px]  lg:translate-y-10  uppercase text-[1.5rem]  lg:text-[2.25rem] font-bold'>Selected Projects.</h3>
        
         <div className='lg:hidden grid gap-3  p-2 grid-cols-1  md:grid-cols-2 text-left items-start md:flex-row md:flex-wrap flex-col justify-start mid:gap-6 '>
-          <AndroidWorkCard img={fuel_3} title='FUEL MANAGEMENT SYSTEM' />
-          <AndroidWorkCard img={PageForm} title='Dnd PAGE FORM' />
-          <AndroidWorkCard img={KhitZay} title='KHIT ZAY ECOMMERCE' />
-          <AndroidWorkCard img={blog_1} title='KHIT ZAY API & DB DESIGN' />
+          <AndroidWorkCard href='https://detfsmm.com' img={fuel_3} title='FUEL MANAGEMENT SYSTEM' />
+          <AndroidWorkCard href='https://github.com/Thura69/Drag-and-Drop-Forms-Management' img={PageForm} title='Dnd PAGE FORM' />
+          <AndroidWorkCard href='https://github.com/Thura69/RealTime_chat' img={mg_4} title='Real Time Chat App' />
+          <AndroidWorkCard href='https://github.com/Thura69/Khit_Zay_Next' img={KhitZay} title='KHIT ZAY ECOMMERCE' />
+          <AndroidWorkCard href='https://github.com/Thura69/Khitzay_restful' img={blog_1} title='KHIT ZAY API & DB DESIGN' />
         </div>
        
       <div ref={gg} className='lg:flex pt-[30px]   hidden '>
@@ -210,13 +211,15 @@ const SeventhFrame: React.FC<any> = ({gg}) => {
             {/* here */}
           <div ref={fullstackRef}>
           <ProjectCard toPage={'/projects/0'}  link='https://detfsmm.com' url='https://detfsmm.com'  title={"FMS MANAGEMNT SYSTEM"} year='2023' description={language.realtimefuelmanagementsystem} skills='React.js, Tailwind ,Framer Motion, React Rouder Dom, Redux, Redux Thunk, Custom Hooks,Prime React, Chart.js, Express, Node.js, Mongodb, TypeScript, Zod, EC2' image={[fuel_1, fuel_3, fuel_4, fuel_5]} account={true} vd={[false,false,false,false]} accountDetail='Username : user, Password : 12345678' />
+           <ProjectCard toPage={'/projects/2'} link='https://github.com/Thura69/Drag-and-Drop-Forms-Management' skills='React.js, Redux, Reuseable Components' url='https://github.com/Thura69/Drag-and-Drop-Forms-Management' title={"Form Drag & Drop"} year='2023' description={language.ecommerce} image={['https://res.cloudinary.com/dbqyaigcg/video/upload/v1704097659/Screen_Recording_2023-12-30_at_19.44.29_h23x9p_2_rbgyxq.webm','https://res.cloudinary.com/dbqyaigcg/video/upload/v1704097566/Screen_Recording_2023-12-30_at_19.43.08_cvnpdz_e3wqeg.webm','https://res.cloudinary.com/dbqyaigcg/video/upload/v1704097255/Screen_Recording_2023-12-30_at_19.45.37_ut4elc_iilapm.webm',PageForm]} vd={[true,true,true,false]} account={false} />
+            <ProjectCard toPage={'/projects/2'} link='https://github.com/Thura69/RealTime_chat' skills='React.js, Redux, Reuseable Components' url='https://github.com/Thura69/RealTime_chat' title={"Real Time Chat App"} year='2023' description={language.chatapp} image={[mg_4,mg_1,mg_3,mg_2]} vd={[false,false,false,false]} account={false} />
           </div>
           <div ref={webRef} className='' id='web'>
-          <ProjectCard toPage={'/projects/2'} link='https://github.com/Thura69/Drag-and-Drop-Forms-Management' skills='React.js, Redux, Reuseable Components' url='https://github.com/Thura69/Drag-and-Drop-Forms-Management' title={"Form Drag & Drop"} year='2023' description={language.ecommerce} image={['https://res.cloudinary.com/dbqyaigcg/video/upload/v1704097659/Screen_Recording_2023-12-30_at_19.44.29_h23x9p_2_rbgyxq.webm','https://res.cloudinary.com/dbqyaigcg/video/upload/v1704097566/Screen_Recording_2023-12-30_at_19.43.08_cvnpdz_e3wqeg.webm','https://res.cloudinary.com/dbqyaigcg/video/upload/v1704097255/Screen_Recording_2023-12-30_at_19.45.37_ut4elc_iilapm.webm',PageForm]} vd={[true,true,true,false]} account={false} />
+         
           <ProjectCard toPage={'/projects/2'} link='https://github.com/Thura69/Khit_Zay_Next' skills='React.js, Redux, Reuseable Components' url='https://khit-zay-next.vercel.app/' title={"Khit Zay Ecommerce"} year='2023' description={language.khitzay} image={[KhitZay,ecommerce_2,ecommerce_3,ecommerce_4]} vd={[false,false,false,false]} account={false} />
           </div>
          <div  ref={serverRef} id="server">
-              <ProjectCard toPage={'/projects/5'} link='https://github.com/Thura69/Khit_Zay_Next_API' skills='Express.js,Node.js,TypeScript,MongoDb,MVC Pattern,Cloudinary' url='https://github.com/Thura69/Ecommerce_Backend' title={"Khit Zay API & Database Design"} year='2023' description={language.ecommerceapi} image={[blog_1, blog_2,blog_2, blog_1]} account={false} />
+              <ProjectCard toPage={'/projects/5'} link='https://github.com/Thura69/Khitzay_restful' skills='Express.js,Node.js,TypeScript,MongoDb,MVC Pattern,Cloudinary' url='https://github.com/Thura69/Khitzay_restful' title={"Khit Zay API & Database Design"} year='2023' description={language.ecommerceapi} image={[blog_1, blog_2,blog_2, blog_1]} account={false} />
          </div>
 
             {/* here */}
