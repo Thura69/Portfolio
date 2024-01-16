@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Profile from '../../public/assets/646933774666ac41a59ff891_Rotate.svg';
-import SVG from '../../public/assets/nft-_1_.svg';
+import SVG from '..A real-time Messenger clone using the latest web development technologies/../public/assets/nft-_1_.svg';
 import {AiFillLinkedin,AiFillGithub,AiFillFacebook} from 'react-icons/ai'
 import Sign from '../../public/assets/2-removebg-preview.png';
 import { ReactSketchCanvas } from 'react-sketch-canvas';
@@ -27,17 +27,9 @@ const styles = {
  
  const SomeAnimation = () => {
   return (
-    <div data-scroll-section className='flex items-center justify-center  w-full h-[1350px] xs:h-[1250px] sm:h-[1200px] mid:h-[1250px] lg:h-[570px] md:h-[1200px]'>
+    <div className='flex items-center justify-center  w-full h-[1350px] xs:h-[1250px] sm:h-[1200px] mid:h-[1250px] lg:h-[570px] md:h-[1200px]'>
       <Frames className='w-[3%] xs:w-[5%] mid:w-[7%] md:w-[5%] lg:w-[3.15%]'/>
       <div className='w-[94%] xs:w-[90%] mid:w-[86%] md:w-[90%] lg:w-[100%] bg-bg  border-r-[0.5px] border-b-[0.5px] border-border h-full md:p-0  lg:flex  '>
-    {/* <div data-scroll-sticky className='md:p-5 lg:p-8 2xl:p-10 bg-bg lg:w-[50.1%] order-1 md:w-[50%] xl:w-[33.1%]   border-text  md:flex items-center justify-center md:justify-start bg-text'>
-      <p className='text-bg text-[2.2rem]  font-bold'>Infinite rotation</p>
-       <div className='border-2 flex  border-border w-[80%] rounded-full gap-5 p-3 '>
-         <p className='text-bg'>Git</p>
-         <p className='text-bg'>source code</p>
-       </div>
-       <Image className='mx-auto' src={Profile} alt="hello"/>
-      </div> */}
         <div className=' md:flex p-4 md:p-5 md:w-[100%] relative lg:p-10 mid:p-10  lg:w-[45%] xl:w-[40.6%] border-b-[0.5px]  flex-col md:border-r-[0.5px] border-border items-start  lg:text-[19.4px] bg-bg h-[470px] xs:h-[450px] mid:h-[480px] sm:h-[460px] lg:h-auto'>
       <div className='border-border mx-auto md:mx-0 relative lg:w-auto  border-[0.5px] inline-block lg:mx-auto    rounded-xl'>
          <Image className=' mx-auto p-3 w-full  rounded-xl  sm:max-w-[400px] lg:w-[500px]   ' src={Dance} alt="hello" />

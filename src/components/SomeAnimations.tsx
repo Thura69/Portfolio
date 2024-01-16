@@ -28,7 +28,6 @@ const styles = {
       <AnimationCard/>
       <AnimationCard/>
         </div>
-    </div>
   )
  }
 
